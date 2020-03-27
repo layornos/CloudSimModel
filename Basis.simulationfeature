@@ -1,0 +1,1771 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SimulationFeature:SimulationFeature xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:DataSpecification="edu.kit.ipd.sdq.Modularization.DataRepresentation.DataSpecification" xmlns:DataTypes="edu.kit.ipd.sdq.Modularization.DataRepresentation.DataTypes" xmlns:SimulationFeature="edu.kit.ipd.sdq.Modularization.SimulationFeature" xmlns:SimulationInformation="edu.kit.ipd.sdq.Modularization.DataRepresentation.SimulationInformation" id="_Z27KgAC3EemnkdGScLA10w" Name="Basis Feature">
+  <simulationDescription id="_fDyQ8AC3EemnkdGScLA10w" Name="Basis Simulation Description">
+    <simulationdata xsi:type="SimulationInformation:ObjectOrientedViewSimulationData" id="_JPZlUAC8EemnkdGScLA10w" Name="Basis Simulation Data">
+      <objectclassoperation id="_exLdAADCEemnkdGScLA10w" Name="VmSchedulerTimeSharedOverSubscription" returnType="_gP4PpgDCEemnkdGScLA10w">
+        <parameters Name="vmMigrationCpuOverhead" optional="true" dataType="_lpWykQC-EemnkdGScLA10w"/>
+      </objectclassoperation>
+      <objectclassoperation id="_x6FnkADCEemnkdGScLA10w" Name="VmSchedulerTimeShared" returnType="_zKA-ZgDCEemnkdGScLA10w">
+        <parameters Name="vmMigrationCpuOverhead" optional="true" dataType="_lpWykQC-EemnkdGScLA10w"/>
+      </objectclassoperation>
+      <objectclassoperation id="_JZ6vEADDEemnkdGScLA10w" Name="VmSchedulerSpaceShared" returnType="_zKA-ZgDCEemnkdGScLA10w">
+        <parameters Name="vmMigrationCpuOverhead" optional="true" dataType="_lpWykQC-EemnkdGScLA10w"/>
+      </objectclassoperation>
+      <objectclassoperation id="_k9-hAADDEemnkdGScLA10w" Name="VmSchedulerAbstract" returnType="_iaScRgDDEemnkdGScLA10w">
+        <parameters Name="vmMigrationCpuOverhead" dataType="_lpWykQC-EemnkdGScLA10w"/>
+      </objectclassoperation>
+      <objectclassoperation id="_1kxp0AE0EemnkdGScLA10w" Name="VmUtilizationHistory" returnType="_3es_5gE0EemnkdGScLA10w">
+        <parameters Name="vm" dataType="_8sYltgE0EemnkdGScLA10w"/>
+        <parameters Name="enabled" optional="true"/>
+      </objectclassoperation>
+      <objectclassoperation id="_RqjowAE1EemnkdGScLA10w" Name="VmStateHistoryEntry" returnType="_HoCU5hXDEemC-aG165HpOg">
+        <parameters Name="time" dataType="_lpWykQC-EemnkdGScLA10w"/>
+        <parameters Name="allocatedMips" dataType="_lpWykQC-EemnkdGScLA10w"/>
+        <parameters Name="requestedMips" dataType="_lpWykQC-EemnkdGScLA10w"/>
+        <parameters Name="inMigration"/>
+      </objectclassoperation>
+      <objectclassoperation id="_Ei6noAE2EemnkdGScLA10w" Name="VmSimple" returnType="_CrkrhgE2EemnkdGScLA10w">
+        <parameters Name="id" optional="true" dataType="_WsB3oQC-EemnkdGScLA10w"/>
+        <parameters Name="mipsCapacity" dataType="_XuMREQEzEemnkdGScLA10w"/>
+        <parameters Name="numberOfPes" dataType="_XuMREQEzEemnkdGScLA10w"/>
+      </objectclassoperation>
+      <objectclassoperation id="_PId_IAE4EemnkdGScLA10w" Name="Storage" returnType="_NNMlRgE4EemnkdGScLA10w">
+        <parameters Name="capacity" dataType="_XuMREQEzEemnkdGScLA10w"/>
+      </objectclassoperation>
+      <objectclassoperation id="_ObThsAE5EemnkdGScLA10w" Name="ResourceManageableAbstract" returnType="_RDnnxgE5EemnkdGScLA10w">
+        <parameters Name="capacity" dataType="_XuMREQEzEemnkdGScLA10w"/>
+      </objectclassoperation>
+      <objectclassoperation id="_nIkFoAE5EemnkdGScLA10w" Name="ResourceAbstract" returnType="_wH1GtgE5EemnkdGScLA10w">
+        <parameters Name="capacity" dataType="_XuMREQEzEemnkdGScLA10w"/>
+      </objectclassoperation>
+      <objectclassoperation id="_oTRlQAE5EemnkdGScLA10w" Name="isResourceAmountBeingUsed" returnType="_6xudkQE5EemnkdGScLA10w">
+        <parameters Name="amountToCheck" dataType="_XuMREQEzEemnkdGScLA10w"/>
+      </objectclassoperation>
+      <objectclassoperation id="_plieYAE5EemnkdGScLA10w" Name="isSuitable" returnType="_6xudkQE5EemnkdGScLA10w">
+        <parameters Name="newTotalAllocatedResource" dataType="_XuMREQEzEemnkdGScLA10w"/>
+      </objectclassoperation>
+      <objectclassoperation id="_O6h-4AE6EemnkdGScLA10w" Name="SanStorage" returnType="_QVh9RgE6EemnkdGScLA10w">
+        <parameters Name="name" optional="true" dataType="_xtQW8QE6EemnkdGScLA10w"/>
+        <parameters Name="capacity" dataType="_XuMREQEzEemnkdGScLA10w"/>
+        <parameters Name="bandwidth" dataType="_lpWykQC-EemnkdGScLA10w"/>
+        <parameters Name="networkLatency" dataType="_lpWykQC-EemnkdGScLA10w"/>
+      </objectclassoperation>
+      <objectclassoperation id="_MBlmYAE7EemnkdGScLA10w" Name="Ram" returnType="_JyFo9gE7EemnkdGScLA10w">
+        <parameters Name="capacity" dataType="_XuMREQEzEemnkdGScLA10w"/>
+      </objectclassoperation>
+      <objectclassoperation id="_gwbM8AE7EemnkdGScLA10w" Name="Processor" returnType="_i5OFdgE7EemnkdGScLA10w">
+        <parameters Name="vm" dataType="_8sYltgE0EemnkdGScLA10w"/>
+        <parameters Name="pesMips" dataType="_lpWykQC-EemnkdGScLA10w"/>
+        <parameters Name="numberOfPes" dataType="_XuMREQEzEemnkdGScLA10w"/>
+      </objectclassoperation>
+      <objectclassoperation id="_v4D6cAE7EemnkdGScLA10w" Name="getTotalMips" returnType="_lpWykQC-EemnkdGScLA10w"/>
+      <objectclassoperation id="_3lHswAE7EemnkdGScLA10w" Name="getVm" returnType="_8sYltgE0EemnkdGScLA10w"/>
+      <objectclassoperation id="_Ylt_4AE8EemnkdGScLA10w" Name="PeSimple" returnType="_VLvMVgE8EemnkdGScLA10w">
+        <parameters Name="id" optional="true" dataType="_WsB3oQC-EemnkdGScLA10w"/>
+        <parameters Name="mipsCapacity" dataType="_lpWykQC-EemnkdGScLA10w"/>
+        <parameters Name="peProvisioner" dataType="_tNeHBgE8EemnkdGScLA10w"/>
+      </objectclassoperation>
+      <objectclassoperation id="_KPfrwAE9EemnkdGScLA10w" Name="HarddriveStorage" returnType="_MbzLRgE9EemnkdGScLA10w">
+        <parameters Name="name" optional="true" dataType="_xtQW8QE6EemnkdGScLA10w"/>
+        <parameters Name="capacity" dataType="_XuMREQEzEemnkdGScLA10w"/>
+      </objectclassoperation>
+      <objectclassoperation id="_uKghkAE9EemnkdGScLA10w" Name="File" returnType="_rW05BgE9EemnkdGScLA10w">
+        <parameters Name="file" dataType="_rW05BgE9EemnkdGScLA10w"/>
+      </objectclassoperation>
+      <objectclassoperation id="_3wF7wAE9EemnkdGScLA10w" Name="File" returnType="_rW05BgE9EemnkdGScLA10w">
+        <parameters Name="fileName" dataType="_xtQW8QE6EemnkdGScLA10w"/>
+        <parameters Name="fileSize" dataType="_WsB3oQC-EemnkdGScLA10w"/>
+      </objectclassoperation>
+      <objectclassoperation id="_Esgu4AE-EemnkdGScLA10w" Name="isValid" returnType="_6xudkQE5EemnkdGScLA10w">
+        <parameters Name="fileName" dataType="_xtQW8QE6EemnkdGScLA10w"/>
+      </objectclassoperation>
+      <objectclassoperation id="_HWx8wAE-EemnkdGScLA10w" Name="isValid" returnType="_6xudkQE5EemnkdGScLA10w">
+        <parameters Name="file" dataType="_rW05BgE9EemnkdGScLA10w"/>
+      </objectclassoperation>
+      <objectclassoperation id="_PfJLAAE-EemnkdGScLA10w" Name="makeReplica" returnType="_rW05BgE9EemnkdGScLA10w"/>
+      <objectclassoperation id="_RQ3AQAE-EemnkdGScLA10w" Name="makeMasterCopy" returnType="_rW05BgE9EemnkdGScLA10w"/>
+      <objectclassoperation id="_e8EMAAE-EemnkdGScLA10w" Name="getAttributeSize" returnType="_WsB3oQC-EemnkdGScLA10w"/>
+      <objectclassoperation id="_zxLZsAE-EemnkdGScLA10w" Name="getSizeInByte" returnType="_WsB3oQC-EemnkdGScLA10w"/>
+      <objectclassoperation id="_LNodEAE_EemnkdGScLA10w" Name="getCreationTime" returnType="_XuMREQEzEemnkdGScLA10w"/>
+      <objectclassoperation id="_RC4ZMAE_EemnkdGScLA10w" Name="isRegistered" returnType="_6xudkQE5EemnkdGScLA10w"/>
+      <objectclassoperation id="_9g38sAE_EemnkdGScLA10w" Name="DatacenterStorage" returnType="_7P-RFgE_EemnkdGScLA10w">
+        <parameters Name="storageList" optional="true" dataType="_QqG3ZAFAEemnkdGScLA10w"/>
+      </objectclassoperation>
+      <objectclassoperation id="_cBQ84AFAEemnkdGScLA10w" Name="contains" returnType="_6xudkQE5EemnkdGScLA10w">
+        <parameters Name="file" dataType="_rW05BgE9EemnkdGScLA10w"/>
+      </objectclassoperation>
+      <objectclassoperation id="_bd2t0AFAEemnkdGScLA10w" Name="contains" returnType="_6xudkQE5EemnkdGScLA10w">
+        <parameters Name="fileName" dataType="_xtQW8QE6EemnkdGScLA10w"/>
+      </objectclassoperation>
+      <objectclassoperation id="_wR8AwAFAEemnkdGScLA10w" Name="setAllFilesOfAllStoragesToThisDatacenter"/>
+      <objectclassoperation id="_7KSDUAFAEemnkdGScLA10w" Name="predictFileTransferTime" returnType="_lpWykQC-EemnkdGScLA10w">
+        <parameters Name="requiredFiles" dataType="_AgRQlAFBEemnkdGScLA10w"/>
+      </objectclassoperation>
+      <objectclassoperation id="_Km_B4AFBEemnkdGScLA10w" Name="addFile" returnType="_WsB3oQC-EemnkdGScLA10w">
+        <parameters Name="file" dataType="_rW05BgE9EemnkdGScLA10w"/>
+      </objectclassoperation>
+      <objectclassoperation id="_ixKt8AFBEemnkdGScLA10w" Name="Bandwidth" returnType="_gDKPlgFBEemnkdGScLA10w">
+        <parameters Name="capacity" dataType="_XuMREQEzEemnkdGScLA10w"/>
+      </objectclassoperation>
+      <objectclassoperation id="_sfo-YAFBEemnkdGScLA10w" Name="FileAttribute" returnType="_XUevlgE-EemnkdGScLA10w">
+        <parameters Name="file" dataType="_rW05BgE9EemnkdGScLA10w"/>
+        <parameters Name="fileSize" dataType="_WsB3oQC-EemnkdGScLA10w"/>
+      </objectclassoperation>
+      <objectclassoperation id="_ynuW8AFBEemnkdGScLA10w" Name="copyValue">
+        <parameters Name="destinationAttr" dataType="_XUevlgE-EemnkdGScLA10w"/>
+      </objectclassoperation>
+      <objectclassoperation id="_Jb-x4AFCEemnkdGScLA10w" Name="getAttributeSize" returnType="_WsB3oQC-EemnkdGScLA10w"/>
+      <objectclassoperation id="_ZxVPsAFCEemnkdGScLA10w" Name="getFileSizeInByte" returnType="_WsB3oQC-EemnkdGScLA10w"/>
+      <objectclassoperation id="_vmmS0AFCEemnkdGScLA10w" Name="isRegistered" returnType="_6xudkQE5EemnkdGScLA10w"/>
+      <objectclassoperation id="_2nCPsAFCEemnkdGScLA10w" Name="isValid" returnType="_6xudkQE5EemnkdGScLA10w">
+        <parameters Name="fileName" dataType="_xtQW8QE6EemnkdGScLA10w"/>
+      </objectclassoperation>
+      <objectclassoperation id="_OxjUUAGCEemnkdGScLA10w" Name="CloudSimEntity" returnType="_LW81tgGCEemnkdGScLA10w">
+        <parameters Name="simulation" dataType="_VhhMRgGCEemnkdGScLA10w"/>
+      </objectclassoperation>
+      <objectclassoperation id="_aAWvEAGCEemnkdGScLA10w" Name="scheduleNow">
+        <parameters Name="tag" dataType="_WsB3oQC-EemnkdGScLA10w"/>
+        <parameters Name="dest" dataType="_jT0ehgGCEemnkdGScLA10w"/>
+        <parameters Name="data" optional="true" dataType="_rPNnwgGCEemnkdGScLA10w"/>
+      </objectclassoperation>
+      <objectclassoperation id="_aAWvEAAECemnkdGScLA10w" Name="scheduleFirstNow">
+        <parameters Name="tag" dataType="_WsB3oQC-EemnkdGScLA10w"/>
+        <parameters Name="dest" dataType="_jT0ehgGCEemnkdGScLA10w"/>
+        <parameters Name="data" optional="true" dataType="_rPNnwgGCEemnkdGScLA10w"/>
+      </objectclassoperation>
+      <objectclassoperation id="_aAWvEAGCElmnkdGScLA10w" Name="scheduleFirst">
+        <parameters Name="tag" dataType="_WsB3oQC-EemnkdGScLA10w"/>
+        <parameters Name="dest" dataType="_jT0ehgGCEemnkdGScLA10w"/>
+        <parameters Name="data" optional="true" dataType="_rPNnwgGCEemnkdGScLA10w"/>
+        <parameters Name="delay" dataType="_lpWykQC-EemnkdGScLA10w"/>
+      </objectclassoperation>
+      <objectclassoperation id="_OspJsAGDEemnkdGScLA10w" Name="pause">
+        <parameters Name="delay" dataType="_lpWykQC-EemnkdGScLA10w"/>
+      </objectclassoperation>
+      <objectclassoperation id="_RZYcwAGDEemnkdGScLA10w" Name="numEventsWaiting" returnType="_XuMREQEzEemnkdGScLA10w">
+        <parameters Name="predicate" optional="true" dataType="_WN1DNQGDEemnkdGScLA10w"/>
+      </objectclassoperation>
+      <objectclassoperation id="_xOnI8AGDEemnkdGScLA10w" Name="selectEvent" returnType="_e4npFgGDEemnkdGScLA10w">
+        <parameters Name="predicate" dataType="_WN1DNQGDEemnkdGScLA10w"/>
+      </objectclassoperation>
+      <objectclassoperation id="_xjJ1kAGDEemnkdGScLA10w" Name="cancelEvent" returnType="_e4npFgGDEemnkdGScLA10w">
+        <parameters Name="predicate" dataType="_WN1DNQGDEemnkdGScLA10w"/>
+      </objectclassoperation>
+      <objectclassoperation id="_G9q2YAGEEemnkdGScLA10w" Name="getNextEvent" returnType="_e4npFgGDEemnkdGScLA10w">
+        <parameters Name="predicate" optional="true" dataType="_WN1DNQGDEemnkdGScLA10w"/>
+      </objectclassoperation>
+      <objectclassoperation id="_NEC-wAGEEemnkdGScLA10w" Name="waitForEvent">
+        <parameters Name="predicate" dataType="_WN1DNQGDEemnkdGScLA10w"/>
+      </objectclassoperation>
+      <objectclassoperation id="_OjT8oAGFEemnkdGScLA10w" Name="CloudSim" returnType="_GIyAVgGFEemnkdGScLA10w">
+        <parameters Name="minTimeBetweenEvents" optional="true" dataType="_lpWykQC-EemnkdGScLA10w"/>
+      </objectclassoperation>
+      <objectclassoperation id="_kouUkAGFEemnkdGScLA10w" Name="getDatacenterList" returnType="_m3461AGFEemnkdGScLA10w"/>
+      <objectclassoperation id="_zjm_gAGFEemnkdGScLA10w" Name="CloudInformationService" returnType="_xABBZgGFEemnkdGScLA10w">
+        <parameters Name="simulation" dataType="_GIyAVgGFEemnkdGScLA10w"/>
+      </objectclassoperation>
+      <objectclassoperation id="_DY6O1AGHEemnkdGScLA10w" Name="CloudSimEvent" returnType="_GIyAVgGFEemnkdGScLA10w">
+        <parameters Name="simulation" dataType="_VhhMRgGCEemnkdGScLA10w"/>
+        <parameters Name="type" dataType="_OzbxYwGHEemnkdGScLA10w"/>
+        <parameters Name="delay" dataType="_lpWykQC-EemnkdGScLA10w"/>
+        <parameters Name="src" dataType="_jT0ehgGCEemnkdGScLA10w"/>
+        <parameters Name="dest" dataType="_jT0ehgGCEemnkdGScLA10w"/>
+        <parameters Name="tag" dataType="_WsB3oQC-EemnkdGScLA10w"/>
+        <parameters Name="data" dataType="_rPNnwgGCEemnkdGScLA10w"/>
+      </objectclassoperation>
+      <objectclassoperation id="_DY6O1AGHEemnmkGScLA10w" Name="CloudSimEvent" returnType="_GIyAVgGFEemnkdGScLA10w">
+        <parameters Name="simulation" dataType="_VhhMRgGCEemnkdGScLA10w"/>
+        <parameters Name="delay" dataType="_lpWykQC-EemnkdGScLA10w"/>
+        <parameters Name="src" dataType="_jT0ehgGCEemnkdGScLA10w"/>
+        <parameters Name="dest" dataType="_jT0ehgGCEemnkdGScLA10w"/>
+        <parameters Name="tag" dataType="_WsB3oQC-EemnkdGScLA10w"/>
+        <parameters Name="data" dataType="_rPNnwgGCEemnkdGScLA10w"/>
+      </objectclassoperation>
+      <objectclassoperation id="_DY6O1AGHlEmnkdGScLA10w" Name="CloudSimEvent" returnType="_GIyAVgGFEemnkdGScLA10w">
+        <parameters Name="simulation" dataType="_VhhMRgGCEemnkdGScLA10w"/>
+        <parameters Name="delay" dataType="_lpWykQC-EemnkdGScLA10w"/>
+        <parameters Name="dest" dataType="_jT0ehgGCEemnkdGScLA10w"/>
+        <parameters Name="tag" dataType="_WsB3oQC-EemnkdGScLA10w"/>
+        <parameters Name="data" dataType="_rPNnwgGCEemnkdGScLA10w"/>
+      </objectclassoperation>
+      <objectclassoperation id="_DY6O1AGHlLmnkdGScLA10w" Name="CloudSimEvent" returnType="_GIyAVgGFEemnkdGScLA10w">
+        <parameters Name="simulation" dataType="_VhhMRgGCEemnkdGScLA10w"/>
+        <parameters Name="dest" dataType="_jT0ehgGCEemnkdGScLA10w"/>
+        <parameters Name="tag" dataType="_WsB3oQC-EemnkdGScLA10w"/>
+      </objectclassoperation>
+      <objectclassoperation id="_DY6O1AGHLlmnkdGScLA10w" Name="CloudSimEvent" returnType="_GIyAVgGFEemnkdGScLA10w">
+        <parameters Name="simulation" dataType="_VhhMRgGCEemnkdGScLA10w"/>
+        <parameters Name="type" dataType="_OzbxYwGHEemnkdGScLA10w"/>
+        <parameters Name="delay" dataType="_lpWykQC-EemnkdGScLA10w"/>
+        <parameters Name="src" dataType="_jT0ehgGCEemnkdGScLA10w"/>
+      </objectclassoperation>
+      <objectclassoperation id="_DY6U1AGHEemnkdGScLA10w" Name="CloudSimEvent" returnType="_GIyAVgGFEemnkdGScLA10w">
+        <parameters Name="src" dataType="_jT0ehgGCEemnkdGScLA10w"/>
+      </objectclassoperation>
+      <objectclassoperation id="_0hakMAGIEemnkdGScLA10w" Name="remove" returnType="_6xudkQE5EemnkdGScLA10w">
+        <parameters Name="event" dataType="_e4npFgGDEemnkdGScLA10w"/>
+      </objectclassoperation>
+      <objectclassoperation id="_4edBgAGIEemnkdGScLA10w" Name="clear"/>
+      <objectclassoperation id="_DDCakAGJEemnkdGScLA10w" Name="addEventFirst">
+        <parameters Name="newEvent" dataType="_e4npFgGDEemnkdGScLA10w"/>
+      </objectclassoperation>
+      <objectclassoperation id="_PvEBQAGJEemnkdGScLA10w" Name="remove" returnType="_6xudkQE5EemnkdGScLA10w">
+        <parameters Name="event" dataType="_e4npFgGDEemnkdGScLA10w"/>
+      </objectclassoperation>
+      <objectclassoperation id="_VLa8QAGJEemnkdGScLA10w" Name="removeAll" returnType="_6xudkQE5EemnkdGScLA10w">
+        <parameters Name="events" dataType="_YiCSxAGJEemnkdGScLA10w"/>
+      </objectclassoperation>
+      <objectclassoperation id="_fpdBYAGJEemnkdGScLA10w" Name="removeIf" returnType="_6xudkQE5EemnkdGScLA10w">
+        <parameters Name="predicate" dataType="_qQl_MgGJEemnkdGScLA10w"/>
+      </objectclassoperation>
+      <objectclassoperation id="_9-4HsAGJEemnkdGScLA10w" Name="PredicateType" returnType="_69n9NgGJEemnkdGScLA10w">
+        <parameters Name="tag" dataType="_WsB3oQC-EemnkdGScLA10w"/>
+      </objectclassoperation>
+      <objectclassoperation id="_kT13dAGKEemnkdGScLA10w" Name="DatacenterSimple" returnType="_ueV8lgGKEemnkdGScLA10w">
+        <parameters Name="simulation" dataType="_VhhMRgGCEemnkdGScLA10w"/>
+        <parameters Name="vmAllocationPolicy" dataType="__x_OpgGKEemnkdGScLA10w"/>
+      </objectclassoperation>
+      <objectclassoperation id="_kT13dAGEKemnkdGScLA10w" Name="DatacenterSimple" returnType="_ueV8lgGKEemnkdGScLA10w">
+        <parameters Name="simulation" dataType="_VhhMRgGCEemnkdGScLA10w"/>
+        <parameters Name="vmAllocationPolicy" dataType="__x_OpgGKEemnkdGScLA10w"/>
+        <parameters Name="hostList" dataType="_VM5RBAGLEemnkdGScLA10w"/>
+      </objectclassoperation>
+      <objectclassoperation id="_kT13dGAEKemnkdGScLA10w" Name="DatacenterSimple" returnType="_ueV8lgGKEemnkdGScLA10w">
+        <parameters Name="simulation" dataType="_VhhMRgGCEemnkdGScLA10w"/>
+        <parameters Name="vmAllocationPolicy" dataType="__x_OpgGKEemnkdGScLA10w"/>
+        <parameters Name="hostList" dataType="_VM5RBAGLEemnkdGScLA10w"/>
+        <parameters Name="storageLIst" dataType="_QqG3ZAFAEemnkdGScLA10w"/>
+      </objectclassoperation>
+      <objectclassoperation id="_kT13dGAEKenmkdGScLA10w" Name="DatacenterSimple" returnType="_ueV8lgGKEemnkdGScLA10w">
+        <parameters Name="simulation" dataType="_VhhMRgGCEemnkdGScLA10w"/>
+        <parameters Name="vmAllocationPolicy" dataType="__x_OpgGKEemnkdGScLA10w"/>
+        <parameters Name="hostList" dataType="_VM5RBAGLEemnkdGScLA10w"/>
+        <parameters Name="storage" dataType="_7P-RFgE_EemnkdGScLA10w"/>
+      </objectclassoperation>
+      <objectclassoperation id="_U3D3dAYLEemnkdGScLA10w" Name="VmAllocationPolicyMigrationStaticThreshold" returnType="_o5drRgYKEemnkdGScLA10w">
+        <parameters Name="vmSelectionPolicy" dataType="_oiI69gYLEemnkdGScLA10w"/>
+        <parameters Name="overUtilizationThreshold" dataType="_lpWykQC-EemnkdGScLA10w"/>
+        <parameters Name="findHostForVmFunction" optional="true" dataType="_38jahQYLEemnkdGScLA10w"/>
+      </objectclassoperation>
+      <objectclassoperation id="_753vMAYMEemnkdGScLA10w" Name="VmAllocationPolicyMigrationWorstFitStaticThreshold" returnType="_3963BgYMEemnkdGScLA10w">
+        <parameters Name="vmSelectionPolicy" dataType="_oiI69gYLEemnkdGScLA10w"/>
+        <parameters Name="overUtilizationThreshold" dataType="_lpWykQC-EemnkdGScLA10w"/>
+        <parameters Name="findHostForVmFunction" optional="true" dataType="_38jahQYLEemnkdGScLA10w"/>
+      </objectclassoperation>
+      <objectclassoperation id="_4z2kAAYNEemnkdGScLA10w" Name="VmAllocationPolicyMigrationMedianAbsoluteDeviation" returnType="_0ceUFgYNEemnkdGScLA10w">
+        <parameters Name="vmSelectionPolicy" dataType="_oiI69gYLEemnkdGScLA10w"/>
+      </objectclassoperation>
+      <objectclassoperation id="_C9aN8AYOEemnkdGScLA10w" Name="VmAllocationPolicyMigrationMedianAbsoluteDeviation">
+        <parameters Name="vmSelectionPolicy" dataType="_oiI69gYLEemnkdGScLA10w"/>
+        <parameters Name="safetyParameter" dataType="_lpWykQC-EemnkdGScLA10w"/>
+        <parameters Name="fallbackPolicy" dataType="_U3uedgYOEemnkdGScLA10w"/>
+      </objectclassoperation>
+      <objectclassoperation id="_qOFygAYjEemnkdGScLA10w" Name="VmAllocationPolicyMigrationLocalRegressionRobust" returnType="_lPsl5gYjEemnkdGScLA10w">
+        <parameters Name="vmSelectionPolicy" dataType="_oiI69gYLEemnkdGScLA10w"/>
+      </objectclassoperation>
+      <objectclassoperation id="_wzmG4AYjEemnkdGScLA10w" Name="VmAllocationPolicyMigrationLocalRegressionRobust" returnType="_lPsl5gYjEemnkdGScLA10w">
+        <parameters Name="vmSelectionPolicy" dataType="_oiI69gYLEemnkdGScLA10w"/>
+        <parameters Name="safetyParameter" dataType="_lpWykQC-EemnkdGScLA10w"/>
+        <parameters Name="fallbackVmAllocationPolicy" dataType="_U3uedgYOEemnkdGScLA10w"/>
+      </objectclassoperation>
+      <objectclassoperation id="_uK9bQAYkEemnkdGScLA10w" Name="VmAllocationPolicyMigrationLocalRegression" returnType="_oCAgBgYkEemnkdGScLA10w">
+        <parameters Name="vmSelectionPolicy" dataType="_oiI69gYLEemnkdGScLA10w"/>
+      </objectclassoperation>
+      <objectclassoperation id="_3iLCQAYkEemnkdGScLA10w" Name="VmAllocationPolicyMigrationLocalRegression" returnType="_oCAgBgYkEemnkdGScLA10w">
+        <parameters Name="vmSelectionPolicy" dataType="_oiI69gYLEemnkdGScLA10w"/>
+        <parameters Name="safetyParameter" dataType="_lpWykQC-EemnkdGScLA10w"/>
+        <parameters Name="fallbackVmAllocationPolicy" dataType="_U3uedgYOEemnkdGScLA10w"/>
+      </objectclassoperation>
+      <objectclassoperation id="_3Trd0AYlEemnkdGScLA10w" Name="VmAllocationPolicyMigrationInterQuartileRange" returnType="_wdPKdgYlEemnkdGScLA10w">
+        <parameters Name="vmSelectionPolicy" dataType="_oiI69gYLEemnkdGScLA10w"/>
+      </objectclassoperation>
+      <objectclassoperation id="_21ee4AYlEemnkdGScLA10w" Name="VmAllocationPolicyMigrationInterQuartileRange" returnType="_wdPKdgYlEemnkdGScLA10w">
+        <parameters Name="vmSelectionPolicy" dataType="_oiI69gYLEemnkdGScLA10w"/>
+        <parameters Name="safetyParameter" dataType="_lpWykQC-EemnkdGScLA10w"/>
+        <parameters Name="fallbackPolicy" dataType="_U3uedgYOEemnkdGScLA10w"/>
+      </objectclassoperation>
+      <objectclassoperation id="_5g01YAYmEemnkdGScLA10w" Name="VmAllocationPolicyMigrationDynamicUpperThresholdFirstFit" returnType="_13APBgYmEemnkdGScLA10w">
+        <parameters Name="vmSelectionPolicy" dataType="_oiI69gYLEemnkdGScLA10w"/>
+      </objectclassoperation>
+      <objectclassoperation id="_7Ur_sAYmEemnkdGScLA10w" Name="VmAllocationPolicyMigrationDynamicUpperThresholdFirstFit" returnType="_13APBgYmEemnkdGScLA10w">
+        <parameters Name="vmSelectionPolicy" dataType="_oiI69gYLEemnkdGScLA10w"/>
+        <parameters Name="safetyParameter" dataType="_lpWykQC-EemnkdGScLA10w"/>
+        <parameters Name="fallbackVmAllocationPolicy" dataType="_U3uedgYOEemnkdGScLA10w"/>
+      </objectclassoperation>
+      <objectclassoperation id="_yL72AAYnEemnkdGScLA10w" Name="VmAllocationPolicyMigrationBestFitStaticThreshold" returnType="_uryJBgYnEemnkdGScLA10w">
+        <parameters Name="vmSelectionPolicy" dataType="_oiI69gYLEemnkdGScLA10w"/>
+        <parameters Name="overUtilizationThreshold" dataType="_lpWykQC-EemnkdGScLA10w"/>
+        <parameters Name="findHostForVmFunction" optional="true" dataType="_38jahQYLEemnkdGScLA10w"/>
+      </objectclassoperation>
+      <objectclassoperation id="_kBO1YAYoEemnkdGScLA10w" Name="VmAllocationPolicyMigrationAbstract" returnType="_tRITdgYoEemnkdGScLA10w">
+        <parameters Name="vmSelectionPolicy" dataType="_oiI69gYLEemnkdGScLA10w"/>
+        <parameters Name="findHostForVmFunction" optional="true" dataType="_38jahQYLEemnkdGScLA10w"/>
+      </objectclassoperation>
+      <objectclassoperation id="_VQ1txAYpEemnkdGScLA10w" Name="findHostForVm" returnType="_uHqdZQYpEemnkdGScLA10w">
+        <parameters Name="vm" dataType="_8sYltgE0EemnkdGScLA10w"/>
+        <parameters Name="excludedHosts" dataType="_eWPMBAYpEemnkdGScLA10w"/>
+        <parameters Name="predicate" optional="true" dataType="_GH3uFQYqEemnkdGScLA10w"/>
+      </objectclassoperation>
+      <objectclassoperation id="_2YywoAYqEemnkdGScLA10w" Name="VmAllocationPolicySimple" returnType="_zEH65gYqEemnkdGScLA10w">
+        <parameters Name="findHostForVmFunction" optional="true" dataType="_38jahQYLEemnkdGScLA10w"/>
+      </objectclassoperation>
+      <objectclassoperation id="_nJOZsAYrEemnkdGScLA10w" Name="VmAllocationPolicyBestFit" returnType="_jB6mFgYrEemnkdGScLA10w">
+        <parameters Name="findHostForVmFunction" optional="true" dataType="_38jahQYLEemnkdGScLA10w"/>
+      </objectclassoperation>
+      <objectclassoperation id="_DBZacAYsEemnkdGScLA10w" Name="VmAllocationPolicyAbstract" returnType="_GUuMZgYsEemnkdGScLA10w">
+        <parameters Name="findHostForVmFunction" optional="true" dataType="_38jahQYLEemnkdGScLA10w"/>
+      </objectclassoperation>
+      <objectclassoperation id="_YEs1IAYsEemnkdGScLA10w" Name="addPesFromHost">
+        <parameters Name="host" dataType="_Q8OtFgGLEemnkdGScLA10w"/>
+      </objectclassoperation>
+      <objectclassoperation id="_L_ndMAYtEemnkdGScLA10w" Name="HostStateHistoryEntry" returnType="_CUL5tgYtEemnkdGScLA10w">
+        <parameters Name="time" dataType="_lpWykQC-EemnkdGScLA10w"/>
+        <parameters Name="allocatedMips" dataType="_lpWykQC-EemnkdGScLA10w"/>
+        <parameters Name="requestedMips" dataType="_lpWykQC-EemnkdGScLA10w"/>
+        <parameters Name="active" dataType="_6xudkQE5EemnkdGScLA10w"/>
+      </objectclassoperation>
+      <objectclassoperation id="_auK8UAYtEemnkdGScLA10w" Name="getTime" returnType="_lpWykQC-EemnkdGScLA10w"/>
+      <objectclassoperation id="_gKAS4AYtEemnkdGScLA10w" Name="getAllocatedMips" returnType="_lpWykQC-EemnkdGScLA10w"/>
+      <objectclassoperation id="_igoMAAYtEemnkdGScLA10w" Name="getRequestedMips" returnType="_lpWykQC-EemnkdGScLA10w"/>
+      <objectclassoperation id="_k4cX8AYtEemnkdGScLA10w" Name="getPercentUsage" returnType="_lpWykQC-EemnkdGScLA10w"/>
+      <objectclassoperation id="_oQZyQAYtEemnkdGScLA10w" Name="isActive" returnType="_6xudkQE5EemnkdGScLA10w"/>
+      <objectclassoperation id="_UGaIsAYuEemnkdGScLA10w" Name="HostSimple" returnType="_QMssNgYuEemnkdGScLA10w">
+        <parameters Name="ram" dataType="_XuMREQEzEemnkdGScLA10w"/>
+        <parameters Name="bw" dataType="_XuMREQEzEemnkdGScLA10w"/>
+        <parameters Name=" storage" dataType="_XuMREQEzEemnkdGScLA10w"/>
+        <parameters Name="peList" dataType="_gyxtpAYuEemnkdGScLA10w"/>
+      </objectclassoperation>
+      <objectclassoperation id="_Udc6QAYvEemnkdGScLA10w" Name="HostSimple" returnType="_QMssNgYuEemnkdGScLA10w">
+        <parameters Name="ramProvisioner" dataType="_NVVoFgYvEemnkdGScLA10w"/>
+        <parameters Name="bwProvisioner" dataType="_NVVoFgYvEemnkdGScLA10w"/>
+        <parameters Name="storage" dataType="_XuMREQEzEemnkdGScLA10w"/>
+        <parameters Name="peList" dataType="_gyxtpAYuEemnkdGScLA10w"/>
+        <parameters Name="vmScheduler" dataType="_rn2kVgYvEemnkdGScLA10w"/>
+      </objectclassoperation>
+      <objectclassoperation id="_Ys-j0AYxEemnkdGScLA10w" Name="DatacenterBrokerHeuristic" returnType="_T2hyRgYxEemnkdGScLA10w">
+        <parameters Name="simulation" dataType="_GIyAVgGFEemnkdGScLA10w"/>
+      </objectclassoperation>
+      <objectclassoperation id="_Nw0i0AYyEemnkdGScLA10w" Name="DatacenterBrokerAbstract" returnType="_Grb0hgYyEemnkdGScLA10w">
+        <parameters Name="simulation" dataType="_GIyAVgGFEemnkdGScLA10w"/>
+        <parameters Name="name" optional="true" dataType="_xtQW8QE6EemnkdGScLA10w"/>
+      </objectclassoperation>
+      <objectclassoperation id="_mBsFsAYyEemnkdGScLA10w" Name="addOneTimeOnCreationOfWaitingVmsFinishListener" returnType="_rrzv5gYyEemnkdGScLA10w">
+        <parameters Name="EventListener&lt;DatacenterBrokerEventInfo> listener"/>
+        <parameters Name="oneTimeListener" dataType="_6xudkQE5EemnkdGScLA10w"/>
+      </objectclassoperation>
+      <objectclassoperation id="_owgKcAY0EemnkdGScLA10w" Name="CloudletSimple" returnType="_guolxgY0EemnkdGScLA10w">
+        <parameters Name="length" dataType="_XuMREQEzEemnkdGScLA10w"/>
+        <parameters Name="pesNumber" dataType="_WsB3oQC-EemnkdGScLA10w"/>
+      </objectclassoperation>
+      <objectclassoperation id="_ogwKcAY0EemnkdGScLA10w" Name="CloudletSimple" returnType="_guolxgY0EemnkdGScLA10w">
+        <parameters Name="length" dataType="_XuMREQEzEemnkdGScLA10w"/>
+        <parameters Name="pesNumber" dataType="_XuMREQEzEemnkdGScLA10w"/>
+        <parameters Name="id" optional="true" dataType="_WsB3oQC-EemnkdGScLA10w"/>
+      </objectclassoperation>
+      <objectclassoperation id="_Bp20MAY2EemnkdGScLA10w" Name="CloudletAbstract" returnType="_8WnY9gY1EemnkdGScLA10w">
+        <parameters Name="id" optional="true" dataType="_WsB3oQC-EemnkdGScLA10w"/>
+        <parameters Name="length" dataType="_XuMREQEzEemnkdGScLA10w"/>
+        <parameters Name="pesNumber" dataType="_XuMREQEzEemnkdGScLA10w"/>
+      </objectclassoperation>
+      <objectclassoperation id="_O9RLAAY2EemnkdGScLA10w" Name="CloudletAbstract" returnType="_8WnY9gY1EemnkdGScLA10w">
+        <parameters Name="length" dataType="_XuMREQEzEemnkdGScLA10w"/>
+        <parameters Name="pesNumber" dataType="_WsB3oQC-EemnkdGScLA10w"/>
+      </objectclassoperation>
+      <objectclassoperation id="_CeU8VAqPEemCjdCvosaTnQ" Name="CloudletDatacenterExecution" returnType="_1XtEVgqOEemCjdCvosaTnQ"/>
+      <objectclassoperation id="_fd1UYAqWEemCjdCvosaTnQ" Name="CloudletExecution" returnType="_xD_C1gC-EemnkdGScLA10w">
+        <parameters Name="cloudlet" dataType="_meO1BgqWEemCjdCvosaTnQ"/>
+      </objectclassoperation>
+      <objectclassoperation id="_1nCnMAqWEemCjdCvosaTnQ" Name="getCloudletLength" returnType="_XuMREQEzEemnkdGScLA10w"/>
+      <objectclassoperation id="_58b6IAqWEemCjdCvosaTnQ" Name="getNumberOfPes" returnType="_XuMREQEzEemnkdGScLA10w"/>
+      <objectclassoperation id="_Bqi1UAqXEemCjdCvosaTnQ" Name="setStatus" returnType="_6xudkQE5EemnkdGScLA10w">
+        <parameters Name="newStatus" dataType="_lsiocxbCEemC-aG165HpOg"/>
+      </objectclassoperation>
+      <objectclassoperation id="_HClRAAqXEemCjdCvosaTnQ" Name="getRemainingCloudletLength" returnType="_XuMREQEzEemnkdGScLA10w"/>
+      <objectclassoperation id="_LJ99IAqXEemCjdCvosaTnQ" Name="finalizeCloudlet"/>
+      <objectclassoperation id="_OKdSoAqXEemCjdCvosaTnQ" Name="updateProcessing">
+        <parameters Name="partialFinishedInstructions" dataType="_XuMREQEzEemnkdGScLA10w"/>
+      </objectclassoperation>
+      <objectclassoperation id="_WMZIwAqXEemCjdCvosaTnQ" Name="getCloudletArrivalTime" returnType="_lpWykQC-EemnkdGScLA10w"/>
+      <objectclassoperation id="_iHH1YAqXEemCjdCvosaTnQ" Name="getCloudlet" returnType="_meO1BgqWEemCjdCvosaTnQ"/>
+      <objectclassoperation id="_kSEC8AqXEemCjdCvosaTnQ" Name="getCloudletId" returnType="_WsB3oQC-EemnkdGScLA10w"/>
+      <objectclassoperation id="_75atwAqiEemCjdCvosaTnQ" Name="UtilizationModelAbstract" returnType="_w7TaZgqiEemCjdCvosaTnQ">
+        <parameters Name="Unit" optional="true" dataType="_BrAR4wqjEemCjdCvosaTnQ"/>
+      </objectclassoperation>
+      <objectclassoperation id="_ZGnAsAqjEemCjdCvosaTnQ" Name="UtilizationModelDynamic" returnType="_WO7o9gqjEemCjdCvosaTnQ">
+        <parameters Name="Unit" dataType="_BrAR4wqjEemCjdCvosaTnQ"/>
+      </objectclassoperation>
+      <objectclassoperation id="_GZnAsAqjEemCjdCvosaTnQ" Name="UtilizationModelDynamic" returnType="_WO7o9gqjEemCjdCvosaTnQ"/>
+      <objectclassoperation id="_mLZssAqjEemCjdCvosaTnQ" Name="UtilizationModelDynamic" returnType="_WO7o9gqjEemCjdCvosaTnQ">
+        <parameters Name="initialUtilizationPercent" dataType="_lpWykQC-EemnkdGScLA10w"/>
+      </objectclassoperation>
+      <objectclassoperation id="_tNnyQAqjEemCjdCvosaTnQ" Name="UtilizationModelDynamic" returnType="_WO7o9gqjEemCjdCvosaTnQ">
+        <parameters Name="initialUtilizationPercent" dataType="_lpWykQC-EemnkdGScLA10w"/>
+        <parameters Name="Unit" dataType="_BrAR4wqjEemCjdCvosaTnQ"/>
+      </objectclassoperation>
+      <objectclassoperation id="_3mVSgAqjEemCjdCvosaTnQ" Name="UtilizationModelDynamic" returnType="_WO7o9gqjEemCjdCvosaTnQ">
+        <parameters Name="initialUtilizationPercent" dataType="_lpWykQC-EemnkdGScLA10w"/>
+        <parameters Name="Unit" dataType="_BrAR4wqjEemCjdCvosaTnQ"/>
+        <parameters Name="maxResourceUtilization" dataType="_lpWykQC-EemnkdGScLA10w"/>
+      </objectclassoperation>
+      <objectclassoperation id="_-XdoEAqjEemCjdCvosaTnQ" Name="UtilizationModelDynamic" returnType="_WO7o9gqjEemCjdCvosaTnQ">
+        <parameters Name="initialUtilization" dataType="_lpWykQC-EemnkdGScLA10w"/>
+        <parameters Name="source" dataType="_WO7o9gqjEemCjdCvosaTnQ"/>
+      </objectclassoperation>
+      <objectclassoperation id="_K0RHAAqkEemCjdCvosaTnQ" Name="getTimeSpan" returnType="_lpWykQC-EemnkdGScLA10w"/>
+      <objectclassoperation id="_SKDBwAqkEemCjdCvosaTnQ" Name="setUtilizationUpdateFunction" returnType="_WO7o9gqjEemCjdCvosaTnQ">
+        <parameters Name="utilizationUpdateFunction" dataType="_Zwt4NQqkEemCjdCvosaTnQ"/>
+      </objectclassoperation>
+      <objectclassoperation id="_e_BE4AqrEemCjdCvosaTnQ" Name="UtilizationModelPlanetLab">
+        <parameters Name="workloadFilePath" dataType="_xtQW8QE6EemnkdGScLA10w"/>
+        <parameters Name="schedulingInterval" dataType="_lpWykQC-EemnkdGScLA10w"/>
+        <parameters Name="dataSamples" optional="true" dataType="_WsB3oQC-EemnkdGScLA10w"/>
+      </objectclassoperation>
+      <objectclassoperation id="_StjTQAqrEemCjdCvosaTnQ" Name="getInstance" returnType="_PKe1JgqrEemCjdCvosaTnQ">
+        <parameters Name="traceFilePath" dataType="_xtQW8QE6EemnkdGScLA10w"/>
+        <parameters Name="schedulingInterval" dataType="_lpWykQC-EemnkdGScLA10w"/>
+      </objectclassoperation>
+      <objectclassoperation id="_LPt90AqtEemCjdCvosaTnQ" Name="UtilizationModelStochastic" returnType="_Fp0sVgqtEemCjdCvosaTnQ">
+        <parameters Name="seed" optional="true" dataType="_XuMREQEzEemnkdGScLA10w"/>
+        <parameters Name="Unit" optional="true" dataType="_BrAR4wqjEemCjdCvosaTnQ"/>
+      </objectclassoperation>
+      <objectclassoperation id="_ZVpWsAqtEemCjdCvosaTnQ" Name="saveHistory">
+        <parameters Name="filename" dataType="_xtQW8QE6EemnkdGScLA10w"/>
+      </objectclassoperation>
+      <objectclassoperation id="_RnIL0AqtEemCjdCvosaTnQ" Name="loadHistory">
+        <parameters Name="filename" dataType="_xtQW8QE6EemnkdGScLA10w"/>
+      </objectclassoperation>
+      <objectclassoperation id="_B7N3JAquEemCjdCvosaTnQ" Name="getVmToMigrate" returnType="_8sYltgE0EemnkdGScLA10w">
+        <parameters Name="host" dataType="_Q8OtFgGLEemnkdGScLA10w"/>
+      </objectclassoperation>
+      <objectclassoperation id="_8j9pIAquEemCjdCvosaTnQ" Name="PowerVmSelectionPolicyMaximumCorrelation" returnType="_4ATQtgquEemCjdCvosaTnQ">
+        <parameters Name="fallbackPolicy" dataType="_oiI69gYLEemnkdGScLA10w"/>
+      </objectclassoperation>
+      <objectclassoperation id="_aavroAqvEemCjdCvosaTnQ" Name="PowerVmSelectionPolicyRandomSelection" returnType="_VNKMdgqvEemCjdCvosaTnQ"/>
+      <objectclassoperation id="_RACQFAC8EemnkdGScLA10w" Name="getPreviousTime" semantics="" returnType="_lpWykQC-EemnkdGScLA10w"/>
+      <objectclassoperation id="_RACQGAC8EemnkdGScLA10w" Name="getAvailableMipsByPe" semantics="" returnType="_lpWykQC-EemnkdGScLA10w"/>
+      <objectclassoperation id="_RACQGgC8EemnkdGScLA10w" Name="getCloudletExecList" semantics="" returnType="_3q1wJADAEemnkdGScLA10w"/>
+      <objectclassoperation id="_RACQHAC8EemnkdGScLA10w" Name="getCloudletFinishedList" semantics="" returnType="_HgFKhADBEemnkdGScLA10w"/>
+      <objectclassoperation id="_RACQHgC8EemnkdGScLA10w" Name="getCloudletWaitingList" semantics="" returnType="_3q1wJADAEemnkdGScLA10w"/>
+      <objectclassoperation id="_JBeqgBW3EemC-aG165HpOg" Name="isEmpty" returnType="_6xudkQE5EemnkdGScLA10w"/>
+      <objectclassoperation id="_RACQIAC8EemnkdGScLA10w" Name="cloudletSubmit" semantics="" returnType="_lpWykQC-EemnkdGScLA10w">
+        <parameters Name="fileTransferTime" optional="true" dataType="_lpWykQC-EemnkdGScLA10w"/>
+        <parameters Name="cloudlet" dataType="_meO1BgqWEemCjdCvosaTnQ"/>
+      </objectclassoperation>
+      <objectclassoperation id="_RACQJAC8EemnkdGScLA10w" Name="hasFinishedCloudlets" semantics="" returnType="_6xudkQE5EemnkdGScLA10w"/>
+      <objectclassoperation id="_RACQJgC8EemnkdGScLA10w" Name="runningCloudletsNumber" semantics="" returnType="_WsB3oQC-EemnkdGScLA10w"/>
+      <objectclassoperation id="_RACQKAC8EemnkdGScLA10w" Name="getCloudletToMigrate" semantics="" returnType="_meO1BgqWEemCjdCvosaTnQ"/>
+      <objectclassoperation id="_RACQKgC8EemnkdGScLA10w" Name="getCloudletStatus" semantics="" returnType="_WsB3oQC-EemnkdGScLA10w"/>
+      <objectclassoperation id="_RACQLQC8EemnkdGScLA10w" Name="cloudletFinish">
+        <parameters Name="cle" dataType="_xD_C1gC-EemnkdGScLA10w"/>
+        <parameters Name="cloudletId" dataType="_WsB3oQC-EemnkdGScLA10w"/>
+      </objectclassoperation>
+      <objectclassoperation id="_RACQLwC8EemnkdGScLA10w" Name="cloudletReady" semantics="" returnType="_6xudkQE5EemnkdGScLA10w">
+        <parameters Name="cloudlet" dataType="_meO1BgqWEemCjdCvosaTnQ"/>
+      </objectclassoperation>
+      <objectclassoperation id="_RACQMgC8EemnkdGScLA10w" Name="cloudletPause" semantics="" returnType="_6xudkQE5EemnkdGScLA10w">
+        <parameters Name="cloudlet" dataType="_meO1BgqWEemCjdCvosaTnQ"/>
+      </objectclassoperation>
+      <objectclassoperation id="_RACQNQC8EemnkdGScLA10w" Name="cloudletResume" semantics="" returnType="_lpWykQC-EemnkdGScLA10w">
+        <parameters Name="cloudlet" dataType="_meO1BgqWEemCjdCvosaTnQ"/>
+      </objectclassoperation>
+      <objectclassoperation id="_RACQOAC8EemnkdGScLA10w" Name="cloudletFail" semantics="" returnType="_meO1BgqWEemCjdCvosaTnQ">
+        <parameters Name="cloudlet" dataType="_meO1BgqWEemCjdCvosaTnQ"/>
+      </objectclassoperation>
+      <objectclassoperation id="_RACQOwC8EemnkdGScLA10w" Name="cloudletCancel" semantics="" returnType="_meO1BgqWEemCjdCvosaTnQ">
+        <parameters Name="cloudlet" dataType="_meO1BgqWEemCjdCvosaTnQ"/>
+      </objectclassoperation>
+      <objectclassoperation id="_RACQPgC8EemnkdGScLA10w" Name="updateProcessing" semantics="" returnType="_lpWykQC-EemnkdGScLA10w">
+        <parameters Name="currentTime" dataType="_lpWykQC-EemnkdGScLA10w"/>
+        <parameters Name="mipsShare" dataType="_QyEItADAEemnkdGScLA10w"/>
+      </objectclassoperation>
+      <objectclassoperation id="_RACQQgC8EemnkdGScLA10w" Name="getUsedPes" semantics="" returnType="_XuMREQEzEemnkdGScLA10w"/>
+      <objectclassoperation id="_RACQRAC8EemnkdGScLA10w" Name="getFreePes" semantics="" returnType="_XuMREQEzEemnkdGScLA10w"/>
+      <objectclassoperation id="_RACQRgC8EemnkdGScLA10w" Name="isThereTaskScheduler" semantics="" returnType="_6xudkQE5EemnkdGScLA10w"/>
+      <objectclassoperation id="_RACQSAC8EemnkdGScLA10w" Name="getRequestedCpuPercentUtilization" semantics="" returnType="_lpWykQC-EemnkdGScLA10w">
+        <parameters Name="time" dataType="_lpWykQC-EemnkdGScLA10w"/>
+      </objectclassoperation>
+      <objectclassoperation id="_RACQSwC8EemnkdGScLA10w" Name="getRequestedMipsForCloudlet" semantics="" returnType="_lpWykQC-EemnkdGScLA10w">
+        <parameters Name="cle" dataType="_xD_C1gC-EemnkdGScLA10w"/>
+        <parameters Name="time" dataType="_lpWykQC-EemnkdGScLA10w"/>
+      </objectclassoperation>
+      <objectclassoperation id="_RACQTwC8EemnkdGScLA10w" Name="getAllocatedMipsForCloudlet" semantics="" returnType="_lpWykQC-EemnkdGScLA10w">
+        <parameters Name="cle" dataType="_xD_C1gC-EemnkdGScLA10w"/>
+        <parameters Name="time" dataType="_lpWykQC-EemnkdGScLA10w"/>
+      </objectclassoperation>
+      <objectclassoperation id="_RACQUwC8EemnkdGScLA10w" Name="getCurrentRequestedBwPercentUtilization" semantics="" returnType="_lpWykQC-EemnkdGScLA10w"/>
+      <objectclassoperation id="_RACQVQC8EemnkdGScLA10w" Name="getCurrentRequestedRamPercentUtilization" semantics="" returnType="_lpWykQC-EemnkdGScLA10w"/>
+      <objectclassoperation id="_RACQVwC8EemnkdGScLA10w" Name="getCloudletReturnedList" semantics="" returnType="_pQTF9BW4EemC-aG165HpOg"/>
+      <objectclassoperation id="_RACQWQC8EemnkdGScLA10w" Name="isCloudletReturned" semantics="" returnType="_6xudkQE5EemnkdGScLA10w">
+        <parameters Name="cloudlet" dataType="_meO1BgqWEemCjdCvosaTnQ"/>
+      </objectclassoperation>
+      <objectclassoperation id="_RACQXAC8EemnkdGScLA10w" Name="addCloudletToReturnedList">
+        <parameters Name="cloudlet" dataType="_meO1BgqWEemCjdCvosaTnQ"/>
+      </objectclassoperation>
+      <objectclassoperation id="_RACQXgC8EemnkdGScLA10w" Name="getCloudletList" semantics="" returnType="_pQTF9BW4EemC-aG165HpOg"/>
+      <objectclassoperation id="_RACQZQC8EemnkdGScLA10w" Name="deallocatePesFromVm">
+        <parameters Name="pesToRemove" dataType="_WsB3oQC-EemnkdGScLA10w"/>
+      </objectclassoperation>
+      <objectclassoperation id="_RACQdwC8EemnkdGScLA10w" Name="allocatePesForVm" semantics="" returnType="_6xudkQE5EemnkdGScLA10w">
+        <parameters Name="vm" dataType="_8sYltgE0EemnkdGScLA10w"/>
+        <parameters Name="requestedMips" optional="true" dataType="_QyEItADAEemnkdGScLA10w"/>
+      </objectclassoperation>
+      <objectclassoperation id="_RACQewC8EemnkdGScLA10w" Name="deallocatePesForAllVms"/>
+      <objectclassoperation id="_RACQfAC8EemnkdGScLA10w" Name="deallocatePesFromVms">
+        <parameters Name="vm" dataType="_8sYltgE0EemnkdGScLA10w"/>
+        <parameters Name="pesToRemove" optional="true" dataType="_WsB3oQC-EemnkdGScLA10w"/>
+      </objectclassoperation>
+      <objectclassoperation id="_RACQfwC8EemnkdGScLA10w" Name="getAllocatedMips" semantics="" returnType="_QyEItADAEemnkdGScLA10w">
+        <parameters Name="vm" dataType="_8sYltgE0EemnkdGScLA10w"/>
+      </objectclassoperation>
+      <objectclassoperation id="_RACQggC8EemnkdGScLA10w" Name="getAvailableMips" semantics="" returnType="_lpWykQC-EemnkdGScLA10w"/>
+      <objectclassoperation id="_RACQhAC8EemnkdGScLA10w" Name="getRequestedMips" semantics="" returnType="_QyEItADAEemnkdGScLA10w">
+        <parameters Name="vm" dataType="_8sYltgE0EemnkdGScLA10w"/>
+      </objectclassoperation>
+      <objectclassoperation id="_RACQhwC8EemnkdGScLA10w" Name="isSuitableForVm" semantics="" returnType="_6xudkQE5EemnkdGScLA10w">
+        <parameters Name="vm" dataType="_8sYltgE0EemnkdGScLA10w"/>
+        <parameters Name="requestedMips" optional="true" dataType="_QyEItADAEemnkdGScLA10w"/>
+        <parameters Name="showLog" dataType="_6xudkQE5EemnkdGScLA10w"/>
+      </objectclassoperation>
+      <objectclassoperation id="_RACQjAC8EemnkdGScLA10w" Name="getMaxAvailableMips" semantics="" returnType="_lpWykQC-EemnkdGScLA10w"/>
+      <objectclassoperation id="_RACQjgC8EemnkdGScLA10w" Name="getPeCapacity" semantics="" returnType="_XuMREQEzEemnkdGScLA10w"/>
+      <objectclassoperation id="_RACQkAC8EemnkdGScLA10w" Name="getWorkingPeList" semantics="" returnType="_L3zlJBW8EemC-aG165HpOg"/>
+      <objectclassoperation id="_RACQkgC8EemnkdGScLA10w" Name="getTotalAllocatedMipsForVm" semantics="" returnType="_lpWykQC-EemnkdGScLA10w">
+        <parameters Name="vm" dataType="_8sYltgE0EemnkdGScLA10w"/>
+      </objectclassoperation>
+      <objectclassoperation id="_RACQlQC8EemnkdGScLA10w" Name="getMaxCpuUsagePercentDuringOutMigration" semantics="" returnType="_lpWykQC-EemnkdGScLA10w"/>
+      <objectclassoperation id="_RACQlwC8EemnkdGScLA10w" Name="getVmMigrationCpuOverhead" semantics="" returnType="_lpWykQC-EemnkdGScLA10w"/>
+      <objectclassoperation id="_RAMD0QC8EemnkdGScLA10w" Name="getSafetyParameter" semantics="" returnType="_lpWykQC-EemnkdGScLA10w"/>
+      <objectclassoperation id="_RAMD0wC8EemnkdGScLA10w" Name="computeHostUtilizationMeasure" semantics="" returnType="_lpWykQC-EemnkdGScLA10w">
+        <parameters Name="host" dataType="_Q8OtFgGLEemnkdGScLA10w"/>
+      </objectclassoperation>
+      <objectclassoperation id="_RAMDwAC8EemnkdGScLA10w" Name="getUtilizationHistory" semantics="" returnType="_2PtepxaoEemC-aG165HpOg"/>
+      <objectclassoperation id="_RAMDwgC8EemnkdGScLA10w" Name="getMetricHistory" semantics="" returnType="_2PtepxaoEemC-aG165HpOg"/>
+      <objectclassoperation id="_RAMDxAC8EemnkdGScLA10w" Name="getTimeHistory" semantics="" returnType="_2PtepxaoEemC-aG165HpOg"/>
+      <objectclassoperation id="_RAMDxgC8EemnkdGScLA10w" Name="isHostUnderloaded" semantics="" returnType="_6xudkQE5EemnkdGScLA10w">
+        <parameters Name="host" dataType="_Q8OtFgGLEemnkdGScLA10w"/>
+      </objectclassoperation>
+      <objectclassoperation id="_RAMDyQC8EemnkdGScLA10w" Name="isHostOverloaded" semantics="" returnType="_6xudkQE5EemnkdGScLA10w">
+        <parameters Name="host" dataType="_Q8OtFgGLEemnkdGScLA10w"/>
+      </objectclassoperation>
+      <objectclassoperation id="_RAMDzAC8EemnkdGScLA10w" Name="getOverUtilizationThreshold" semantics="" returnType="_lpWykQC-EemnkdGScLA10w">
+        <parameters Name="host" dataType="_Q8OtFgGLEemnkdGScLA10w"/>
+      </objectclassoperation>
+      <objectclassoperation id="_RAMDqwC8EemnkdGScLA10w" Name="allocateHostForVm" semantics="" returnType="_6xudkQE5EemnkdGScLA10w">
+        <parameters Name="vm" dataType="_8sYltgE0EemnkdGScLA10w"/>
+        <parameters Name="host" optional="true" dataType="_Q8OtFgGLEemnkdGScLA10w"/>
+      </objectclassoperation>
+      <objectclassoperation id="_RAMDrwC8EemnkdGScLA10w" Name="deallocateHostForVm">
+        <parameters Name="vm" dataType="_8sYltgE0EemnkdGScLA10w"/>
+      </objectclassoperation>
+      <objectclassoperation id="_RAMDsQC8EemnkdGScLA10w" Name="scaleVmVertically" semantics="" returnType="_6xudkQE5EemnkdGScLA10w">
+        <parameters Name="VerticalVmScaling scaling"/>
+      </objectclassoperation>
+      <objectclassoperation id="_RAMDtAC8EemnkdGScLA10w" Name="findHostForVm" semantics="" returnType="_uHqdZQYpEemnkdGScLA10w">
+        <parameters Name="vm" dataType="_8sYltgE0EemnkdGScLA10w"/>
+      </objectclassoperation>
+      <objectclassoperation id="_RAMDtwC8EemnkdGScLA10w" Name="getHostList" semantics="" returnType="_VM5RBAGLEemnkdGScLA10w"/>
+      <objectclassoperation id="_RAMDuQC8EemnkdGScLA10w" Name="getOptimizedAllocationMap" semantics="" returnType="_EenRhxaiEemC-aG165HpOg">
+        <parameters Name="vmList" dataType="_Se4oJBa_EemC-aG165HpOg"/>
+      </objectclassoperation>
+      <objectclassoperation id="_RAMDvAC8EemnkdGScLA10w" Name="setFindHostForVmFunction">
+        <parameters Name=" findHostForVmFunction" dataType="_38jahQYLEemnkdGScLA10w"/>
+      </objectclassoperation>
+      <objectclassoperation id="_RAMDpAC8EemnkdGScLA10w" Name="getUnit" semantics="" returnType="_BrAR4wqjEemCjdCvosaTnQ"/>
+      <objectclassoperation id="_RAMDpgC8EemnkdGScLA10w" Name="getUtilization" semantics="" returnType="_lpWykQC-EemnkdGScLA10w">
+        <parameters Name="time" optional="true" dataType="_lpWykQC-EemnkdGScLA10w"/>
+      </objectclassoperation>
+      <objectclassoperation id="_RAMDSAC8EemnkdGScLA10w" Name="addRequiredFile" semantics="booleanOut" returnType="_6xudkQE5EemnkdGScLA10w">
+        <parameters Name="fileName" dataType="_xtQW8QE6EemnkdGScLA10w"/>
+      </objectclassoperation>
+      <objectclassoperation id="_RAMDSwC8EemnkdGScLA10w" Name="deleteRequiredFile" semantics="" returnType="_6xudkQE5EemnkdGScLA10w">
+        <parameters Name="filename" dataType="_xtQW8QE6EemnkdGScLA10w"/>
+      </objectclassoperation>
+      <objectclassoperation id="_RAMDTgC8EemnkdGScLA10w" Name="requiresFiles" semantics="" returnType="_6xudkQE5EemnkdGScLA10w"/>
+      <objectclassoperation id="_RAMDUAC8EemnkdGScLA10w" Name="getRequiredFiles" semantics="" returnType="_AgRQlAFBEemnkdGScLA10w"/>
+      <objectclassoperation id="_RAMDUgC8EemnkdGScLA10w" Name="getAccumulatedBwCost" semantics="" returnType="_lpWykQC-EemnkdGScLA10w"/>
+      <objectclassoperation id="_RAMDVAC8EemnkdGScLA10w" Name="getActualCpuTime" semantics="" returnType="_lpWykQC-EemnkdGScLA10w">
+        <parameters Name="datacenter" optional="true" dataType="_uZhjFgE_EemnkdGScLA10w"/>
+      </objectclassoperation>
+      <objectclassoperation id="_RAMDVwC8EemnkdGScLA10w" Name="getStatus" semantics="" returnType="_lsiocxbCEemC-aG165HpOg"/>
+      <objectclassoperation id="_RAMDWQC8EemnkdGScLA10w" Name="assignToDatacenter">
+        <parameters Name="datacenter" dataType="_uZhjFgE_EemnkdGScLA10w"/>
+      </objectclassoperation>
+      <objectclassoperation id="_RAMDWwC8EemnkdGScLA10w" Name="setUtilizationModel" semantics="" returnType="_meO1BgqWEemCjdCvosaTnQ">
+        <parameters Name="utilizationModel" dataType="_TGCx9hbDEemC-aG165HpOg"/>
+      </objectclassoperation>
+      <objectclassoperation id="_RAMDXgC8EemnkdGScLA10w" Name="registerArrivalInDatacenter" semantics="" returnType="_lpWykQC-EemnkdGScLA10w"/>
+      <objectclassoperation id="_RAMDYAC8EemnkdGScLA10w" Name="isAssignedToDatacenter" semantics="" returnType="_6xudkQE5EemnkdGScLA10w"/>
+      <objectclassoperation id="_RAMDYgC8EemnkdGScLA10w" Name="getCostPerBw" semantics="" returnType="_lpWykQC-EemnkdGScLA10w"/>
+      <objectclassoperation id="_RAMDZAC8EemnkdGScLA10w" Name="getCostPerSec" semantics="" returnType="_lpWykQC-EemnkdGScLA10w">
+        <parameters Name="datacenter" optional="true" dataType="_uZhjFgE_EemnkdGScLA10w"/>
+      </objectclassoperation>
+      <objectclassoperation id="_RAMDZwC8EemnkdGScLA10w" Name="getTotalCost" semantics="" returnType="_lpWykQC-EemnkdGScLA10w"/>
+      <objectclassoperation id="_RAMDaQC8EemnkdGScLA10w" Name="getFinishTime" semantics="" returnType="_lpWykQC-EemnkdGScLA10w"/>
+      <objectclassoperation id="_RAMDawC8EemnkdGScLA10w" Name="getLastDatacenterArrivalTime" semantics="" returnType="_lpWykQC-EemnkdGScLA10w"/>
+      <objectclassoperation id="_RAMDbQC8EemnkdGScLA10w" Name="getArrivalTime" semantics="" returnType="_lpWykQC-EemnkdGScLA10w">
+        <parameters Name="datacenter" dataType="_uZhjFgE_EemnkdGScLA10w"/>
+      </objectclassoperation>
+      <objectclassoperation id="_RAMDcAC8EemnkdGScLA10w" Name="getNetServiceLevel" semantics="" returnType="_WsB3oQC-EemnkdGScLA10w"/>
+      <objectclassoperation id="_RAMDcgC8EemnkdGScLA10w" Name="getNumberOfPes" semantics="" returnType="_XuMREQEzEemnkdGScLA10w"/>
+      <objectclassoperation id="_RAMDdAC8EemnkdGScLA10w" Name="getLastDatacenter" semantics="" returnType="_uZhjFgE_EemnkdGScLA10w"/>
+      <objectclassoperation id="_RAMDdgC8EemnkdGScLA10w" Name="getUtilizationOfCpu" semantics="" returnType="_lpWykQC-EemnkdGScLA10w">
+        <parameters Name="time" optional="true" dataType="_lpWykQC-EemnkdGScLA10w"/>
+      </objectclassoperation>
+      <objectclassoperation id="_RAMDeQC8EemnkdGScLA10w" Name="getUtilizationOfRam" semantics="" returnType="_lpWykQC-EemnkdGScLA10w">
+        <parameters Name="time" optional="true" dataType="_lpWykQC-EemnkdGScLA10w"/>
+      </objectclassoperation>
+      <objectclassoperation id="_RAMDfAC8EemnkdGScLA10w" Name="getUtilizationOfBw" semantics="" returnType="_lpWykQC-EemnkdGScLA10w">
+        <parameters Name="time" optional="true" dataType="_lpWykQC-EemnkdGScLA10w"/>
+      </objectclassoperation>
+      <objectclassoperation id="_RAMDfwC8EemnkdGScLA10w" Name="isBindToVm" semantics="" returnType="_6xudkQE5EemnkdGScLA10w"/>
+      <objectclassoperation id="_RAMDgQC8EemnkdGScLA10w" Name="getWallClockTime" semantics="" returnType="_lpWykQC-EemnkdGScLA10w">
+        <parameters Name="datacenter" dataType="_uZhjFgE_EemnkdGScLA10w"/>
+      </objectclassoperation>
+      <objectclassoperation id="_RAMDhAC8EemnkdGScLA10w" Name="isFinished" semantics="" returnType="_6xudkQE5EemnkdGScLA10w"/>
+      <objectclassoperation id="_RAMDhgC8EemnkdGScLA10w" Name="getWaitingTime" semantics="" returnType="_lpWykQC-EemnkdGScLA10w"/>
+      <objectclassoperation id="_RAMDiAC8EemnkdGScLA10w" Name="getWallClockTimeInLastExecutedDatacenter" semantics="" returnType="_lpWykQC-EemnkdGScLA10w"/>
+      <objectclassoperation id="_RAMDigC8EemnkdGScLA10w" Name="setStatus" semantics="" returnType="_6xudkQE5EemnkdGScLA10w">
+        <parameters Name="newStatus" dataType="_lsiocxbCEemC-aG165HpOg"/>
+      </objectclassoperation>
+      <objectclassoperation id="_RAMDjQC8EemnkdGScLA10w" Name="setNetServiceLevel" semantics="" returnType="_6xudkQE5EemnkdGScLA10w">
+        <parameters Name="netServiceLevel" dataType="_WsB3oQC-EemnkdGScLA10w"/>
+      </objectclassoperation>
+      <objectclassoperation id="_RAMDkAC8EemnkdGScLA10w" Name="setNumberOfPes" semantics="" returnType="_meO1BgqWEemCjdCvosaTnQ">
+        <parameters Name="numberOfPes" dataType="_XuMREQEzEemnkdGScLA10w"/>
+      </objectclassoperation>
+      <objectclassoperation id="_RAMDkwC8EemnkdGScLA10w" Name="getFinishedLengthSoFar" semantics="" returnType="_XuMREQEzEemnkdGScLA10w">
+        <parameters Name="datacenter" dataType="_uZhjFgE_EemnkdGScLA10w"/>
+      </objectclassoperation>
+      <objectclassoperation id="_RAMDlgC8EemnkdGScLA10w" Name="addFinishedLengthSoFar" semantics="" returnType="_6xudkQE5EemnkdGScLA10w">
+        <parameters Name="partialFinishedMI" dataType="_XuMREQEzEemnkdGScLA10w"/>
+      </objectclassoperation>
+      <objectclassoperation id="_RAMDmQC8EemnkdGScLA10w" Name="setWallClockTime" semantics="" returnType="_6xudkQE5EemnkdGScLA10w">
+        <parameters Name="wallTime" dataType="_lpWykQC-EemnkdGScLA10w"/>
+        <parameters Name="actualCpuTime" dataType="_lpWykQC-EemnkdGScLA10w"/>
+      </objectclassoperation>
+      <objectclassoperation id="_RAMDnQC8EemnkdGScLA10w" Name="notifyOnUpdateProcessingListeners">
+        <parameters Name="time" dataType="_lpWykQC-EemnkdGScLA10w"/>
+      </objectclassoperation>
+      <objectclassoperation id="_RAMDnwC8EemnkdGScLA10w" Name="getSimulation" semantics="" returnType="_VhhMRgGCEemnkdGScLA10w"/>
+      <objectclassoperation id="_RAMC4AC8EemnkdGScLA10w" Name="isSuitableForVm" semantics="" returnType="_6xudkQE5EemnkdGScLA10w">
+        <parameters Name="vm" dataType="_8sYltgE0EemnkdGScLA10w"/>
+      </objectclassoperation>
+      <objectclassoperation id="_RAMC4wC8EemnkdGScLA10w" Name="getVmsMigratingIn" semantics="" returnType="_IYxmtBayEemC-aG165HpOg"/>
+      <objectclassoperation id="_RAMC5QC8EemnkdGScLA10w" Name="getVmsMigratingOut" semantics="" returnType="_TNIhJBayEemC-aG165HpOg"/>
+      <objectclassoperation id="_RAMC5wC8EemnkdGScLA10w" Name="reallocateMigratingInVms"/>
+      <objectclassoperation id="_RAMC6AC8EemnkdGScLA10w" Name="deallocatePesForVm">
+        <parameters Name="vm"/>
+      </objectclassoperation>
+      <objectclassoperation id="_RAMC6gC8EemnkdGScLA10w" Name="getAllocatedMipsForVm" semantics="" returnType="_QyEItADAEemnkdGScLA10w">
+        <parameters Name="vm" dataType="_8sYltgE0EemnkdGScLA10w"/>
+      </objectclassoperation>
+      <objectclassoperation id="_RAMC7QC8EemnkdGScLA10w" Name="getTotalAllocatedMipsForVm" semantics="" returnType="_lpWykQC-EemnkdGScLA10w">
+        <parameters Name="vm" dataType="_8sYltgE0EemnkdGScLA10w"/>
+      </objectclassoperation>
+      <objectclassoperation id="_RAMC8AC8EemnkdGScLA10w" Name="getPeList" semantics="" returnType="_0BLtRBXGEemC-aG165HpOg"/>
+      <objectclassoperation id="_RAMC8gC8EemnkdGScLA10w" Name="getWorkingPeList" semantics="" returnType="_gyxtpAYuEemnkdGScLA10w"/>
+      <objectclassoperation id="_RAMC9AC8EemnkdGScLA10w" Name="getBuzyPeList" semantics="" returnType="_gyxtpAYuEemnkdGScLA10w"/>
+      <objectclassoperation id="_RAMC9gC8EemnkdGScLA10w" Name="getFreePeList" semantics="" returnType="_gyxtpAYuEemnkdGScLA10w"/>
+      <objectclassoperation id="_RAMC-AC8EemnkdGScLA10w" Name="getNumberOfFreePes" semantics="" returnType="_WsB3oQC-EemnkdGScLA10w"/>
+      <objectclassoperation id="_RAMC-gC8EemnkdGScLA10w" Name="getNumberOfWorkingPes" semantics="" returnType="_XuMREQEzEemnkdGScLA10w"/>
+      <objectclassoperation id="_RAMC_AC8EemnkdGScLA10w" Name="getNumberOfFailedPes" semantics="" returnType="_XuMREQEzEemnkdGScLA10w"/>
+      <objectclassoperation id="_RAMC_gC8EemnkdGScLA10w" Name="getAvailableMips" semantics="" returnType="_lpWykQC-EemnkdGScLA10w"/>
+      <objectclassoperation id="_RAMDAAC8EemnkdGScLA10w" Name="getMaxAvailableMips" semantics="" returnType="_lpWykQC-EemnkdGScLA10w"/>
+      <objectclassoperation id="_RAMDAgC8EemnkdGScLA10w" Name="getAvailableStorage" semantics="" returnType="_XuMREQEzEemnkdGScLA10w"/>
+      <objectclassoperation id="_RAMDBAC8EemnkdGScLA10w" Name="getVm" semantics="" returnType="_8sYltgE0EemnkdGScLA10w">
+        <parameters Name="vmId" dataType="_WsB3oQC-EemnkdGScLA10w"/>
+        <parameters Name="brokerId" dataType="_WsB3oQC-EemnkdGScLA10w"/>
+      </objectclassoperation>
+      <objectclassoperation id="_RAMDCAC8EemnkdGScLA10w" Name="getVmList" semantics="" returnType="_7Uy9lBayEemC-aG165HpOg"/>
+      <objectclassoperation id="_RAMDCgC8EemnkdGScLA10w" Name="getVmCreatedList" semantics="" returnType="_7Uy9lBayEemC-aG165HpOg"/>
+      <objectclassoperation id="_RAMDDAC8EemnkdGScLA10w" Name="updateProcessing" semantics="" returnType="_lpWykQC-EemnkdGScLA10w">
+        <parameters Name="currentTime" dataType="_lpWykQC-EemnkdGScLA10w"/>
+      </objectclassoperation>
+      <objectclassoperation id="_RAMDDwC8EemnkdGScLA10w" Name="createVm" semantics="" returnType="_6xudkQE5EemnkdGScLA10w">
+        <parameters Name="vm" dataType="_8sYltgE0EemnkdGScLA10w"/>
+      </objectclassoperation>
+      <objectclassoperation id="_RAMDEgC8EemnkdGScLA10w" Name="destroyVm">
+        <parameters Name="vm" dataType="_8sYltgE0EemnkdGScLA10w"/>
+      </objectclassoperation>
+      <objectclassoperation id="_RAMDFAC8EemnkdGScLA10w" Name="destroyAllVms"/>
+      <objectclassoperation id="_RAMDFQC8EemnkdGScLA10w" Name="addOnUpdateProcessingListener" semantics="" returnType="_Q8OtFgGLEemnkdGScLA10w">
+        <parameters Name="EventListener&lt;HostUpdatesVmsProcessingEventInfo> listener"/>
+      </objectclassoperation>
+      <objectclassoperation id="_RAMDGAC8EemnkdGScLA10w" Name="removeOnUpdateProcessingListener" semantics="" returnType="_6xudkQE5EemnkdGScLA10w">
+        <parameters Name="EventListener&lt;HostUpdatesVmsProcessingEventInfo>listener"/>
+      </objectclassoperation>
+      <objectclassoperation id="_RAMDGwC8EemnkdGScLA10w" Name="setSimulation" semantics="" returnType="_Q8OtFgGLEemnkdGScLA10w">
+        <parameters Name="simulation" dataType="_VhhMRgGCEemnkdGScLA10w"/>
+      </objectclassoperation>
+      <objectclassoperation id="_RAMDHgC8EemnkdGScLA10w" Name="getProvisioner" semantics="" returnType="_NVVoFgYvEemnkdGScLA10w">
+        <parameters Name="resourceClass" dataType="_eNpaZRXEEemC-aG165HpOg"/>
+      </objectclassoperation>
+      <objectclassoperation id="_RAMDIQC8EemnkdGScLA10w" Name="getUtilizationOfCpu" semantics="" returnType="_lpWykQC-EemnkdGScLA10w"/>
+      <objectclassoperation id="_RAMDIwC8EemnkdGScLA10w" Name="getUtilizationOfCpuMips" semantics="" returnType="_lpWykQC-EemnkdGScLA10w"/>
+      <objectclassoperation id="_RAMDJQC8EemnkdGScLA10w" Name="getUtilizationOfBw" semantics="" returnType="_XuMREQEzEemnkdGScLA10w"/>
+      <objectclassoperation id="_RAMDJwC8EemnkdGScLA10w" Name="getUtilizationOfRam" semantics="" returnType="_XuMREQEzEemnkdGScLA10w"/>
+      <objectclassoperation id="_RAMDKQC8EemnkdGScLA10w" Name="getUtilizationHistory" semantics="" returnType="_r_yF9xazEemC-aG165HpOg"/>
+      <objectclassoperation id="_RAMDKwC8EemnkdGScLA10w" Name="getUtilizationHistorySum" semantics="" returnType="_8GhVVxXJEemC-aG165HpOg"/>
+      <objectclassoperation id="_RAMDLQC8EemnkdGScLA10w" Name="getPreviousUtilizationOfCpu" semantics="" returnType="_lpWykQC-EemnkdGScLA10w"/>
+      <objectclassoperation id="_RAMDLwC8EemnkdGScLA10w" Name="enableStateHistory"/>
+      <objectclassoperation id="_RAMDMAC8EemnkdGScLA10w" Name="disableStateHistory"/>
+      <objectclassoperation id="_RAMDMQC8EemnkdGScLA10w" Name="isStateHistoryEnabled" semantics="" returnType="_6xudkQE5EemnkdGScLA10w"/>
+      <objectclassoperation id="_RAMDMwC8EemnkdGScLA10w" Name="getStateHistory" semantics="" returnType="_GBo99Ba3EemC-aG165HpOg"/>
+      <objectclassoperation id="_RAMDNQC8EemnkdGScLA10w" Name="getFinishedVms" semantics="" returnType="_N0--dBa3EemC-aG165HpOg"/>
+      <objectclassoperation id="_RAMCnAC8EemnkdGScLA10w" Name="bindCloudletToVm" semantics="" returnType="_6xudkQE5EemnkdGScLA10w">
+        <parameters Name="cloudlet" dataType="_meO1BgqWEemCjdCvosaTnQ"/>
+        <parameters Name="vm" dataType="_8sYltgE0EemnkdGScLA10w"/>
+      </objectclassoperation>
+      <objectclassoperation id="_RAMCoAC8EemnkdGScLA10w" Name="getCloudletWaitingList" semantics="" returnType="_ZnT9BBa3EemC-aG165HpOg"/>
+      <objectclassoperation id="_RAMCogC8EemnkdGScLA10w" Name="getWaitingVm" semantics="" returnType="_8sYltgE0EemnkdGScLA10w">
+        <parameters Name="index" dataType="_WsB3oQC-EemnkdGScLA10w"/>
+      </objectclassoperation>
+      <objectclassoperation id="_RAMCpQC8EemnkdGScLA10w" Name="getCloudletFinishedList" semantics="" returnType="_ZnT9BBa3EemC-aG165HpOg"/>
+      <objectclassoperation id="_RAMCpwC8EemnkdGScLA10w" Name="getVmWaitingList" semantics="" returnType="_7Uy9lBayEemC-aG165HpOg"/>
+      <objectclassoperation id="_RAMCqQC8EemnkdGScLA10w" Name="getVmExecList" semantics="" returnType="_7Uy9lBayEemC-aG165HpOg"/>
+      <objectclassoperation id="_RAMCqwC8EemnkdGScLA10w" Name="getVmCreatedList" semantics="" returnType="_7Uy9lBayEemC-aG165HpOg"/>
+      <objectclassoperation id="_RAMCrQC8EemnkdGScLA10w" Name="submitVm">
+        <parameters Name="vm" dataType="_8sYltgE0EemnkdGScLA10w"/>
+      </objectclassoperation>
+      <objectclassoperation id="_RAMCrwC8EemnkdGScLA10w" Name="submitCloudlet">
+        <parameters Name="cloudlet" dataType="_meO1BgqWEemCjdCvosaTnQ"/>
+      </objectclassoperation>
+      <objectclassoperation id="_RAMCsQC8EemnkdGScLA10w" Name="submitCloudlet">
+        <parameters Name="list" dataType="_DPTflBa_EemC-aG165HpOg"/>
+        <parameters Name="vm" optional="true" dataType="_8sYltgE0EemnkdGScLA10w"/>
+        <parameters Name="submissionDelay" optional="true" dataType="_lpWykQC-EemnkdGScLA10w"/>
+      </objectclassoperation>
+      <objectclassoperation id="_RAMCtQC8EemnkdGScLA10w" Name="submitVmList">
+        <parameters Name="list" dataType="_Se4oJBa_EemC-aG165HpOg"/>
+        <parameters Name="submissionDelay" optional="true" dataType="_lpWykQC-EemnkdGScLA10w"/>
+      </objectclassoperation>
+      <objectclassoperation id="_RAMCuAC8EemnkdGScLA10w" Name="isThereWaitingCloudlets" semantics="" returnType="_6xudkQE5EemnkdGScLA10w"/>
+      <objectclassoperation id="_RAMCugC8EemnkdGScLA10w" Name="setDatacenterSupplier">
+        <parameters Name="datacenterSupplier" dataType="_akWTZRa_EemC-aG165HpOg"/>
+      </objectclassoperation>
+      <objectclassoperation id="_RAMCvAC8EemnkdGScLA10w" Name="setVmComparator">
+        <parameters Name="comparator" dataType="_lTYo9Ra_EemC-aG165HpOg"/>
+      </objectclassoperation>
+      <objectclassoperation id="_RAMCvgC8EemnkdGScLA10w" Name="defaultVmMapper" returnType="_8sYltgE0EemnkdGScLA10w">
+        <parameters Name="cloudlet" dataType="_meO1BgqWEemCjdCvosaTnQ"/>
+      </objectclassoperation>
+      <objectclassoperation id="_RAMCvwC8EemnkdGScLA10w" Name="getCloudletSubmittedList" returnType="_pQTF9BW4EemC-aG165HpOg"/>
+      <objectclassoperation id="_RAMCwAC8EemnkdGScLA10w" Name="setFallbackDatacenterSupplier">
+        <parameters Name="Supplier&lt;Datacenter> fallbackDatacenterSupplier"/>
+      </objectclassoperation>
+      <objectclassoperation id="_RAMCwgC8EemnkdGScLA10w" Name="setCloudletComparator">
+        <parameters Name="Comparator&lt;Cloudlet> comparator"/>
+      </objectclassoperation>
+      <objectclassoperation id="_RAMCxAC8EemnkdGScLA10w" Name="setVmMapper">
+        <parameters Name="vmMapper" dataType="__x-AlRa_EemC-aG165HpOg"/>
+      </objectclassoperation>
+      <objectclassoperation id="_RAMCxgC8EemnkdGScLA10w" Name="getCloudletCreatedList" semantics="" returnType="_Jp02hBbAEemC-aG165HpOg"/>
+      <objectclassoperation id="_RAMCyAC8EemnkdGScLA10w" Name="addOnVmsCreatedListener" semantics="" returnType="_rrzv5gYyEemnkdGScLA10w">
+        <parameters Name="EventListener&lt;DatacenterBrokerEventInfo> listener"/>
+      </objectclassoperation>
+      <objectclassoperation id="_RAMCywC8EemnkdGScLA10w" Name="addOneTimeOnVmsCreatedListener" semantics="" returnType="_rrzv5gYyEemnkdGScLA10w">
+        <parameters Name="EventListener&lt;DatacenterBrokerEventInfo> listener"/>
+      </objectclassoperation>
+      <objectclassoperation id="_RAMCzgC8EemnkdGScLA10w" Name="getCloudletSubmittedList" semantics="" returnType="_Jp02hBbAEemC-aG165HpOg"/>
+      <objectclassoperation id="_RAMC0AC8EemnkdGScLA10w" Name="defaultVmMapper" semantics="" returnType="_8sYltgE0EemnkdGScLA10w">
+        <parameters Name="cloudlet" dataType="_meO1BgqWEemCjdCvosaTnQ"/>
+      </objectclassoperation>
+      <objectclassoperation id="_RAMCjgC8EemnkdGScLA10w" Name="getMips" semantics="" returnType="_lpWykQC-EemnkdGScLA10w"/>
+      <objectclassoperation id="_RAMCkAC8EemnkdGScLA10w" Name="getDatacenter" semantics="" returnType="_uZhjFgE_EemnkdGScLA10w"/>
+      <objectclassoperation id="_RAMCkgC8EemnkdGScLA10w" Name="getNumberOfFailedHosts" semantics="" returnType="_XuMREQEzEemnkdGScLA10w"/>
+      <objectclassoperation id="_RAMClAC8EemnkdGScLA10w" Name="getNumberOfFreePes" semantics="" returnType="_WsB3oQC-EemnkdGScLA10w"/>
+      <objectclassoperation id="_RAMClgC8EemnkdGScLA10w" Name="getNumberOfPes" semantics="" returnType="_WsB3oQC-EemnkdGScLA10w"/>
+      <objectclassoperation id="_RAMCmAC8EemnkdGScLA10w" Name="isWorking" semantics="" returnType="_6xudkQE5EemnkdGScLA10w"/>
+      <objectclassoperation id="_RAMCdwC8EemnkdGScLA10w" Name="getHostById" semantics="" returnType="_Q8OtFgGLEemnkdGScLA10w">
+        <parameters Name="id" dataType="_WsB3oQC-EemnkdGScLA10w"/>
+      </objectclassoperation>
+      <objectclassoperation id="_RAMCegC8EemnkdGScLA10w" Name="removeHost" semantics="" returnType="_ZtDRRRa6EemC-aG165HpOg">
+        <parameters Name=" T host"/>
+      </objectclassoperation>
+      <objectclassoperation id="_RAMCfQC8EemnkdGScLA10w" Name="getVmAllocationPolicy" semantics="" returnType="__x_OpgGKEemnkdGScLA10w"/>
+      <objectclassoperation id="_RAMCfwC8EemnkdGScLA10w" Name="getVmList" semantics="" returnType="_7Uy9lBayEemC-aG165HpOg"/>
+      <objectclassoperation id="_RAMCgQC8EemnkdGScLA10w" Name="getCharakteristics" semantics="" returnType="_ttVvxha6EemC-aG165HpOg"/>
+      <objectclassoperation id="_RAMCgwC8EemnkdGScLA10w" Name="addOnHostAvailableListener" semantics="" returnType="_uZhjFgE_EemnkdGScLA10w">
+        <parameters Name="EventListener&lt;HostEventInfo>  listener"/>
+      </objectclassoperation>
+      <objectclassoperation id="_RAMCSgC8EemnkdGScLA10w" Name="addEvent">
+        <parameters Name="newEvent" dataType="_e4npFgGDEemnkdGScLA10w"/>
+      </objectclassoperation>
+      <objectclassoperation id="_RAMCTAC8EemnkdGScLA10w" Name="iterator" semantics="" returnType="_c49FJQGIEemnkdGScLA10w"/>
+      <objectclassoperation id="_RAMCTgC8EemnkdGScLA10w" Name="stream" semantics="" returnType="_fjFwLQGIEemnkdGScLA10w"/>
+      <objectclassoperation id="_RAMCUAC8EemnkdGScLA10w" Name="size" semantics="" returnType="_WsB3oQC-EemnkdGScLA10w"/>
+      <objectclassoperation id="_RAMCUgC8EemnkdGScLA10w" Name="isEmpty" semantics="" returnType="_6xudkQE5EemnkdGScLA10w"/>
+      <objectclassoperation id="_RAMCVAC8EemnkdGScLA10w" Name="first" semantics="" returnType="_e4npFgGDEemnkdGScLA10w"/>
+      <objectclassoperation id="_RAMCQwC8EemnkdGScLA10w" Name="scheduledBy" semantics="" returnType="_jT0ehgGCEemnkdGScLA10w"/>
+      <objectclassoperation id="_RAMCRQC8EemnkdGScLA10w" Name="getEndWaitingTime" semantics="" returnType="_lpWykQC-EemnkdGScLA10w"/>
+      <objectclassoperation id="_RAMCRwC8EemnkdGScLA10w" Name="getData" semantics=""/>
+      <objectclassoperation id="_RAMByAC8EemnkdGScLA10w" Name="isTerminationTimeSet" semantics="" returnType="_6xudkQE5EemnkdGScLA10w"/>
+      <objectclassoperation id="_RAMBygC8EemnkdGScLA10w" Name="abort"/>
+      <objectclassoperation id="_RAMBywC8EemnkdGScLA10w" Name="addEntity">
+        <parameters Name="e" dataType="_LW81tgGCEemnkdGScLA10w"/>
+      </objectclassoperation>
+      <objectclassoperation id="_RAMBzQC8EemnkdGScLA10w" Name="cancel" semantics="" returnType="_e4npFgGDEemnkdGScLA10w">
+        <parameters Name="src" dataType="_jT0ehgGCEemnkdGScLA10w"/>
+        <parameters Name="p" dataType="_WN1DNQGDEemnkdGScLA10w"/>
+      </objectclassoperation>
+      <objectclassoperation id="_RAMB0QC8EemnkdGScLA10w" Name="cancelAll" semantics="" returnType="_6xudkQE5EemnkdGScLA10w">
+        <parameters Name="src" dataType="_jT0ehgGCEemnkdGScLA10w"/>
+        <parameters Name="p" dataType="_WN1DNQGDEemnkdGScLA10w"/>
+      </objectclassoperation>
+      <objectclassoperation id="_RAMB1QC8EemnkdGScLA10w" Name="clock" semantics="" returnType="_lpWykQC-EemnkdGScLA10w"/>
+      <objectclassoperation id="_RAMB1wC8EemnkdGScLA10w" Name="clockInMinutes" semantics="" returnType="_lpWykQC-EemnkdGScLA10w"/>
+      <objectclassoperation id="_RAMB2QC8EemnkdGScLA10w" Name="clockInHours" semantics="" returnType="_lpWykQC-EemnkdGScLA10w"/>
+      <objectclassoperation id="_RAMB2wC8EemnkdGScLA10w" Name="findFirstDeferred" semantics="" returnType="_e4npFgGDEemnkdGScLA10w">
+        <parameters Name="dest" dataType="_jT0ehgGCEemnkdGScLA10w"/>
+        <parameters Name="p" dataType="_WN1DNQGDEemnkdGScLA10w"/>
+      </objectclassoperation>
+      <objectclassoperation id="_RAMB3wC8EemnkdGScLA10w" Name="getCalendar" semantics="Out: java.util.Calendar"/>
+      <objectclassoperation id="_RAMB4QC8EemnkdGScLA10w" Name="getCloudInfoService" semantics="" returnType="_xABBZgGFEemnkdGScLA10w"/>
+      <objectclassoperation id="_RAMB4wC8EemnkdGScLA10w" Name="getDatacenterList" semantics="" returnType="_m3461AGFEemnkdGScLA10w"/>
+      <objectclassoperation id="_RAMB5QC8EemnkdGScLA10w" Name="getEntityList" semantics="" returnType="_6CmTxBXfEemC-aG165HpOg"/>
+      <objectclassoperation id="_RAMB5wC8EemnkdGScLA10w" Name="getMinTimeBetweenEvents" semantics="" returnType="_lpWykQC-EemnkdGScLA10w"/>
+      <objectclassoperation id="_RAMB6QC8EemnkdGScLA10w" Name="getNumEntities" semantics="" returnType="_WsB3oQC-EemnkdGScLA10w"/>
+      <objectclassoperation id="_RAMB6wC8EemnkdGScLA10w" Name="removeOnEventProcessingListener" semantics="" returnType="_6xudkQE5EemnkdGScLA10w">
+        <parameters Name="EventListener&lt;SimEvent> listener"/>
+      </objectclassoperation>
+      <objectclassoperation id="_RAMB7gC8EemnkdGScLA10w" Name="addOnSimulationPauseListener" semantics="" returnType="_VhhMRgGCEemnkdGScLA10w">
+        <parameters Name="EventListener&lt;EventInfo> listener"/>
+      </objectclassoperation>
+      <objectclassoperation id="_RAMB8QC8EemnkdGScLA10w" Name="addOnSimulationStartListener" semantics="" returnType="_VhhMRgGCEemnkdGScLA10w">
+        <parameters Name="EventListener&lt;EventInfo> listener"/>
+      </objectclassoperation>
+      <objectclassoperation id="_RAMB9AC8EemnkdGScLA10w" Name="removeOnSimulationPauseListener" semantics="" returnType="_6xudkQE5EemnkdGScLA10w">
+        <parameters Name="EventListener&lt;EventInfo> listener"/>
+      </objectclassoperation>
+      <objectclassoperation id="_RAMB9wC8EemnkdGScLA10w" Name="addOnEventProcessingListener" semantics="" returnType="_VhhMRgGCEemnkdGScLA10w">
+        <parameters Name="EventListener&lt;SimEvent> listener"/>
+      </objectclassoperation>
+      <objectclassoperation id="_RAMB-gC8EemnkdGScLA10w" Name="addOnClockTickListener" semantics="" returnType="_VhhMRgGCEemnkdGScLA10w">
+        <parameters Name="EventListener&lt;EventInfo> listener"/>
+      </objectclassoperation>
+      <objectclassoperation id="_RAMB_QC8EemnkdGScLA10w" Name="removeOnClockTickListener" semantics="" returnType="_6xudkQE5EemnkdGScLA10w">
+        <parameters Name="EventListener&lt;? extends EventInfo> listener"/>
+      </objectclassoperation>
+      <objectclassoperation id="_RAMCAAC8EemnkdGScLA10w" Name="pauseEntity">
+        <parameters Name="src" dataType="_jT0ehgGCEemnkdGScLA10w"/>
+        <parameters Name="delay" dataType="_lpWykQC-EemnkdGScLA10w"/>
+      </objectclassoperation>
+      <objectclassoperation id="_RAMCAwC8EemnkdGScLA10w" Name="holdEntity">
+        <parameters Name="src" dataType="_jT0ehgGCEemnkdGScLA10w"/>
+        <parameters Name="delay" dataType="_XuMREQEzEemnkdGScLA10w"/>
+      </objectclassoperation>
+      <objectclassoperation id="_RAMCBgC8EemnkdGScLA10w" Name="isPaused" semantics="" returnType="_6xudkQE5EemnkdGScLA10w"/>
+      <objectclassoperation id="_RAMCCAC8EemnkdGScLA10w" Name="resume" semantics="" returnType="_6xudkQE5EemnkdGScLA10w"/>
+      <objectclassoperation id="_RAMCCgC8EemnkdGScLA10w" Name="pause" semantics="" returnType="_6xudkQE5EemnkdGScLA10w">
+        <parameters Name="time" optional="true" dataType="_lpWykQC-EemnkdGScLA10w"/>
+      </objectclassoperation>
+      <objectclassoperation id="_RAMCDQC8EemnkdGScLA10w" Name="isRunning" semantics="" returnType="_6xudkQE5EemnkdGScLA10w"/>
+      <objectclassoperation id="_RAMCDwC8EemnkdGScLA10w" Name="select" semantics="" returnType="_e4npFgGDEemnkdGScLA10w">
+        <parameters Name="dest" dataType="_jT0ehgGCEemnkdGScLA10w"/>
+        <parameters Name="p" dataType="_WN1DNQGDEemnkdGScLA10w"/>
+      </objectclassoperation>
+      <objectclassoperation id="_RAMCEwC8EemnkdGScLA10w" Name="send">
+        <parameters Name="evt" dataType="_e4npFgGDEemnkdGScLA10w"/>
+      </objectclassoperation>
+      <objectclassoperation id="_RAMCFQC8EemnkdGScLA10w" Name="send">
+        <parameters Name="src" dataType="_jT0ehgGCEemnkdGScLA10w"/>
+        <parameters Name="dest" dataType="_jT0ehgGCEemnkdGScLA10w"/>
+        <parameters Name="delay" dataType="_lpWykQC-EemnkdGScLA10w"/>
+        <parameters Name="tag" dataType="_WsB3oQC-EemnkdGScLA10w"/>
+        <parameters Name="Object data"/>
+      </objectclassoperation>
+      <objectclassoperation id="_RAMCGwC8EemnkdGScLA10w" Name="sendFirst">
+        <parameters Name="evt" dataType="_e4npFgGDEemnkdGScLA10w"/>
+      </objectclassoperation>
+      <objectclassoperation id="_RAMCHQC8EemnkdGScLA10w" Name="sendFirst">
+        <parameters Name="src" dataType="_jT0ehgGCEemnkdGScLA10w"/>
+        <parameters Name="dest" dataType="_jT0ehgGCEemnkdGScLA10w"/>
+        <parameters Name="delay" dataType="_lpWykQC-EemnkdGScLA10w"/>
+        <parameters Name="tag" dataType="_WsB3oQC-EemnkdGScLA10w"/>
+        <parameters Name="Object data"/>
+      </objectclassoperation>
+      <objectclassoperation id="_RAMCIwC8EemnkdGScLA10w" Name="start" semantics="" returnType="_lpWykQC-EemnkdGScLA10w"/>
+      <objectclassoperation id="_RAMCJQC8EemnkdGScLA10w" Name="sendNow">
+        <parameters Name="src" dataType="_jT0ehgGCEemnkdGScLA10w"/>
+        <parameters Name="dest" dataType="_jT0ehgGCEemnkdGScLA10w"/>
+        <parameters Name="tag" dataType="_WsB3oQC-EemnkdGScLA10w"/>
+        <parameters Name="Object data"/>
+      </objectclassoperation>
+      <objectclassoperation id="_RAMCKgC8EemnkdGScLA10w" Name="isTimeToTerminateSimulationUnderRequest" semantics="" returnType="_6xudkQE5EemnkdGScLA10w"/>
+      <objectclassoperation id="_RAMCLAC8EemnkdGScLA10w" Name="terminate" semantics="" returnType="_6xudkQE5EemnkdGScLA10w"/>
+      <objectclassoperation id="_RAMCLgC8EemnkdGScLA10w" Name="terminateAt" semantics="" returnType="_6xudkQE5EemnkdGScLA10w">
+        <parameters Name="time" dataType="_lpWykQC-EemnkdGScLA10w"/>
+      </objectclassoperation>
+      <objectclassoperation id="_RAMCMQC8EemnkdGScLA10w" Name="wait">
+        <parameters Name="p" dataType="_WN1DNQGDEemnkdGScLA10w"/>
+        <parameters Name="src" dataType="_LW81tgGCEemnkdGScLA10w"/>
+      </objectclassoperation>
+      <objectclassoperation id="_RAMCNAC8EemnkdGScLA10w" Name="waiting" semantics="" returnType="_XuMREQEzEemnkdGScLA10w">
+        <parameters Name="dest" dataType="_jT0ehgGCEemnkdGScLA10w"/>
+        <parameters Name="p" dataType="_WN1DNQGDEemnkdGScLA10w"/>
+      </objectclassoperation>
+      <objectclassoperation id="_RAMCOAC8EemnkdGScLA10w" Name="setIdForEntitiesWithoutOne" semantics="" returnType="_OxJxBBXhEemC-aG165HpOg">
+        <parameters Name="list" dataType="_XpviVBXhEemC-aG165HpOg"/>
+        <parameters Name="T lastEntity" optional="true"/>
+      </objectclassoperation>
+      <objectclassoperation id="_eXZtIBXhEemC-aG165HpOg" Name="getNumberOfFutureEvents" returnType="_XuMREQEzEemnkdGScLA10w">
+        <parameters Name="predicate" dataType="_WN1DNQGDEemnkdGScLA10w"/>
+      </objectclassoperation>
+      <objectclassoperation id="_RAMBogC8EemnkdGScLA10w" Name="setState" semantics="" returnType="_jT0ehgGCEemnkdGScLA10w">
+        <parameters Name="state" dataType="_v7-T8xXdEemC-aG165HpOg"/>
+      </objectclassoperation>
+      <objectclassoperation id="_RAMBpQC8EemnkdGScLA10w" Name="isStarted" semantics="" returnType="_6xudkQE5EemnkdGScLA10w"/>
+      <objectclassoperation id="_RAMBpwC8EemnkdGScLA10w" Name="isFinished" semantics="" returnType="_6xudkQE5EemnkdGScLA10w"/>
+      <objectclassoperation id="_RAMBqQC8EemnkdGScLA10w" Name="isAlive" semantics="" returnType="_6xudkQE5EemnkdGScLA10w"/>
+      <objectclassoperation id="_RAMBqwC8EemnkdGScLA10w" Name="processEvent">
+        <parameters Name="evt" dataType="_e4npFgGDEemnkdGScLA10w"/>
+      </objectclassoperation>
+      <objectclassoperation id="_RAMBrQC8EemnkdGScLA10w" Name="schedule" semantics="" returnType="_6xudkQE5EemnkdGScLA10w">
+        <parameters Name="delay" dataType="_lpWykQC-EemnkdGScLA10w"/>
+        <parameters Name="tag" dataType="_WsB3oQC-EemnkdGScLA10w"/>
+        <parameters Name="Object data"/>
+      </objectclassoperation>
+      <objectclassoperation id="_RAMBsgC8EemnkdGScLA10w" Name="schedule" semantics="" returnType="_6xudkQE5EemnkdGScLA10w">
+        <parameters Name="evt" dataType="_e4npFgGDEemnkdGScLA10w"/>
+      </objectclassoperation>
+      <objectclassoperation id="_RAMBtQC8EemnkdGScLA10w" Name="schedule" semantics="" returnType="_6xudkQE5EemnkdGScLA10w">
+        <parameters Name="delay" dataType="_lpWykQC-EemnkdGScLA10w"/>
+        <parameters Name="tag" dataType="_WsB3oQC-EemnkdGScLA10w"/>
+        <parameters Name="dest" dataType="_jT0ehgGCEemnkdGScLA10w"/>
+        <parameters Name="Object data"/>
+      </objectclassoperation>
+      <objectclassoperation id="_RAMBuwC8EemnkdGScLA10w" Name="schedule" semantics="" returnType="_6xudkQE5EemnkdGScLA10w">
+        <parameters Name="delay" dataType="_lpWykQC-EemnkdGScLA10w"/>
+        <parameters Name="tag" dataType="_WsB3oQC-EemnkdGScLA10w"/>
+        <parameters Name="Object data"/>
+      </objectclassoperation>
+      <objectclassoperation id="_RAMBwAC8EemnkdGScLA10w" Name="start"/>
+      <objectclassoperation id="_RAMBwQC8EemnkdGScLA10w" Name="shutdownEntity"/>
+      <objectclassoperation id="_RAMBwgC8EemnkdGScLA10w" Name="setName" semantics="" returnType="_jT0ehgGCEemnkdGScLA10w">
+        <parameters Name="newName" dataType="_xtQW8QE6EemnkdGScLA10w"/>
+      </objectclassoperation>
+      <objectclassoperation id="_RAMBjwC8EemnkdGScLA10w" Name="getBw" semantics="" returnType="_hHSRRhXVEemC-aG165HpOg"/>
+      <objectclassoperation id="_RAMBkQC8EemnkdGScLA10w" Name="getStorage" semantics="" returnType="_hHSRRhXVEemC-aG165HpOg"/>
+      <objectclassoperation id="_RAMBkwC8EemnkdGScLA10w" Name="getRam" semantics="" returnType="_hHSRRhXVEemC-aG165HpOg"/>
+      <objectclassoperation id="_RAMBlQC8EemnkdGScLA10w" Name="getNumberOfPes" semantics="" returnType="_XuMREQEzEemnkdGScLA10w"/>
+      <objectclassoperation id="_RAMBlwC8EemnkdGScLA10w" Name="getMips" semantics="" returnType="_lpWykQC-EemnkdGScLA10w"/>
+      <objectclassoperation id="_RAMBmQC8EemnkdGScLA10w" Name="getTotalMipsCapacity" semantics="" returnType="_lpWykQC-EemnkdGScLA10w"/>
+      <objectclassoperation id="_RAMBmwC8EemnkdGScLA10w" Name="getSimulation" semantics="" returnType="_VhhMRgGCEemnkdGScLA10w"/>
+      <objectclassoperation id="_RAMBhAC8EemnkdGScLA10w" Name="getName" semantics="" returnType="_xtQW8QE6EemnkdGScLA10w"/>
+      <objectclassoperation id="_RAMBjAC8EemnkdGScLA10w" Name="setId">
+        <parameters Name="id" dataType="_WsB3oQC-EemnkdGScLA10w"/>
+      </objectclassoperation>
+      <objectclassoperation id="_gZiywBXbEemC-aG165HpOg" Name="getId" returnType="_WsB3oQC-EemnkdGScLA10w"/>
+      <objectclassoperation id="_RAMBRgC8EemnkdGScLA10w" Name="getName" semantics="" returnType="_xtQW8QE6EemnkdGScLA10w"/>
+      <objectclassoperation id="_RAMBSAC8EemnkdGScLA10w" Name="getNumStoredFile" semantics="" returnType="_WsB3oQC-EemnkdGScLA10w"/>
+      <objectclassoperation id="_RAMBSgC8EemnkdGScLA10w" Name="reserveSpace" semantics="" returnType="_6xudkQE5EemnkdGScLA10w">
+        <parameters Name="fileSize" dataType="_WsB3oQC-EemnkdGScLA10w"/>
+      </objectclassoperation>
+      <objectclassoperation id="_RAMBTQC8EemnkdGScLA10w" Name="addReservedFile" semantics="" returnType="_lpWykQC-EemnkdGScLA10w">
+        <parameters Name="file" dataType="_rW05BgE9EemnkdGScLA10w"/>
+      </objectclassoperation>
+      <objectclassoperation id="_RAMBUAC8EemnkdGScLA10w" Name="getFile" semantics="" returnType="_rW05BgE9EemnkdGScLA10w">
+        <parameters Name="fileName" dataType="_xtQW8QE6EemnkdGScLA10w"/>
+      </objectclassoperation>
+      <objectclassoperation id="_RAMBUwC8EemnkdGScLA10w" Name="getFileNameList" semantics="" returnType="_AgRQlAFBEemnkdGScLA10w"/>
+      <objectclassoperation id="_RAMBVQC8EemnkdGScLA10w" Name="getFileList" semantics="" returnType="_iA75RBXZEemC-aG165HpOg"/>
+      <objectclassoperation id="_RAMBVwC8EemnkdGScLA10w" Name="getTransferTime" semantics="" returnType="_lpWykQC-EemnkdGScLA10w">
+        <parameters Name="fileName" dataType="_xtQW8QE6EemnkdGScLA10w"/>
+      </objectclassoperation>
+      <objectclassoperation id="_RAMBWgC8EemnkdGScLA10w" Name="getTransferTime" semantics="" returnType="_lpWykQC-EemnkdGScLA10w">
+        <parameters Name="file" dataType="_rW05BgE9EemnkdGScLA10w"/>
+      </objectclassoperation>
+      <objectclassoperation id="_RAMBXQC8EemnkdGScLA10w" Name="getTransferTime" semantics="" returnType="_lpWykQC-EemnkdGScLA10w">
+        <parameters Name="fileSize" dataType="_WsB3oQC-EemnkdGScLA10w"/>
+      </objectclassoperation>
+      <objectclassoperation id="_RAMBYAC8EemnkdGScLA10w" Name="addFile" semantics="" returnType="_lpWykQC-EemnkdGScLA10w">
+        <parameters Name="file" dataType="_rW05BgE9EemnkdGScLA10w"/>
+      </objectclassoperation>
+      <objectclassoperation id="_RAMBYwC8EemnkdGScLA10w" Name="addFile" semantics="" returnType="_lpWykQC-EemnkdGScLA10w">
+        <parameters Name="list" dataType="_iA75RBXZEemC-aG165HpOg"/>
+      </objectclassoperation>
+      <objectclassoperation id="_RAMBZgC8EemnkdGScLA10w" Name="deleteFile" semantics="" returnType="_rW05BgE9EemnkdGScLA10w">
+        <parameters Name="fileName" dataType="_xtQW8QE6EemnkdGScLA10w"/>
+      </objectclassoperation>
+      <objectclassoperation id="_RAMBaQC8EemnkdGScLA10w" Name="deleteFile" semantics="" returnType="_lpWykQC-EemnkdGScLA10w">
+        <parameters Name="file" dataType="_rW05BgE9EemnkdGScLA10w"/>
+      </objectclassoperation>
+      <objectclassoperation id="_RAMBbAC8EemnkdGScLA10w" Name="contains" semantics="" returnType="_6xudkQE5EemnkdGScLA10w">
+        <parameters Name="file" dataType="_rW05BgE9EemnkdGScLA10w"/>
+      </objectclassoperation>
+      <objectclassoperation id="_RAMBbwC8EemnkdGScLA10w" Name="contains" semantics="" returnType="_6xudkQE5EemnkdGScLA10w">
+        <parameters Name="fileName" dataType="_xtQW8QE6EemnkdGScLA10w"/>
+      </objectclassoperation>
+      <objectclassoperation id="_RAMBcgC8EemnkdGScLA10w" Name="renameFile" semantics="" returnType="_6xudkQE5EemnkdGScLA10w">
+        <parameters Name="file" dataType="_rW05BgE9EemnkdGScLA10w"/>
+        <parameters Name="newName" dataType="_xtQW8QE6EemnkdGScLA10w"/>
+      </objectclassoperation>
+      <objectclassoperation id="_RAMBdgC8EemnkdGScLA10w" Name="hasPotentialAvailableSpace" semantics="" returnType="_6xudkQE5EemnkdGScLA10w">
+        <parameters Name="fileSize" dataType="_WsB3oQC-EemnkdGScLA10w"/>
+      </objectclassoperation>
+      <objectclassoperation id="_RAMBeQC8EemnkdGScLA10w" Name="hasFile" semantics="" returnType="_6xudkQE5EemnkdGScLA10w">
+        <parameters Name="fileName" dataType="_xtQW8QE6EemnkdGScLA10w"/>
+      </objectclassoperation>
+      <objectclassoperation id="_RAMBfQC8EemnkdGScLA10w" Name="getUid" semantics="" returnType="_xtQW8QE6EemnkdGScLA10w">
+        <parameters Name="brokerId" dataType="_WsB3oQC-EemnkdGScLA10w"/>
+        <parameters Name="id" dataType="_WsB3oQC-EemnkdGScLA10w"/>
+      </objectclassoperation>
+      <objectclassoperation id="_RAMBgQC8EemnkdGScLA10w" Name="getUid" semantics="" returnType="_xtQW8QE6EemnkdGScLA10w"/>
+      <objectclassoperation id="_RAMBOQC8EemnkdGScLA10w" Name="setId">
+        <parameters Name="id" dataType="_WsB3oQC-EemnkdGScLA10w"/>
+      </objectclassoperation>
+      <objectclassoperation id="_RAMBOwC8EemnkdGScLA10w" Name="isWorking" semantics="" returnType="_6xudkQE5EemnkdGScLA10w"/>
+      <objectclassoperation id="_RAMBPQC8EemnkdGScLA10w" Name="isFailed" semantics="" returnType="_6xudkQE5EemnkdGScLA10w"/>
+      <objectclassoperation id="_RAMBPwC8EemnkdGScLA10w" Name="isFree" semantics="" returnType="_6xudkQE5EemnkdGScLA10w"/>
+      <objectclassoperation id="_RAMBQQC8EemnkdGScLA10w" Name="isBusy" semantics="" returnType="_6xudkQE5EemnkdGScLA10w"/>
+      <objectclassoperation id="_RAMBIgC8EemnkdGScLA10w" Name="isObjectSubClassOf" semantics="" returnType="_6xudkQE5EemnkdGScLA10w">
+        <parameters Name="Object object" optional="true"/>
+        <parameters Name="Class classWanted"/>
+      </objectclassoperation>
+      <objectclassoperation id="_RAMBJgC8EemnkdGScLA10w" Name="getAvailableResource" semantics="" returnType="_XuMREQEzEemnkdGScLA10w"/>
+      <objectclassoperation id="_RAMBKAC8EemnkdGScLA10w" Name="getAllocatedResource" semantics="" returnType="_XuMREQEzEemnkdGScLA10w"/>
+      <objectclassoperation id="_RAMBKgC8EemnkdGScLA10w" Name="isAmountAvailable" semantics="" returnType="_6xudkQE5EemnkdGScLA10w">
+        <parameters Name="resource" dataType="_hHSRRhXVEemC-aG165HpOg"/>
+      </objectclassoperation>
+      <objectclassoperation id="_RAMBLQC8EemnkdGScLA10w" Name="isAmountAvailable" semantics="" returnType="_6xudkQE5EemnkdGScLA10w">
+        <parameters Name="amountToCheck" dataType="_XuMREQEzEemnkdGScLA10w"/>
+      </objectclassoperation>
+      <objectclassoperation id="_RAMBMAC8EemnkdGScLA10w" Name="isFull" semantics="" returnType="_6xudkQE5EemnkdGScLA10w"/>
+      <objectclassoperation id="_RAMBMgC8EemnkdGScLA10w" Name="getPercentUtilization" semantics="" returnType="_lpWykQC-EemnkdGScLA10w"/>
+      <objectclassoperation id="_RACQqAC8EemnkdGScLA10w" Name="addStateHistoryEntry">
+        <parameters Name="entry" dataType="_HoCU5hXDEemC-aG165HpOg"/>
+      </objectclassoperation>
+      <objectclassoperation id="_RACQqgC8EemnkdGScLA10w" Name="getCurrentRequestBw" semantics="" returnType="_XuMREQEzEemnkdGScLA10w"/>
+      <objectclassoperation id="_RACQrAC8EemnkdGScLA10w" Name="getCurrentRequestMaxMips" semantics="" returnType="_lpWykQC-EemnkdGScLA10w"/>
+      <objectclassoperation id="_RACQrgC8EemnkdGScLA10w" Name="getCurrentRequestMips" semantics="" returnType="_QyEItADAEemnkdGScLA10w"/>
+      <objectclassoperation id="_RACQsAC8EemnkdGScLA10w" Name="getCurrentRequestedRam" semantics="" returnType="_XuMREQEzEemnkdGScLA10w"/>
+      <objectclassoperation id="_RACQsgC8EemnkdGScLA10w" Name="getCurrentRequestedTotalMips" semantics="" returnType="_lpWykQC-EemnkdGScLA10w"/>
+      <objectclassoperation id="_RACQtAC8EemnkdGScLA10w" Name="allocateResource">
+        <parameters Name="resourceClass" dataType="_eNpaZRXEEemC-aG165HpOg"/>
+        <parameters Name="newTotalResourceAmount" dataType="_XuMREQEzEemnkdGScLA10w"/>
+      </objectclassoperation>
+      <objectclassoperation id="_RACQtwC8EemnkdGScLA10w" Name="deallocateResource">
+        <parameters Name="resourceClass" dataType="_eNpaZRXEEemC-aG165HpOg"/>
+      </objectclassoperation>
+      <objectclassoperation id="_RACQuQC8EemnkdGScLA10w" Name="addOnHostAllocationListener" semantics="" returnType="_8sYltgE0EemnkdGScLA10w">
+        <parameters Name="EventListener&lt;VmHostEventInfo> listener"/>
+      </objectclassoperation>
+      <objectclassoperation id="_RACQvAC8EemnkdGScLA10w" Name="addOnHostDeallocationListener" semantics="" returnType="_8sYltgE0EemnkdGScLA10w">
+        <parameters Name="EventListener&lt;VmHostEventInfo> listener"/>
+      </objectclassoperation>
+      <objectclassoperation id="_RACQvwC8EemnkdGScLA10w" Name="addOnUpdateProcessingListener" semantics="" returnType="_8sYltgE0EemnkdGScLA10w">
+        <parameters Name="EventListener&lt;VmHostEventInfo> listener"/>
+      </objectclassoperation>
+      <objectclassoperation id="_RACQwgC8EemnkdGScLA10w" Name="addOnCreationFailureListener" semantics="" returnType="_8sYltgE0EemnkdGScLA10w">
+        <parameters Name="EventListener&lt;VmHostEventInfo> listener"/>
+      </objectclassoperation>
+      <objectclassoperation id="_RACQxQC8EemnkdGScLA10w" Name="notifyOnHostAllocationListeners"/>
+      <objectclassoperation id="_RACQxgC8EemnkdGScLA10w" Name="notifyOnHostDeallocationListeners">
+        <parameters Name="deallocatedHost" dataType="_Q8OtFgGLEemnkdGScLA10w"/>
+      </objectclassoperation>
+      <objectclassoperation id="_RACQyAC8EemnkdGScLA10w" Name="notifyOnCreationFailureListeners">
+        <parameters Name="failedDatacenter" dataType="_uZhjFgE_EemnkdGScLA10w"/>
+      </objectclassoperation>
+      <objectclassoperation id="_RACQygC8EemnkdGScLA10w" Name="removeOnUpdateProcessingListener" semantics="" returnType="_6xudkQE5EemnkdGScLA10w">
+        <parameters Name="EventListener&lt;VmHostEventInfo> listener"/>
+      </objectclassoperation>
+      <objectclassoperation id="_RACQzQC8EemnkdGScLA10w" Name="removeOnHostAllocationListener" semantics="" returnType="_6xudkQE5EemnkdGScLA10w">
+        <parameters Name="EventListener&lt;VmHostEventInfo> listener"/>
+      </objectclassoperation>
+      <objectclassoperation id="_RACQ0AC8EemnkdGScLA10w" Name="removeOnHostDeallocationListener" semantics="" returnType="_6xudkQE5EemnkdGScLA10w">
+        <parameters Name="EventListener&lt;VmHostEventInfo> listener"/>
+      </objectclassoperation>
+      <objectclassoperation id="_RACQ0wC8EemnkdGScLA10w" Name="removeOnCreationFailureListener" semantics="" returnType="_6xudkQE5EemnkdGScLA10w">
+        <parameters Name="EventListener&lt;VmDatacenterEventInfo> listener"/>
+      </objectclassoperation>
+      <objectclassoperation id="_RACQ1gC8EemnkdGScLA10w" Name="getStateHistory" semantics="" returnType="_8cxO9BXFEemC-aG165HpOg"/>
+      <objectclassoperation id="_RACQ2AC8EemnkdGScLA10w" Name="getCpuPercentageUsage" semantics="" returnType="_lpWykQC-EemnkdGScLA10w">
+        <parameters Name="time" optional="true" dataType="_lpWykQC-EemnkdGScLA10w"/>
+      </objectclassoperation>
+      <objectclassoperation id="_RACQ2wC8EemnkdGScLA10w" Name="getTotalCpuMipsUsage" semantics="" returnType="_lpWykQC-EemnkdGScLA10w">
+        <parameters Name="time" optional="true" dataType="_lpWykQC-EemnkdGScLA10w"/>
+      </objectclassoperation>
+      <objectclassoperation id="_RACQ3gC8EemnkdGScLA10w" Name="getVmm" semantics="" returnType="_xtQW8QE6EemnkdGScLA10w"/>
+      <objectclassoperation id="_RACQ4gC8EemnkdGScLA10w" Name="isSuitableForCloudlet" semantics="" returnType="_6xudkQE5EemnkdGScLA10w">
+        <parameters Name="cloudlet" dataType="_meO1BgqWEemCjdCvosaTnQ"/>
+      </objectclassoperation>
+      <objectclassoperation id="_RACQ5wC8EemnkdGScLA10w" Name="setSize" semantics="" returnType="_8sYltgE0EemnkdGScLA10w">
+        <parameters Name="size" dataType="_XuMREQEzEemnkdGScLA10w"/>
+      </objectclassoperation>
+      <objectclassoperation id="_RACQ6gC8EemnkdGScLA10w" Name="updateProcessing" semantics="" returnType="_lpWykQC-EemnkdGScLA10w">
+        <parameters Name="currentTime" dataType="_lpWykQC-EemnkdGScLA10w"/>
+        <parameters Name="mipsShare" dataType="_QyEItADAEemnkdGScLA10w"/>
+      </objectclassoperation>
+      <objectclassoperation id="_RACQ8AC8EemnkdGScLA10w" Name="getProcessor" semantics="" returnType="_i5OFdgE7EemnkdGScLA10w"/>
+      <objectclassoperation id="_RACQ8gC8EemnkdGScLA10w" Name="getTotalExecutionTime" semantics="" returnType="_lpWykQC-EemnkdGScLA10w"/>
+      <objectclassoperation id="_RACQ9AC8EemnkdGScLA10w" Name="getLastBusyTime" semantics="" returnType="_lpWykQC-EemnkdGScLA10w"/>
+      <objectclassoperation id="_RACQ9gC8EemnkdGScLA10w" Name="getIdleInterval" semantics="" returnType="_lpWykQC-EemnkdGScLA10w"/>
+      <objectclassoperation id="_RACQ-AC8EemnkdGScLA10w" Name="isIdle" semantics="" returnType="_6xudkQE5EemnkdGScLA10w"/>
+      <objectclassoperation id="_RACQ-gC8EemnkdGScLA10w" Name="isIdleEnough" semantics="" returnType="_6xudkQE5EemnkdGScLA10w">
+        <parameters Name="time" dataType="_lpWykQC-EemnkdGScLA10w"/>
+      </objectclassoperation>
+      <objectclassoperation id="_RACQ_QC8EemnkdGScLA10w" Name="getUtilizationHistory" semantics="" returnType="_63EKhhXHEemC-aG165HpOg"/>
+      <objectclassoperation id="_RACREgC8EemnkdGScLA10w" Name="getResource" semantics="" returnType="_neM_xhXEEemC-aG165HpOg">
+        <parameters Name="resourceClass" dataType="_eNpaZRXEEemC-aG165HpOg"/>
+      </objectclassoperation>
+      <objectclassoperation id="_RACRFQC8EemnkdGScLA10w" Name="getResources" semantics="" returnType="_0BLtRBXGEemC-aG165HpOg"/>
+      <objectclassoperation id="_RACRAQC8EemnkdGScLA10w" Name="getUtilizationMad" semantics="" returnType="_lpWykQC-EemnkdGScLA10w"/>
+      <objectclassoperation id="_RACRAwC8EemnkdGScLA10w" Name="getUtilizationMean" semantics="" returnType="_lpWykQC-EemnkdGScLA10w"/>
+      <objectclassoperation id="_RACRBQC8EemnkdGScLA10w" Name="getUtilizationVariance" semantics="" returnType="_lpWykQC-EemnkdGScLA10w"/>
+      <objectclassoperation id="_RACRBwC8EemnkdGScLA10w" Name="addUtilizationHistroy">
+        <parameters Name="time" dataType="_lpWykQC-EemnkdGScLA10w"/>
+      </objectclassoperation>
+      <objectclassoperation id="_RACRCQC8EemnkdGScLA10w" Name="getHistory" semantics="" returnType="_8GhVVxXJEemC-aG165HpOg"/>
+      <objectclassoperation id="_RACRCwC8EemnkdGScLA10w" Name="isEnabled" semantics="" returnType="_6xudkQE5EemnkdGScLA10w"/>
+      <objectclassoperation id="_RACRDQC8EemnkdGScLA10w" Name="disable"/>
+      <objectclassoperation id="_RACRDgC8EemnkdGScLA10w" Name="enable"/>
+      <objectclassoperation id="_RACRDwC8EemnkdGScLA10w" Name="getVm" semantics="" returnType="_8sYltgE0EemnkdGScLA10w"/>
+      <objectclassoperation id="_MI-dkBXQEemC-aG165HpOg" Name="setCapacity" returnType="_6xudkQE5EemnkdGScLA10w">
+        <parameters Name="newCapacity" dataType="_XuMREQEzEemnkdGScLA10w"/>
+      </objectclassoperation>
+      <objectclassoperation id="_R_eW4BXQEemC-aG165HpOg" Name="addCapacity" returnType="_6xudkQE5EemnkdGScLA10w">
+        <parameters Name="capacityToAdd" dataType="_XuMREQEzEemnkdGScLA10w"/>
+      </objectclassoperation>
+      <objectclassoperation id="_YqD_kBXQEemC-aG165HpOg" Name="removeCapacity" returnType="_6xudkQE5EemnkdGScLA10w">
+        <parameters Name="capacityToRemove" dataType="_XuMREQEzEemnkdGScLA10w"/>
+      </objectclassoperation>
+      <objectclassoperation id="_cGlw0BXQEemC-aG165HpOg" Name="allocateResource" returnType="_6xudkQE5EemnkdGScLA10w">
+        <parameters Name="amountToAllocate" dataType="_XuMREQEzEemnkdGScLA10w"/>
+      </objectclassoperation>
+      <objectclassoperation id="_jXqKsBXQEemC-aG165HpOg" Name="setAllocatedResource" returnType="_6xudkQE5EemnkdGScLA10w">
+        <parameters Name="newTotalAllocatedResource" dataType="_XuMREQEzEemnkdGScLA10w"/>
+      </objectclassoperation>
+      <objectclassoperation id="_nW_uEBXQEemC-aG165HpOg" Name="deallocateResource" returnType="_6xudkQE5EemnkdGScLA10w">
+        <parameters Name="amountToDeallocate" dataType="_XuMREQEzEemnkdGScLA10w"/>
+      </objectclassoperation>
+      <objectclassoperation id="_tIekgBXQEemC-aG165HpOg" Name="deallocateAndRemoveResource" returnType="_6xudkQE5EemnkdGScLA10w">
+        <parameters Name="amountToDeallocate" dataType="_XuMREQEzEemnkdGScLA10w"/>
+      </objectclassoperation>
+      <objectclassoperation id="_xbcOgBXQEemC-aG165HpOg" Name="deallocateAllResources" returnType="_XuMREQEzEemnkdGScLA10w"/>
+      <objectclassoperation id="_0q-FkBXQEemC-aG165HpOg" Name="isResourceAmountBeingUsed" returnType="_6xudkQE5EemnkdGScLA10w">
+        <parameters Name="amountToCheck" dataType="_XuMREQEzEemnkdGScLA10w"/>
+      </objectclassoperation>
+      <objectclassoperation id="_46EjQBXQEemC-aG165HpOg" Name="isSuitable" returnType="_6xudkQE5EemnkdGScLA10w">
+        <parameters Name="newTotalAllocatedResource" dataType="_XuMREQEzEemnkdGScLA10w"/>
+      </objectclassoperation>
+      <objectclassoperation id="_AR4hhBXVEemC-aG165HpOg" Name="getCapacity" returnType="_XuMREQEzEemnkdGScLA10w"/>
+      <objectclassoperation id="_Vjl2rRa8EemC-aG165HpOg" Name="DatacenterCharacteristicsSimple" returnType="_X2uW5ha8EemC-aG165HpOg">
+        <parameters Name="datacenter" dataType="_uZhjFgE_EemnkdGScLA10w"/>
+      </objectclassoperation>
+      <objectclassoperation id="_MCGc1Ba9EemC-aG165HpOg" Name="DatacenterBrokerSimple" returnType="_QSU75ha9EemC-aG165HpOg">
+        <parameters Name="simulation" dataType="_GIyAVgGFEemnkdGScLA10w"/>
+        <parameters Name="name" optional="true" dataType="_xtQW8QE6EemnkdGScLA10w"/>
+      </objectclassoperation>
+      <objectclass id="_RACQEQC8EemnkdGScLA10w" Name="schedulers.cloudlet.I_CloudletScheduler" semantics="extends java.io.Serializable" objectclassoperation="_RACQFAC8EemnkdGScLA10w _RACQGgC8EemnkdGScLA10w _RACQHAC8EemnkdGScLA10w _RACQHgC8EemnkdGScLA10w _RACQIAC8EemnkdGScLA10w _RACQJAC8EemnkdGScLA10w _RACQJgC8EemnkdGScLA10w _RACQKAC8EemnkdGScLA10w _RACQKgC8EemnkdGScLA10w _RACQLQC8EemnkdGScLA10w _RACQLwC8EemnkdGScLA10w _RACQMgC8EemnkdGScLA10w _RACQNQC8EemnkdGScLA10w _RACQOAC8EemnkdGScLA10w _RACQOwC8EemnkdGScLA10w _RACQPgC8EemnkdGScLA10w _RACQQgC8EemnkdGScLA10w _RACQRAC8EemnkdGScLA10w _RACQRgC8EemnkdGScLA10w _RACQSAC8EemnkdGScLA10w _RACQSwC8EemnkdGScLA10w _RACQUwC8EemnkdGScLA10w _RACQVQC8EemnkdGScLA10w _RACQVwC8EemnkdGScLA10w _RACQWQC8EemnkdGScLA10w _RACQXAC8EemnkdGScLA10w _RACQXgC8EemnkdGScLA10w _RACQZQC8EemnkdGScLA10w _JBeqgBW3EemC-aG165HpOg" instantiable="false">
+        <objectClassInheritance Name="schedulers.cloudlet.I_CloudletScheduler" childClasses="_7gXawwDBEemnkdGScLA10w _4VK8AwC_EemnkdGScLA10w"/>
+        <data id="_RACQEgC8EemnkdGScLA10w" Name="taskScheduler"/>
+        <data id="_RACQEwC8EemnkdGScLA10w" Name="vm" datatype="_8sYltgE0EemnkdGScLA10w"/>
+      </objectclass>
+      <objectclass id="_CjbxswC-EemnkdGScLA10w" Name="schedulers.cloudlet.CloudletSchedulerSpaceShared" parentClass="//@simulationDescription/@simulationdata/@objectclass.3/@objectClassInheritance"/>
+      <objectclass id="_K_Z4dwC-EemnkdGScLA10w" Name="schedulers.cloudlet.CloudletSchedulerCompletelyFair" parentClass="//@simulationDescription/@simulationdata/@objectclass.5/@objectClassInheritance">
+        <data id="_Rf5J8AC-EemnkdGScLA10w" Name="latency" datatype="_WsB3oQC-EemnkdGScLA10w"/>
+        <data id="_kn3D4AC_EemnkdGScLA10w" Name="minimumGranularity" datatype="_WsB3oQC-EemnkdGScLA10w"/>
+      </objectclass>
+      <objectclass id="_4VK8AwC_EemnkdGScLA10w" Name="schedulers.cloudlet.A_CloudletSchedulerAbstract" semantics="" parentClass="//@simulationDescription/@simulationdata/@objectclass.0/@objectClassInheritance" objectclassoperation="_RACQTwC8EemnkdGScLA10w _RACQGAC8EemnkdGScLA10w" instantiable="false">
+        <objectClassInheritance Name="schedulers.cloudlet.A_CloudletSchedulerAbstract" childClasses="_CjbxswC-EemnkdGScLA10w _ACmP0wDCEemnkdGScLA10w"/>
+        <data id="_QAI8gADAEemnkdGScLA10w" Name="currentMipsShare" datatype="_QyEItADAEemnkdGScLA10w"/>
+      </objectclass>
+      <objectclass id="_7gXawwDBEemnkdGScLA10w" Name="schedulers.cloudlet.CloudletSchedulerNull" parentClass="//@simulationDescription/@simulationdata/@objectclass.0/@objectClassInheritance"/>
+      <objectclass id="_ACmP0wDCEemnkdGScLA10w" Name="schedulers.cloudlet.CloudletSchedulerTimeShared" parentClass="//@simulationDescription/@simulationdata/@objectclass.3/@objectClassInheritance">
+        <objectClassInheritance Name="schedulers.cloudlet.CloudletSchedulerTimeShared" childClasses="_K_Z4dwC-EemnkdGScLA10w"/>
+      </objectclass>
+      <objectclass id="_o-Hh9wYvEemnkdGScLA10w" Name="schedulers.vm.I_VmScheduler" objectclassoperation="_RACQdwC8EemnkdGScLA10w _RACQewC8EemnkdGScLA10w _RACQfAC8EemnkdGScLA10w _RACQfwC8EemnkdGScLA10w _RACQggC8EemnkdGScLA10w _RACQhAC8EemnkdGScLA10w _RACQhwC8EemnkdGScLA10w _RACQjAC8EemnkdGScLA10w _RACQjgC8EemnkdGScLA10w _RACQkAC8EemnkdGScLA10w _RACQkgC8EemnkdGScLA10w _RACQlQC8EemnkdGScLA10w _RACQlwC8EemnkdGScLA10w" instantiable="false">
+        <objectClassInheritance Name="schedulers.vm.I_VmScheduler" childClasses="_RnTnUADDEemnkdGScLA10w _f1UlIwDDEemnkdGScLA10w"/>
+        <data id="_RACQdgC8EemnkdGScLA10w" Name="host" datatype="_Q8OtFgGLEemnkdGScLA10w"/>
+      </objectclass>
+      <objectclass id="_c6avswDCEemnkdGScLA10w" Name="schedulers.vm.VmSchedulerTimeSharedOverSubscription" parentClass="//@simulationDescription/@simulationdata/@objectclass.8/@objectClassInheritance" objectclassoperation="_exLdAADCEemnkdGScLA10w"/>
+      <objectclass id="_1pTEQwDCEemnkdGScLA10w" Name="schedulers.vm.VmSchedulerTimeShared" parentClass="//@simulationDescription/@simulationdata/@objectclass.11/@objectClassInheritance" objectclassoperation="_x6FnkADCEemnkdGScLA10w">
+        <objectClassInheritance Name="schedulers.vm.VmSchedulerTimeShared" childClasses="_c6avswDCEemnkdGScLA10w"/>
+      </objectclass>
+      <objectclass id="_C8RWMwDDEemnkdGScLA10w" Name="schedulers.vm.VmSchedulerSpaceShared" parentClass="//@simulationDescription/@simulationdata/@objectclass.11/@objectClassInheritance" objectclassoperation="_JZ6vEADDEemnkdGScLA10w"/>
+      <objectclass id="_RnTnUADDEemnkdGScLA10w" Name="schedulers.vm.VmSchedulerNull" parentClass="//@simulationDescription/@simulationdata/@objectclass.6/@objectClassInheritance"/>
+      <objectclass id="_f1UlIwDDEemnkdGScLA10w" Name="schedulers.vm.A_VmSchedulerAbstract" parentClass="//@simulationDescription/@simulationdata/@objectclass.6/@objectClassInheritance" objectclassoperation="_k9-hAADDEemnkdGScLA10w" instantiable="false">
+        <objectClassInheritance Name="schedulers.vm.A_VmSchedulerAbstract" childClasses="_C8RWMwDDEemnkdGScLA10w _1pTEQwDCEemnkdGScLA10w"/>
+        <data id="_ZEfMYBW9EemC-aG165HpOg" Name="DEFAULT_VM_MIGRATION_CPU_OVERHEAD" semantics="DEFAULT_VM_MIGRATION_CPU_OVERHEAD = 0.1" constant="true" datatype="_lpWykQC-EemnkdGScLA10w"/>
+      </objectclass>
+      <objectclass id="_xWPz4wE0EemnkdGScLA10w" Name="vms.VmUtilizationHistory" parentClass="//@simulationDescription/@simulationdata/@objectclass.17/@objectClassInheritance" objectclassoperation="_1kxp0AE0EemnkdGScLA10w"/>
+      <objectclass id="_NDQGdwE1EemnkdGScLA10w" Name="vms.VmStateHistoryEntry" objectclassoperation="_RqjowAE1EemnkdGScLA10w">
+        <data id="_tamBgBXLEemC-aG165HpOg" Name="allocatedMips" datatype="_lpWykQC-EemnkdGScLA10w"/>
+        <data id="_t0yDIBXLEemC-aG165HpOg" Name="requestedMips" datatype="_lpWykQC-EemnkdGScLA10w"/>
+        <data id="_uXzQoBXLEemC-aG165HpOg" Name="inMigration" datatype="_6xudkQE5EemnkdGScLA10w"/>
+      </objectclass>
+      <objectclass id="_-yLYEwE1EemnkdGScLA10w" Name="vms.VmSimple" parentClass="//@simulationDescription/@simulationdata/@objectclass.15/@objectClassInheritance" objectclassoperation="_Ei6noAE2EemnkdGScLA10w">
+        <objectClassInheritance id="_-yLYEwE1EemnfdGScLA10w" Name="vms.VmSimple">
+          <childClasses href="Network.simulationfeature#_wSh1MxBrEemCjdCvosaTnQ"/>
+        </objectClassInheritance>
+      </objectclass>
+      <objectclass id="_gqjAtwE2EemnkdGScLA10w" Name="vms.I_Vm" semantics="extends Comparable&lt;Vm>" parentClass="//@simulationDescription/@simulationdata/@objectclass.47/@objectClassInheritance //@simulationDescription/@simulationdata/@objectclass.45/@objectClassInheritance //@simulationDescription/@simulationdata/@objectclass.46/@objectClassInheritance" objectclassoperation="_RACQqAC8EemnkdGScLA10w _RACQqgC8EemnkdGScLA10w _RACQrAC8EemnkdGScLA10w _RACQrgC8EemnkdGScLA10w _RACQsAC8EemnkdGScLA10w _RACQsgC8EemnkdGScLA10w _RACQtAC8EemnkdGScLA10w _RACQtwC8EemnkdGScLA10w _RACQuQC8EemnkdGScLA10w _RACQvAC8EemnkdGScLA10w _RACQvwC8EemnkdGScLA10w _RACQwgC8EemnkdGScLA10w _RACQxQC8EemnkdGScLA10w _RACQxgC8EemnkdGScLA10w _RACQyAC8EemnkdGScLA10w _RACQygC8EemnkdGScLA10w _RACQzQC8EemnkdGScLA10w _RACQ0AC8EemnkdGScLA10w _RACQ0wC8EemnkdGScLA10w _RACQ1gC8EemnkdGScLA10w _RACQ2AC8EemnkdGScLA10w _RACQ2wC8EemnkdGScLA10w _RACQ3gC8EemnkdGScLA10w _RACQ4gC8EemnkdGScLA10w _RACQ5wC8EemnkdGScLA10w _RACQ6gC8EemnkdGScLA10w _RACQ8AC8EemnkdGScLA10w _RACQ8gC8EemnkdGScLA10w _RACQ9AC8EemnkdGScLA10w _RACQ9gC8EemnkdGScLA10w _RACQ-AC8EemnkdGScLA10w _RACQ-gC8EemnkdGScLA10w _RACQ_QC8EemnkdGScLA10w" instantiable="false">
+        <objectClassInheritance Name="vms.I_Vm" childClasses="_-yLYEwE1EemnkdGScLA10w _YIoNgwE3EemnkdGScLA10w"/>
+        <data id="_RACQmgC8EemnkdGScLA10w" Name="description" datatype="_xtQW8QE6EemnkdGScLA10w"/>
+        <data id="_RACQmwC8EemnkdGScLA10w" Name="migrating" datatype="_6xudkQE5EemnkdGScLA10w"/>
+        <data id="_RACQnAC8EemnkdGScLA10w" Name="bwCapacity"/>
+        <data id="_RACQnQC8EemnkdGScLA10w" Name="host" datatype="_Q8OtFgGLEemnkdGScLA10w"/>
+        <data id="_RACQngC8EemnkdGScLA10w" Name="ramCapacity"/>
+        <data id="_RACQnwC8EemnkdGScLA10w" Name="cloudletScheduler" datatype="_tvYKRhXBEemC-aG165HpOg"/>
+        <data id="_RACQoAC8EemnkdGScLA10w" Name="failed" datatype="_6xudkQE5EemnkdGScLA10w"/>
+        <data id="_RACQoQC8EemnkdGScLA10w" Name="HorizontalVmScaling horizontalScaling"/>
+        <data id="_RACQogC8EemnkdGScLA10w" Name="VerticalVmScaling ramVerticalScaling"/>
+        <data id="_RACQowC8EemnkdGScLA10w" Name="VerticalVmScaling bwVerticalScaling"/>
+        <data id="_RACQpAC8EemnkdGScLA10w" Name="VerticalVmScaling peVerticalScaling"/>
+        <data id="_RACQpQC8EemnkdGScLA10w" Name="broker" datatype="_rrzv5gYyEemnkdGScLA10w"/>
+        <data id="_RACQpgC8EemnkdGScLA10w" Name="startTime" datatype="_lpWykQC-EemnkdGScLA10w"/>
+        <data id="_RACQpwC8EemnkdGScLA10w" Name="stopTime" datatype="_lpWykQC-EemnkdGScLA10w"/>
+        <data id="_J6BMUBXIEemC-aG165HpOg" Name="created" datatype="_6xudkQE5EemnkdGScLA10w"/>
+      </objectclass>
+      <objectclass id="_YIoNgwE3EemnkdGScLA10w" Name="vms.VmNull" parentClass="//@simulationDescription/@simulationdata/@objectclass.15/@objectClassInheritance"/>
+      <objectclass id="_l5q7hwE3EemnkdGScLA10w" Name="vms.I_UtilizationHistory" objectclassoperation="_RACRAQC8EemnkdGScLA10w _RACRAwC8EemnkdGScLA10w _RACRBQC8EemnkdGScLA10w _RACRBwC8EemnkdGScLA10w _RACRCQC8EemnkdGScLA10w _RACRCwC8EemnkdGScLA10w _RACRDQC8EemnkdGScLA10w _RACRDgC8EemnkdGScLA10w _RACRDwC8EemnkdGScLA10w" instantiable="false">
+        <objectClassInheritance Name="vms.I_UtilizationHistory" childClasses="_si6gZwE3EemnkdGScLA10w _xWPz4wE0EemnkdGScLA10w"/>
+        <data id="_RACRAAC8EemnkdGScLA10w" Name="maxHistoryEntries" datatype="_WsB3oQC-EemnkdGScLA10w"/>
+      </objectclass>
+      <objectclass id="_si6gZwE3EemnkdGScLA10w" Name="vms.UtilizationHistoryNull" parentClass="//@simulationDescription/@simulationdata/@objectclass.17/@objectClassInheritance"/>
+      <objectclass id="_Jb-9dwE4EemnkdGScLA10w" Name="resources.Storage" parentClass="//@simulationDescription/@simulationdata/@objectclass.20/@objectClassInheritance" objectclassoperation="_PId_IAE4EemnkdGScLA10w"/>
+      <objectclass id="_ZIB_oAE4EemnkdGScLA10w" Name="resources.A_ResourceManageableAbstract" semantics="" parentClass="//@simulationDescription/@simulationdata/@objectclass.28/@objectClassInheritance //@simulationDescription/@simulationdata/@objectclass.20/@objectClassInheritance" objectclassoperation="_ObThsAE5EemnkdGScLA10w" instantiable="false">
+        <objectClassInheritance Name="resources.A_ResourceManageableAbstract" childClasses="_Jb-9dwE4EemnkdGScLA10w _EcVsRwE7EemnkdGScLA10w _R9_6gAE7EemnkdGScLA10w _X9r9RwFBEemnkdGScLA10w _ZIB_oAE4EemnkdGScLA10w _DKt25wE8EemnkdGScLA10w _9joSlwE7EemnkdGScLA10w"/>
+      </objectclass>
+      <objectclass id="_wAIYswE4EemnkdGScLA10w" Name="resources.ResourceNull" parentClass="//@simulationDescription/@simulationdata/@objectclass.23/@objectClassInheritance"/>
+      <objectclass id="_RACRFwC8EemnkdGScLA10w" Name="resources.I_ResourceCapacity" objectclassoperation="_AR4hhBXVEemC-aG165HpOg" instantiable="false">
+        <objectClassInheritance Name="resources.I_ResourceCapacity" childClasses="_xC75hwE4EemnkdGScLA10w"/>
+      </objectclass>
+      <objectclass id="_xC75hwE4EemnkdGScLA10w" Name="resources.I_Resource" parentClass="//@simulationDescription/@simulationdata/@objectclass.22/@objectClassInheritance" objectclassoperation="_RAMBIgC8EemnkdGScLA10w _RAMBJgC8EemnkdGScLA10w _RAMBKAC8EemnkdGScLA10w _RAMBKgC8EemnkdGScLA10w _RAMBLQC8EemnkdGScLA10w _RAMBMAC8EemnkdGScLA10w _RAMBMgC8EemnkdGScLA10w" instantiable="false">
+        <objectClassInheritance Name="resources.I_Resource" childClasses="_wAIYswE4EemnkdGScLA10w _B9OQZwE5EemnkdGScLA10w _5bPBQAE4EemnkdGScLA10w _3zWglwE8EemnkdGScLA10w"/>
+      </objectclass>
+      <objectclass id="_2DdNFwE4EemnkdGScLA10w" Name="resources.ResourceManageableNull" parentClass="//@simulationDescription/@simulationdata/@objectclass.26/@objectClassInheritance"/>
+      <objectclass id="_3zWglwE8EemnkdGScLA10w" Name="resources.I_FileStorage" parentClass="//@simulationDescription/@simulationdata/@objectclass.23/@objectClassInheritance" objectclassoperation="_RAMBRgC8EemnkdGScLA10w _RAMBSAC8EemnkdGScLA10w _RAMBSgC8EemnkdGScLA10w _RAMBTQC8EemnkdGScLA10w _RAMBUAC8EemnkdGScLA10w _RAMBUwC8EemnkdGScLA10w _RAMBVQC8EemnkdGScLA10w _RAMBVwC8EemnkdGScLA10w _RAMBWgC8EemnkdGScLA10w _RAMBXQC8EemnkdGScLA10w _RAMBYAC8EemnkdGScLA10w _RAMBYwC8EemnkdGScLA10w _RAMBZgC8EemnkdGScLA10w _RAMBaQC8EemnkdGScLA10w _RAMBbAC8EemnkdGScLA10w _RAMBbwC8EemnkdGScLA10w _RAMBcgC8EemnkdGScLA10w _RAMBdgC8EemnkdGScLA10w _RAMBeQC8EemnkdGScLA10w" instantiable="false">
+        <objectClassInheritance Name="resources.I_FileStorage" childClasses="_HC2Q9wE6EemnkdGScLA10w"/>
+        <data id="_RAMBRAC8EemnkdGScLA10w" Name="maxTransferRate" datatype="_lpWykQC-EemnkdGScLA10w"/>
+        <data id="_RAMBRQC8EemnkdGScLA10w" Name="latency" datatype="_lpWykQC-EemnkdGScLA10w"/>
+      </objectclass>
+      <objectclass id="_5bPBQAE4EemnkdGScLA10w" Name="resources.I_ResourceManageable" parentClass="//@simulationDescription/@simulationdata/@objectclass.23/@objectClassInheritance" objectclassoperation="_R_eW4BXQEemC-aG165HpOg _cGlw0BXQEemC-aG165HpOg _xbcOgBXQEemC-aG165HpOg _tIekgBXQEemC-aG165HpOg _nW_uEBXQEemC-aG165HpOg _0q-FkBXQEemC-aG165HpOg _46EjQBXQEemC-aG165HpOg _YqD_kBXQEemC-aG165HpOg _jXqKsBXQEemC-aG165HpOg _MI-dkBXQEemC-aG165HpOg" instantiable="false">
+        <objectClassInheritance Name="resources.I_ResourceManageable" childClasses="_2DdNFwE4EemnkdGScLA10w _8NfmFwE7EemnkdGScLA10w"/>
+      </objectclass>
+      <objectclass id="_3zWglwE8EemnkdGScLA11w" Name="resources.I_Resourceful" objectclassoperation="_RACREgC8EemnkdGScLA10w _RACRFQC8EemnkdGScLA10w" instantiable="false">
+        <objectClassInheritance Name="resources.I_Resourceful" childClasses="_ZIokRwF_EemnkdGScLA10w"/>
+      </objectclass>
+      <objectclass id="_B9OQZwE5EemnkdGScLA10w" Name="resources.A_ResourceAbstract" parentClass="//@simulationDescription/@simulationdata/@objectclass.23/@objectClassInheritance" objectclassoperation="_oTRlQAE5EemnkdGScLA10w _plieYAE5EemnkdGScLA10w _nIkFoAE5EemnkdGScLA10w" instantiable="false">
+        <objectClassInheritance Name="resources.A_ResourceAbstract" childClasses="_ZIB_oAE4EemnkdGScLA10w"/>
+      </objectclass>
+      <objectclass id="_F4xDdwE6EemnkdGScLA10w" Name="resources.SanStorage" parentClass="//@simulationDescription/@simulationdata/@objectclass.30/@objectClassInheritance" objectclassoperation="_O6h-4AE6EemnkdGScLA10w">
+        <data id="_8KnGqQE6EemnkdGScLA10w" Name="bandwidth" datatype="_lpWykQC-EemnkdGScLA10w"/>
+        <data id="__9EroAE6EemnkdGScLA10w" Name="networkLatency" datatype="_lpWykQC-EemnkdGScLA10w"/>
+      </objectclass>
+      <objectclass id="_HC2Q9wE6EemnkdGScLA10w" Name="resources.HarddriveStorage" parentClass="//@simulationDescription/@simulationdata/@objectclass.25/@objectClassInheritance" objectclassoperation="_KPfrwAE9EemnkdGScLA10w">
+        <objectClassInheritance Name="resources.HarddriveStorage" childClasses="_F4xDdwE6EemnkdGScLA10w"/>
+        <data id="__ZucEAE8EemnkdGScLA10w" Name="DEF_SEEK_TIME_SECS" semantics="0.009" constant="true" datatype="_lpWykQC-EemnkdGScLA10w"/>
+        <data id="_DuVr4AE9EemnkdGScLA10w" Name="DEF_LATENCY_SECS" semantics="0.00417" constant="true" datatype="_lpWykQC-EemnkdGScLA10w"/>
+        <data id="_c4YScAE9EemnkdGScLA10w" Name="seekTime" datatype="_lpWykQC-EemnkdGScLA10w"/>
+        <data id="_AfG-0BXNEemC-aG165HpOg" Name="avgSeekTime" datatype="_lpWykQC-EemnkdGScLA10w"/>
+      </objectclass>
+      <objectclass id="_EcVsRwE7EemnkdGScLA10w" Name="resources.Ram" parentClass="//@simulationDescription/@simulationdata/@objectclass.20/@objectClassInheritance" objectclassoperation="_MBlmYAE7EemnkdGScLA10w"/>
+      <objectclass id="_R9_6gAE7EemnkdGScLA10w" Name="resources.Processor" parentClass="//@simulationDescription/@simulationdata/@objectclass.20/@objectClassInheritance" objectclassoperation="_gwbM8AE7EemnkdGScLA10w _v4D6cAE7EemnkdGScLA10w _3lHswAE7EemnkdGScLA10w">
+        <data id="_y9xHKQE7EemnkdGScLA10w" Name="mips" datatype="_lpWykQC-EemnkdGScLA10w"/>
+      </objectclass>
+      <objectclass id="_8NfmFwE7EemnkdGScLA10w" Name="resources.I_Pe" semantics="" parentClass="//@simulationDescription/@simulationdata/@objectclass.26/@objectClassInheritance //@simulationDescription/@simulationdata/@objectclass.41/@objectClassInheritance" objectclassoperation="_RAMBOQC8EemnkdGScLA10w _RAMBOwC8EemnkdGScLA10w _RAMBPQC8EemnkdGScLA10w _RAMBPwC8EemnkdGScLA10w _RAMBQQC8EemnkdGScLA10w" instantiable="false">
+        <objectClassInheritance Name="resources.I_Pe" childClasses="_9joSlwE7EemnkdGScLA10w _DKt25wE8EemnkdGScLA10w"/>
+        <data xsi:type="DataSpecification:EnumTypedData" id="_RAMBNQC8EemnkdGScLA10w" Name="enum Status" semantics="" datatype="_xtQW8QE6EemnkdGScLA10w" enumtype="_i6F2MxXWEemC-aG165HpOg"/>
+        <data id="_RAMBNgC8EemnkdGScLA10w" Name="mipsCapacity" datatype="_lpWykQC-EemnkdGScLA10w"/>
+        <data id="_RAMBNwC8EemnkdGScLA10w" Name="peProvisioner" datatype="_tNeHBgE8EemnkdGScLA10w"/>
+      </objectclass>
+      <objectclass id="_DKt25wE8EemnkdGScLA10w" Name="resources.PeSimple" semantics="" parentClass="//@simulationDescription/@simulationdata/@objectclass.33/@objectClassInheritance //@simulationDescription/@simulationdata/@objectclass.20/@objectClassInheritance" objectclassoperation="_Ylt_4AE8EemnkdGScLA10w"/>
+      <objectclass id="_9joSlwE7EemnkdGScLA10w" Name="resources.PeNull" semantics="" parentClass="//@simulationDescription/@simulationdata/@objectclass.33/@objectClassInheritance //@simulationDescription/@simulationdata/@objectclass.20/@objectClassInheritance"/>
+      <objectclass id="_jpahZwE9EemnkdGScLA10w" Name="resources.File" objectclassoperation="_uKghkAE9EemnkdGScLA10w _3wF7wAE9EemnkdGScLA10w _Esgu4AE-EemnkdGScLA10w _HWx8wAE-EemnkdGScLA10w _RQ3AQAE-EemnkdGScLA10w _PfJLAAE-EemnkdGScLA10w _e8EMAAE-EemnkdGScLA10w _zxLZsAE-EemnkdGScLA10w _LNodEAE_EemnkdGScLA10w _RC4ZMAE_EemnkdGScLA10w">
+        <data id="_lUGhmQE9EemnkdGScLA10w" Name="NOT_REGISTERED" semantics="-1" constant="true" datatype="_WsB3oQC-EemnkdGScLA10w"/>
+        <data id="_ls1xsAE9EemnkdGScLA10w" Name="TYPE_UNKNOWN" semantics="0" constant="true" datatype="_WsB3oQC-EemnkdGScLA10w"/>
+        <data id="_khCQeQE-EemnkdGScLA10w" Name="name" datatype="_xtQW8QE6EemnkdGScLA10w"/>
+        <data id="_pt5W4AE-EemnkdGScLA10w" Name="ownerName" semantics="attribute.owenerName" datatype="_xtQW8QE6EemnkdGScLA10w"/>
+        <data id="_vbo80AE-EemnkdGScLA10w" Name="fileSize" datatype="_WsB3oQC-EemnkdGScLA10w"/>
+        <data id="_7jwlOQE-EemnkdGScLA10w" Name="time" datatype="_lpWykQC-EemnkdGScLA10w"/>
+        <data id="_8_394AE-EemnkdGScLA10w" Name="registrationID" datatype="_WsB3oQC-EemnkdGScLA10w"/>
+        <data id="__zGTcAE-EemnkdGScLA10w" Name="type" datatype="_WsB3oQC-EemnkdGScLA10w"/>
+        <data id="_DcQLcAE_EemnkdGScLA10w" Name="checksum" datatype="_WsB3oQC-EemnkdGScLA10w"/>
+        <data id="_HZjHcAE_EemnkdGScLA10w" Name="cost" datatype="_lpWykQC-EemnkdGScLA10w"/>
+        <data id="_dZLniQE_EemnkdGScLA10w" Name="masterCopy" datatype="_6xudkQE5EemnkdGScLA10w"/>
+        <data id="_evAyAAE_EemnkdGScLA10w" Name="deleted" datatype="_6xudkQE5EemnkdGScLA10w"/>
+        <data id="_mdT6cAE_EemnkdGScLA10w" Name="transactionTime" datatype="_lpWykQC-EemnkdGScLA10w"/>
+        <data id="_xlLmwAE_EemnkdGScLA10w" Name="datacenter" datatype="_uZhjFgE_EemnkdGScLA10w"/>
+        <data id="_AVdSkBXYEemC-aG165HpOg" Name="attribute" datatype="_XUevlgE-EemnkdGScLA10w"/>
+      </objectclass>
+      <objectclass id="_VmeVpwE-EemnkdGScLA10w" Name="resources.FileAttribute" objectclassoperation="_sfo-YAFBEemnkdGScLA10w _ynuW8AFBEemnkdGScLA10w _Jb-x4AFCEemnkdGScLA10w _ZxVPsAFCEemnkdGScLA10w _vmmS0AFCEemnkdGScLA10w _2nCPsAFCEemnkdGScLA10w">
+        <data id="_8-wcOQFBEemnkdGScLA10w" Name="creationTime" datatype="_XuMREQEzEemnkdGScLA10w"/>
+        <data id="_EwesEAFCEemnkdGScLA10w" Name="ownerName" datatype="_xtQW8QE6EemnkdGScLA10w"/>
+        <data id="_WZ3kqQFCEemnkdGScLA10w" Name="fileSize" semantics="in MBytes" datatype="_WsB3oQC-EemnkdGScLA10w"/>
+        <data id="_gLTpgAFCEemnkdGScLA10w" Name="updateTime" datatype="_lpWykQC-EemnkdGScLA10w"/>
+        <data id="_hvojAAFCEemnkdGScLA10w" Name="registrationId" datatype="_WsB3oQC-EemnkdGScLA10w"/>
+        <data id="_kQpuQAFCEemnkdGScLA10w" Name="type" datatype="_WsB3oQC-EemnkdGScLA10w"/>
+        <data id="_o5jzEAFCEemnkdGScLA10w" Name="checksum" datatype="_WsB3oQC-EemnkdGScLA10w"/>
+        <data id="_p_PowAFCEemnkdGScLA10w" Name="cost" datatype="_lpWykQC-EemnkdGScLA10w"/>
+        <data id="_yvjAwAFCEemnkdGScLA10w" Name="masterCopy" datatype="_6xudkQE5EemnkdGScLA10w"/>
+      </objectclass>
+      <objectclass id="_2UGM9wE_EemnkdGScLA10w" Name="resources.DatacenterStorage" objectclassoperation="_9g38sAE_EemnkdGScLA10w _cBQ84AFAEemnkdGScLA10w _bd2t0AFAEemnkdGScLA10w _wR8AwAFAEemnkdGScLA10w _7KSDUAFAEemnkdGScLA10w _Km_B4AFBEemnkdGScLA10w">
+        <data id="_rWA5UAFAEemnkdGScLA10w" Name="storageList" datatype="_QqG3ZAFAEemnkdGScLA10w"/>
+        <data id="_y4vq-QFAEemnkdGScLA10w" Name="datacenter" datatype="_uZhjFgE_EemnkdGScLA10w"/>
+      </objectclass>
+      <objectclass id="_X9r9RwFBEemnkdGScLA10w" Name="resources.Bandwith" parentClass="//@simulationDescription/@simulationdata/@objectclass.20/@objectClassInheritance" objectclassoperation="_ixKt8AFBEemnkdGScLA10w"/>
+      <objectclass id="__ms3lwF9EemnkdGScLA10w" Name="core.I_Simulation" objectclassoperation="_RAMByAC8EemnkdGScLA10w _RAMBygC8EemnkdGScLA10w _RAMBywC8EemnkdGScLA10w _RAMB0QC8EemnkdGScLA10w _RAMB1QC8EemnkdGScLA10w _RAMB1wC8EemnkdGScLA10w _RAMB2QC8EemnkdGScLA10w _RAMB2wC8EemnkdGScLA10w _RAMB3wC8EemnkdGScLA10w _RAMB4QC8EemnkdGScLA10w _RAMB4wC8EemnkdGScLA10w _RAMB5QC8EemnkdGScLA10w _RAMB5wC8EemnkdGScLA10w _RAMB6QC8EemnkdGScLA10w _RAMB6wC8EemnkdGScLA10w _RAMB7gC8EemnkdGScLA10w _RAMB8QC8EemnkdGScLA10w _RAMB9AC8EemnkdGScLA10w _RAMB9wC8EemnkdGScLA10w _RAMB-gC8EemnkdGScLA10w _RAMB_QC8EemnkdGScLA10w _RAMCAAC8EemnkdGScLA10w _RAMCAwC8EemnkdGScLA10w _RAMCBgC8EemnkdGScLA10w _RAMCCAC8EemnkdGScLA10w _RAMCCgC8EemnkdGScLA10w _RAMCDQC8EemnkdGScLA10w _RAMCDwC8EemnkdGScLA10w _RAMCEwC8EemnkdGScLA10w _RAMCFQC8EemnkdGScLA10w _RAMCGwC8EemnkdGScLA10w _RAMCHQC8EemnkdGScLA10w _RAMCIwC8EemnkdGScLA10w _RAMCJQC8EemnkdGScLA10w _RAMCKgC8EemnkdGScLA10w _RAMCLAC8EemnkdGScLA10w _RAMCLgC8EemnkdGScLA10w _RAMCMQC8EemnkdGScLA10w _RAMCNAC8EemnkdGScLA10w _RAMCOAC8EemnkdGScLA10w _RAMBzQC8EemnkdGScLA10w _RAMBzQC8EemnkdGScLA10w _eXZtIBXhEemC-aG165HpOg" instantiable="false">
+        <objectClassInheritance Name="core.I_Simulation" childClasses="_A6YF9wF-EemnkdGScLA10w _70-ONwGEEemnkdGScLA10w"/>
+        <data id="_RAMBxgC8EemnkdGScLA10w" Name="ANY_EVT" semantics="ANY_EVT = evt -> true; " datatype="_WN1DNQGDEemnkdGScLA10w"/>
+        <data id="_RAMBxwC8EemnkdGScLA10w" Name="NetworkTopology networkTopology"/>
+      </objectclass>
+      <objectclass id="_kzrFVwYwEemnkdGScLA10w" Name="core.I_Identifiable" objectclassoperation="_gZiywBXbEemC-aG165HpOg" instantiable="false">
+        <objectClassInheritance Name="core.I_Identifiable">
+          <childClasses href="#_WGjwpwYwEemnkdGScLA10w"/>
+          <childClasses href="#_Yy3zpwY1EemnkdGScLA10w"/>
+          <childClasses href="#_RAMBiwC8EemnkdGScLA10w"/>
+          <childClasses href="#_RAMBgwC8EemnkdGScLA10w"/>
+          <childClasses href="Network.simulationfeature#_xMx3lxT4EemC-aG165HpOg"/>
+          <childClasses href="#_8NfmFwE7EemnkdGScLA10w"/>
+          <childClasses href="Network.simulationfeature#_MPHxxxECEemlUMLbVV28Ug"/>
+        </objectClassInheritance>
+      </objectclass>
+      <objectclass id="_RAMBgwC8EemnkdGScLA10w" Name="core.I_Nameable" parentClass="//@simulationDescription/@simulationdata/@objectclass.41/@objectClassInheritance" objectclassoperation="_RAMBhAC8EemnkdGScLA10w" instantiable="false">
+        <objectClassInheritance Name="core.I_Nameable" childClasses="_Q1j61wF_EemnkdGScLA10w"/>
+      </objectclass>
+      <objectclass id="_RAMBnQC8EemnkdGScLA10w" Name="core.I_Delayable" instantiable="false">
+        <objectClassInheritance id="_RAMBnQ8CEemnkdGScLA10w" Name="core.I_Delayable" childClasses="_euHDBwY1EemnkdGScLA10w"/>
+        <data id="_RAMBngC8EemnkdGScLA10w" Name="submissionDelay" datatype="_lpWykQC-EemnkdGScLA10w"/>
+      </objectclass>
+      <objectclass id="_RAMBiwC8EemnkdGScLA10w" Name="core.I_ChangeableId" parentClass="//@simulationDescription/@simulationdata/@objectclass.41/@objectClassInheritance" objectclassoperation="_RAMBjAC8EemnkdGScLA10w" instantiable="false">
+        <objectClassInheritance Name="core.I_ChangeableId" childClasses="_euHDBwY1EemnkdGScLA10w _ZIokRwF_EemnkdGScLA10w"/>
+      </objectclass>
+      <objectclass id="_Yy3zpwY1EemnkdGScLA10w" Name="core.I_UniquelyIdentifiable" parentClass="//@simulationDescription/@simulationdata/@objectclass.41/@objectClassInheritance" objectclassoperation="_RAMBfQC8EemnkdGScLA10w _RAMBgQC8EemnkdGScLA10w" instantiable="false">
+        <objectClassInheritance Name="core.I_UniquelyIdentifiable" childClasses="_gqjAtwE2EemnkdGScLA10w"/>
+      </objectclass>
+      <objectclass id="_euHDBwY1EemnkdGScLA10w" Name="core.I_CustomerEntity" semantics="" parentClass="//@simulationDescription/@simulationdata/@objectclass.44/@objectClassInheritance _RAMBnQ8CEemnkdGScLA10w" instantiable="false">
+        <objectClassInheritance Name="core.I_CustomerEntity" childClasses="_KDEXVwY1EemnkdGScLA10w _gqjAtwE2EemnkdGScLA10w"/>
+        <data id="_RAMBigC8EemnkdGScLA10w" Name="broker" datatype="_rrzv5gYyEemnkdGScLA10w"/>
+      </objectclass>
+      <objectclass id="_ZIokRwF_EemnkdGScLA10w" Name="core.I_Machine" semantics="" parentClass="//@simulationDescription/@simulationdata/@objectclass.44/@objectClassInheritance //@simulationDescription/@simulationdata/@objectclass.27/@objectClassInheritance" objectclassoperation="_RAMBjwC8EemnkdGScLA10w _RAMBkQC8EemnkdGScLA10w _RAMBkwC8EemnkdGScLA10w _RAMBlQC8EemnkdGScLA10w _RAMBlwC8EemnkdGScLA10w _RAMBmQC8EemnkdGScLA10w _RAMBmwC8EemnkdGScLA10w" instantiable="false">
+        <objectClassInheritance Name="core.I_Machine" childClasses="_cGuGBwF_EemnkdGScLA10w _gqjAtwE2EemnkdGScLA10w _PGD1pwGLEemnkdGScLA10w"/>
+      </objectclass>
+      <objectclass id="_gqsnhwF_EemnkdGScLA10w" Name="core.CloudSimTags">
+        <data id="_iHzesAF_EemnkdGScLA10w" Name="END_OF_SIMULATION" semantics="-1" constant="true" datatype="_WsB3oQC-EemnkdGScLA10w"/>
+        <data id="_il1egAF_EemnkdGScLA10w" Name="DATACENTER_REGISTRATION_REQUEST" semantics="BASE + 2" constant="true" datatype="_WsB3oQC-EemnkdGScLA10w"/>
+        <data id="_qC1bkAF_EemnkdGScLA10w" Name="DATACENTER_LIST_REQUEST" semantics="BASE + 4" constant="true" datatype="_WsB3oQC-EemnkdGScLA10w"/>
+        <data id="_qYC2kAF_EemnkdGScLA10w" Name="REGISTER_REGIONAL_CIS" semantics="BASE + 13" constant="true" datatype="_WsB3oQC-EemnkdGScLA10w"/>
+        <data id="_rQyccAF_EemnkdGScLA10w" Name="REQUEST_REGIONAL_CIS" semantics="BASE + 14" constant="true" datatype="_WsB3oQC-EemnkdGScLA10w"/>
+        <data id="_16C6IAF_EemnkdGScLA10w" Name="ICMP_PKT_SUBMIT" semantics="NETBASE + 5" constant="true" datatype="_WsB3oQC-EemnkdGScLA10w"/>
+        <data id="_1mUF0AF_EemnkdGScLA10w" Name="ICMP_PKT_RETURN" semantics="NETBASE + 6" constant="true" datatype="_WsB3oQC-EemnkdGScLA10w"/>
+        <data id="_zuJDQAF_EemnkdGScLA10w" Name="CLOUDLET_RETURN" semantics="BASE + 15" constant="true" datatype="_WsB3oQC-EemnkdGScLA10w"/>
+        <data id="_BW-3gAGAEemnkdGScLA10w" Name="CLOUDLET_SUBMIT" semantics="BASE + 16" constant="true" datatype="_WsB3oQC-EemnkdGScLA10w"/>
+        <data id="_DZhXAAGAEemnkdGScLA10w" Name="CLOUDLET_SUBMIT_ACK" semantics="BASE + 17" constant="true" datatype="_WsB3oQC-EemnkdGScLA10w"/>
+        <data id="_D5hswAGAEemnkdGScLA10w" Name="CLOUDLET_CANCEL" semantics="BASE + 18" constant="true" datatype="_WsB3oQC-EemnkdGScLA10w"/>
+        <data id="_K95ucAGAEemnkdGScLA10w" Name="CLOUDLET_PAUSE" semantics="BASE + 19" constant="true" datatype="_WsB3oQC-EemnkdGScLA10w"/>
+        <data id="_MGmb4AGAEemnkdGScLA10w" Name="CLOUDLET_PAUSE_ACK" semantics="BASE + 20" datatype="_WsB3oQC-EemnkdGScLA10w"/>
+        <data id="_MfLT8AGAEemnkdGScLA10w" Name="CLOUDLET_RESUME" semantics="BASE + 21" constant="true" datatype="_WsB3oQC-EemnkdGScLA10w"/>
+        <data id="_VG-QMAGAEemnkdGScLA10w" Name="CLOUDLET_RESUME_ACK" semantics="BASE + 22" constant="true" datatype="_WsB3oQC-EemnkdGScLA10w"/>
+        <data id="_TJiTIAGAEemnkdGScLA10w" Name="CLOUDLET_READY" semantics="BASE + 23" constant="true" datatype="_WsB3oQC-EemnkdGScLA10w"/>
+        <data id="_cA_cAAGAEemnkdGScLA10w" Name="CLOUDLET_FAIL" semantics="BASE + 24" constant="true" datatype="_WsB3oQC-EemnkdGScLA10w"/>
+        <data id="_bo66QAGAEemnkdGScLA10w" Name="CLOUDLET_FINISH" semantics="-(BASE + 25)" constant="true" datatype="_WsB3oQC-EemnkdGScLA10w"/>
+        <data id="_bLQt4AGAEemnkdGScLA10w" Name="CLOUDLET_KILL" semantics="BASE + 26" constant="true" datatype="_WsB3oQC-EemnkdGScLA10w"/>
+        <data id="_iMq7IAGAEemnkdGScLA10w" Name="CLOUDLET_UPDATE_ATTRIBUTES" semantics="BASE + 27" constant="true" datatype="_WsB3oQC-EemnkdGScLA10w"/>
+        <data id="_iMq7IAGAEemnkdGScLA31w" Name="VM_CREATE" semantics="BASE + 31" constant="true" datatype="_WsB3oQC-EemnkdGScLA10w"/>
+        <data id="_iMq7IAGAEemnkdGScLA32w" Name="VM_CREATE_ACK" semantics="BASE + 32" constant="true" datatype="_WsB3oQC-EemnkdGScLA10w"/>
+        <data id="_iMq7IAGAEemnkdGScLA33w" Name="VM_DESTROY" semantics="BASE + 33" constant="true" datatype="_WsB3oQC-EemnkdGScLA10w"/>
+        <data id="_iMq7IAGAEemnkdGScLA34w" Name="VM_DESTROY_ACK" semantics="BASE + 34" constant="true" datatype="_WsB3oQC-EemnkdGScLA10w"/>
+        <data id="_iMq7IAGAEemnkdGScLA35w" Name="VM_MIGRATE" semantics="BASE + 35" constant="true" datatype="_WsB3oQC-EemnkdGScLA10w"/>
+        <data id="_iMq7IAGAEemnkdGScLA36w" Name="VM_MIGRATE_ACK" semantics="BASE + 36" constant="true" datatype="_WsB3oQC-EemnkdGScLA10w"/>
+        <data id="_iMq7IAGAEemnkdGScLA41w" Name="VM_UPDATE_CLOUDLET_PROCESSING" semantics="BASE + 41" constant="true" datatype="_WsB3oQC-EemnkdGScLA10w"/>
+        <data id="_iMq7IAGAEemnkdGScLA42w" Name="VM_VERTICAL_SCALING" semantics="BASE + 42" constant="true" datatype="_WsB3oQC-EemnkdGScLA10w"/>
+        <data id="_iMq7IAGAEemnkdGScLA43w" Name="NETWORK_EVENT_UP" semantics="BASE + 43" constant="true" datatype="_WsB3oQC-EemnkdGScLA10w"/>
+        <data id="_iMq7IAGAEemnkdGScLA44w" Name="NETWORK_EVENT_SEND" semantics="BASE + 44" constant="true" datatype="_WsB3oQC-EemnkdGScLA10w"/>
+        <data id="_iMq7IAGAEemnkdGScLA45w" Name="NETWORK_HOST_REGISTER" semantics="BASE + 45" constant="true" datatype="_WsB3oQC-EemnkdGScLA10w"/>
+        <data id="_iMq7IAGAEemnkdGScLA46w" Name="NETWORK_EVENT_DOWN" semantics="BASE + 46" constant="true" datatype="_WsB3oQC-EemnkdGScLA10w"/>
+        <data id="_iMq7IAGAEemnkdGScLA47w" Name="NETWORK_EVENT_HOST" semantics="BASE + 47" constant="true" datatype="_WsB3oQC-EemnkdGScLA10w"/>
+        <data id="_iMq7IAGAEemnkdGScLA48w" Name="FAILURE" semantics="BASE + 48" constant="true" datatype="_WsB3oQC-EemnkdGScLA10w"/>
+        <data id="_iMq7IAGAEemnkGScLA149w" Name="HOST_FAILURE" semantics="FAILURE + 1" constant="true" datatype="_WsB3oQC-EemnkdGScLA10w"/>
+        <data id="_iMq7IAGAEemnkdGScLA60w" Name="HOST_ADD" semantics="BASE + 60" constant="true" datatype="_WsB3oQC-EemnkdGScLA10w"/>
+        <data id="_iMq7IAGAEemnkdGScLA61w" Name="HOST_REMOVE" semantics="BASE + 61" constant="true" datatype="_WsB3oQC-EemnkdGScLA10w"/>
+      </objectclass>
+      <objectclass id="_Q1j61wF_EemnkdGScLA10w" Name="core.I_SimEntity" semantics="extends  Cloneable, Runnable, Comparable&lt;SimEntity>" parentClass="//@simulationDescription/@simulationdata/@objectclass.42/@objectClassInheritance" objectclassoperation="_RAMBogC8EemnkdGScLA10w _RAMBpQC8EemnkdGScLA10w _RAMBpwC8EemnkdGScLA10w _RAMBqQC8EemnkdGScLA10w _RAMBqwC8EemnkdGScLA10w _RAMBrQC8EemnkdGScLA10w _RAMBsgC8EemnkdGScLA10w _RAMBtQC8EemnkdGScLA10w _RAMBuwC8EemnkdGScLA10w _RAMBwAC8EemnkdGScLA10w _RAMBwQC8EemnkdGScLA10w _RAMBwgC8EemnkdGScLA10w" instantiable="false">
+        <objectClassInheritance Name="core.I_SimEntity">
+          <childClasses href="#_TDhnNwF_EemnkdGScLA10w"/>
+          <childClasses href="#_arE8hwGBEemnkdGScLA10w"/>
+          <childClasses href="#_r6XZBwE_EemnkdGScLA10w"/>
+          <childClasses href="Network.simulationfeature#_3teR4xBtEemCjdCvosaTnQ"/>
+        </objectClassInheritance>
+        <data xsi:type="DataSpecification:EnumTypedData" id="_RAMBoAC8EemnkdGScLA10w" Name="enum State" semantics="enum State {RUNNABLE, WAITING, HOLDING, FINISHED}" datatype="_xtQW8QE6EemnkdGScLA10w" enumtype="_v7-T8xXdEemC-aG165HpOg"/>
+        <data id="_FoJsgBXeEemC-aG165HpOg" Name="simulation" datatype="_VhhMRgGCEemnkdGScLA10w"/>
+      </objectclass>
+      <objectclass id="_arE8hwGBEemnkdGScLA10w" Name="core.A_CloudSimEntity" parentClass="//@simulationDescription/@simulationdata/@objectclass.49/@objectClassInheritance" objectclassoperation="_OxjUUAGCEemnkdGScLA10w _aAWvEAGCEemnkdGScLA10w _aAWvEAGCElmnkdGScLA10w _aAWvEAAECemnkdGScLA10w _OspJsAGDEemnkdGScLA10w _RZYcwAGDEemnkdGScLA10w _xOnI8AGDEemnkdGScLA10w _xjJ1kAGDEemnkdGScLA10w _G9q2YAGEEemnkdGScLA10w _NEC-wAGEEemnkdGScLA10w" instantiable="false">
+        <objectClassInheritance Name="core.A_CloudSimEntity">
+          <childClasses href="#_a1eR4AGFEemnkdGScLA10w"/>
+          <childClasses href="#_lQee1wGKEemnkdGScLA10w"/>
+          <childClasses href="#_x6q7VwYxEemnkdGScLA10w"/>
+          <childClasses href="Network.simulationfeature#_gTDVxxDkEemlUMLbVV28Ug"/>
+        </objectClassInheritance>
+        <data id="_Y5RgUAGEEemnkdGScLA10w" Name="state" datatype="_v7-T8xXdEemC-aG165HpOg"/>
+      </objectclass>
+      <objectclass id="_70-ONwGEEemnkdGScLA10w" Name="core.CloudSim" parentClass="//@simulationDescription/@simulationdata/@objectclass.40/@objectClassInheritance" objectclassoperation="_OjT8oAGFEemnkdGScLA10w">
+        <data id="_9fyxQAGEEemnkdGScLA10w" Name="VERSION" semantics="VERSION=&quot;4.0.1&quot;" datatype="_xtQW8QE6EemnkdGScLA10w"/>
+      </objectclass>
+      <objectclass id="_a1eR4AGFEemnkdGScLA10w" Name="core.CloudInformationService" parentClass="//@simulationDescription/@simulationdata/@objectclass.50/@objectClassInheritance" objectclassoperation="_kouUkAGFEemnkdGScLA10w _zjm_gAGFEemnkdGScLA10w"/>
+      <objectclass id="_cGuGBwF_EemnkdGScLA10w" Name="core.MachineNull" parentClass="//@simulationDescription/@simulationdata/@objectclass.47/@objectClassInheritance"/>
+      <objectclass id="_A6YF9wF-EemnkdGScLA10w" Name="core.SimulationNull" parentClass="//@simulationDescription/@simulationdata/@objectclass.40/@objectClassInheritance"/>
+      <objectclass id="_TDhnNwF_EemnkdGScLA10w" Name="core.SimEntityNull" parentClass="//@simulationDescription/@simulationdata/@objectclass.49/@objectClassInheritance"/>
+      <objectclass id="_cjvcZwGDEemnkdGScLA10w" Name="core.events.I_SimEvent" semantics="extends Comparable&lt;SimEvent>, EventInfo" objectclassoperation="_RAMCQwC8EemnkdGScLA10w _RAMCRQC8EemnkdGScLA10w _RAMCRwC8EemnkdGScLA10w" instantiable="false">
+        <objectClassInheritance Name="core.events.I_SimEvent" childClasses="_n22oBwGGEemnkdGScLA10w _2s-uxwGGEemnkdGScLA10w"/>
+        <data id="_RAMCPQC8EemnkdGScLA10w" Name="simulation" semantics="" datatype="_GIyAVgGFEemnkdGScLA10w"/>
+        <data id="_RAMCPgC8EemnkdGScLA10w" Name="serial" semantics="" datatype="_XuMREQEzEemnkdGScLA10w"/>
+        <data xsi:type="DataSpecification:EnumTypedData" id="_RAMCPwC8EemnkdGScLA10w" Name="enum Type" semantics="enum Type {NULL, SEND, HOLD_DONE, CREATE} getType()" datatype="_xtQW8QE6EemnkdGScLA10w" enumtype="_OzbxYwGHEemnkdGScLA10w"/>
+        <data id="_RAMCQQC8EemnkdGScLA10w" Name="destination" semantics="" datatype="_jT0ehgGCEemnkdGScLA10w"/>
+        <data id="_RAMCQgC8EemnkdGScLA10w" Name="source" semantics="" datatype="_jT0ehgGCEemnkdGScLA10w"/>
+      </objectclass>
+      <objectclass id="_n22oBwGGEemnkdGScLA10w" Name="core.events.SimEventNull" parentClass="//@simulationDescription/@simulationdata/@objectclass.56/@objectClassInheritance"/>
+      <objectclass id="_y2halwGGEemnkdGScLA10w" Name="core.events.I_EventQueue" objectclassoperation="_RAMCSgC8EemnkdGScLA10w _RAMCTAC8EemnkdGScLA10w _RAMCTgC8EemnkdGScLA10w _RAMCUAC8EemnkdGScLA10w _RAMCUgC8EemnkdGScLA10w _RAMCVAC8EemnkdGScLA10w" instantiable="false">
+        <objectClassInheritance Name="core.events.I_EventQueue" childClasses="_P8f1xwGIEemnkdGScLA10w _851AsAGIEemnkdGScLA10w"/>
+      </objectclass>
+      <objectclass id="_2s-uxwGGEemnkdGScLA10w" Name="core.events.CloudSimEvent" parentClass="//@simulationDescription/@simulationdata/@objectclass.56/@objectClassInheritance" objectclassoperation="_DY6O1AGHEemnkdGScLA10w _DY6O1AGHEemnmkGScLA10w _DY6O1AGHlEmnkdGScLA10w _DY6O1AGHlLmnkdGScLA10w _DY6O1AGHLlmnkdGScLA10w _DY6U1AGHEemnkdGScLA10w"/>
+      <objectclass id="_P8f1xwGIEemnkdGScLA10w" Name="core.events.DeferredQueue" parentClass="//@simulationDescription/@simulationdata/@objectclass.58/@objectClassInheritance" objectclassoperation="_4edBgAGIEemnkdGScLA10w _0hakMAGIEemnkdGScLA10w"/>
+      <objectclass id="_851AsAGIEemnkdGScLA10w" Name="core.events.FutureQueue" parentClass="//@simulationDescription/@simulationdata/@objectclass.58/@objectClassInheritance" objectclassoperation="_DDCakAGJEemnkdGScLA10w _PvEBQAGJEemnkdGScLA10w _VLa8QAGJEemnkdGScLA10w _fpdBYAGJEemnkdGScLA10w _4edBgAGIEemnkdGScLA10w"/>
+      <objectclass id="_4zCU9wGJEemnkdGScLA10w" Name="core.events.PredicateType" semantics=" implements Predicate&lt;SimEvent>" objectclassoperation="_9-4HsAGJEemnkdGScLA10w"/>
+      <objectclass id="_9-WGxwGKEemnkdGScLA10w" Name="allocationpolicies.I_VmAllocationPolicy" objectclassoperation="_RAMDqwC8EemnkdGScLA10w _RAMDrwC8EemnkdGScLA10w _RAMDsQC8EemnkdGScLA10w _RAMDtAC8EemnkdGScLA10w _RAMDtwC8EemnkdGScLA10w _RAMDuQC8EemnkdGScLA10w _RAMDvAC8EemnkdGScLA10w" instantiable="false">
+        <objectClassInheritance Name="allocationpolicies.I_VmAllocationPolicy" childClasses="_JsUPxwYrEemnkdGScLA10w _SUmUNwYrEemnkdGScLA10w _ViyO1wYoEemnkdGScLA10w _iPifBwYMEemnkdGScLA10w"/>
+        <data id="_RAMDqgC8EemnkdGScLA10w" Name="datacenter" datatype="_uZhjFgE_EemnkdGScLA10w"/>
+      </objectclass>
+      <objectclass id="_JsUPxwYrEemnkdGScLA10w" Name="allocationpolicies.VmAllocationPolicyNull" parentClass="//@simulationDescription/@simulationdata/@objectclass.63/@objectClassInheritance"/>
+      <objectclass id="_ViyO1wYoEemnkdGScLA10w" Name="allocationpolicies.A_VmAllocationPolicyAbstract" parentClass="//@simulationDescription/@simulationdata/@objectclass.63/@objectClassInheritance" objectclassoperation="_YEs1IAYsEemnkdGScLA10w _DBZacAYsEemnkdGScLA10w" instantiable="false">
+        <objectClassInheritance Name="allocationpolicies.A_VmAllocationPolicyAbstract" childClasses="_g11lhwYqEemnkdGScLA10w _h3k55wYrEemnkdGScLA10w _esC1BwYKEemnkdGScLA10w _fUqz5wYNEemnkdGScLA10w _SUmUNwYrEemnkdGScLA10w"/>
+      </objectclass>
+      <objectclass id="_g11lhwYqEemnkdGScLA10w" Name="allocationpolicies.VmAllocationPolicySimple" parentClass="//@simulationDescription/@simulationdata/@objectclass.65/@objectClassInheritance" objectclassoperation="_2YywoAYqEemnkdGScLA10w"/>
+      <objectclass id="_SUmUNwYrEemnkdGScLA10w" Name="allocationpolicies.VmAllocationPolicyFirstFit" semantics="" parentClass="//@simulationDescription/@simulationdata/@objectclass.63/@objectClassInheritance //@simulationDescription/@simulationdata/@objectclass.65/@objectClassInheritance"/>
+      <objectclass id="_h3k55wYrEemnkdGScLA10w" Name="allocationpolicies.VmAllocationPolicyBestFit" parentClass="//@simulationDescription/@simulationdata/@objectclass.65/@objectClassInheritance" objectclassoperation="_nJOZsAYrEemnkdGScLA10w"/>
+      <objectclass id="_iPifBwYMEemnkdGScLA10w" Name="allocationpolicies.migration.I_VmAllocationPolicyMigration" parentClass="//@simulationDescription/@simulationdata/@objectclass.63/@objectClassInheritance" objectclassoperation="_RAMDwAC8EemnkdGScLA10w _RAMDwgC8EemnkdGScLA10w _RAMDxAC8EemnkdGScLA10w _RAMDxgC8EemnkdGScLA10w _RAMDyQC8EemnkdGScLA10w _RAMDzAC8EemnkdGScLA10w" instantiable="false">
+        <objectClassInheritance Name="allocationpolicies.migration.I_VmAllocationPolicyMigration" childClasses="_aW1dZwYMEemnkdGScLA10w _esC1BwYKEemnkdGScLA10w _f0uDlwYmEemnkdGScLA10w"/>
+        <data id="_RAMDvwC8EemnkdGScLA10w" Name="underUtilizationThreshold" datatype="_lpWykQC-EemnkdGScLA10w"/>
+      </objectclass>
+      <objectclass id="_f0uDlwYmEemnkdGScLA10w" Name="allocationpolicies.migration.I_VmAllocationPolicyMigrationDynamicUpperThreshold" parentClass="//@simulationDescription/@simulationdata/@objectclass.69/@objectClassInheritance" objectclassoperation="_RAMD0QC8EemnkdGScLA10w _RAMD0wC8EemnkdGScLA10w" instantiable="false">
+        <objectClassInheritance Name="allocationpolicies.migration.I_VmAllocationPolicyMigrationDynamicUpperThreshold" childClasses="_fUqz5wYNEemnkdGScLA10w _k-oZJwYlEemnkdGScLA10w _becHNwYjEemnkdGScLA10w"/>
+        <data id="_RAMD0AC8EemnkdGScLA10w" Name="fallbackPolicy" semantics="FallbackVmAllocationPolicy" datatype="_U3uedgYOEemnkdGScLA10w"/>
+      </objectclass>
+      <objectclass id="_aW1dZwYMEemnkdGScLA10w" Name="allocationpolicies.migration.VmAllocationPolicyMigrationNull" parentClass="//@simulationDescription/@simulationdata/@objectclass.69/@objectClassInheritance"/>
+      <objectclass id="_b9kclwYKEemnkdGScLA10w" Name="allocationpolicies.migration.VmAllocationPolicyMigrationStaticThreshold" parentClass="//@simulationDescription/@simulationdata/@objectclass.75/@objectClassInheritance" objectclassoperation="_U3D3dAYLEemnkdGScLA10w">
+        <objectClassInheritance Name="allocationpolicies.migration.VmAllocationPolicyMigrationStaticThreshold" childClasses="_ooRitwYMEemnkdGScLA10w _XRx8twYnEemnkdGScLA10w"/>
+        <data id="_XvtqIAYMEemnkdGScLA10w" Name="overUtilizationThreshold" datatype="_lpWykQC-EemnkdGScLA10w"/>
+      </objectclass>
+      <objectclass id="_ooRitwYMEemnkdGScLA10w" Name="allocationpolicies.migration.VmAllocationPolicyMigrationWorstFitStaticThreshold" parentClass="//@simulationDescription/@simulationdata/@objectclass.72/@objectClassInheritance" objectclassoperation="_753vMAYMEemnkdGScLA10w"/>
+      <objectclass id="_XRx8twYnEemnkdGScLA10w" Name="allocationpolicies.migration.VmAllocationPolicyMigrationBestFitStaticThreshold" parentClass="//@simulationDescription/@simulationdata/@objectclass.72/@objectClassInheritance" objectclassoperation="_yL72AAYnEemnkdGScLA10w"/>
+      <objectclass id="_esC1BwYKEemnkdGScLA10w" Name="allocationpolicies.migration.A_VmAllocationPolicyMigrationAbstract" semantics="" parentClass="//@simulationDescription/@simulationdata/@objectclass.69/@objectClassInheritance //@simulationDescription/@simulationdata/@objectclass.65/@objectClassInheritance" objectclassoperation="_kBO1YAYoEemnkdGScLA10w _VQ1txAYpEemnkdGScLA10w" instantiable="false">
+        <objectClassInheritance Name="allocationpolicies.migration.A_VmAllocationPolicyMigrationAbstract" childClasses="_b9kclwYKEemnkdGScLA10w"/>
+      </objectclass>
+      <objectclass id="_k-oZJwYlEemnkdGScLA10w" Name="allocationpolicies.migration.VmAllocationPolicyMigrationInterQuartileRange" parentClass="//@simulationDescription/@simulationdata/@objectclass.70/@objectClassInheritance" objectclassoperation="_3Trd0AYlEemnkdGScLA10w _21ee4AYlEemnkdGScLA10w"/>
+      <objectclass id="_becHNwYjEemnkdGScLA10w" Name="allocationpolicies.migration.VmAllocationPolicyMigrationLocalRegression" parentClass="//@simulationDescription/@simulationdata/@objectclass.70/@objectClassInheritance" objectclassoperation="_uK9bQAYkEemnkdGScLA10w _3iLCQAYkEemnkdGScLA10w">
+        <objectClassInheritance Name="allocationpolicies.migration.VmAllocationPolicyMigrationLocalRegression" childClasses="_aBCVFwYjEemnkdGScLA10w"/>
+        <data id="_KBRa0AYlEemnkdGScLA10w" Name="schedulingInterval" datatype="_lpWykQC-EemnkdGScLA10w"/>
+      </objectclass>
+      <objectclass id="_eS2KhwYNEemnkdGScLA10w" Name="allocationpolicies.migration.VmAllocationPolicyMigrationMedianAbsoluteDeviation" parentClass="//@simulationDescription/@simulationdata/@objectclass.79/@objectClassInheritance" objectclassoperation="_4z2kAAYNEemnkdGScLA10w _C9aN8AYOEemnkdGScLA10w"/>
+      <objectclass id="_fUqz5wYNEemnkdGScLA10w" Name="allocationpolicies.migration.A_VmAllocationPolicyMigrationDynamicUpperThresholdFirstFit" semantics="" parentClass="//@simulationDescription/@simulationdata/@objectclass.70/@objectClassInheritance //@simulationDescription/@simulationdata/@objectclass.65/@objectClassInheritance" objectclassoperation="_5g01YAYmEemnkdGScLA10w _7Ur_sAYmEemnkdGScLA10w" instantiable="false">
+        <objectClassInheritance Name="allocationpolicies.migration.A_VmAllocationPolicyMigrationDynamicUpperThresholdFirstFit" childClasses="_eS2KhwYNEemnkdGScLA10w"/>
+      </objectclass>
+      <objectclass id="_aBCVFwYjEemnkdGScLA10w" Name="allocationpolicies.migration.VmAllocationPolicyMigrationLocalRegressionRobust" parentClass="//@simulationDescription/@simulationdata/@objectclass.77/@objectClassInheritance" objectclassoperation="_qOFygAYjEemnkdGScLA10w _wzmG4AYjEemnkdGScLA10w"/>
+      <objectclass id="_vRJtpwYsEemnkdGScLA10w" Name="hosts.HostStateHistoryEntry" objectclassoperation="_gKAS4AYtEemnkdGScLA10w _k4cX8AYtEemnkdGScLA10w _igoMAAYtEemnkdGScLA10w _auK8UAYtEemnkdGScLA10w _L_ndMAYtEemnkdGScLA10w _oQZyQAYtEemnkdGScLA10w"/>
+      <objectclass id="_PGD1pwGLEemnkdGScLA10w" Name="hosts.I_Host" semantics="extends Comparable&lt;Host>" parentClass="//@simulationDescription/@simulationdata/@objectclass.47/@objectClassInheritance" objectclassoperation="_RAMC4AC8EemnkdGScLA10w _RAMC4wC8EemnkdGScLA10w _RAMC5QC8EemnkdGScLA10w _RAMC5wC8EemnkdGScLA10w _RAMC6AC8EemnkdGScLA10w _RAMC6gC8EemnkdGScLA10w _RAMC7QC8EemnkdGScLA10w _RAMC8AC8EemnkdGScLA10w _RAMC8gC8EemnkdGScLA10w _RAMC9AC8EemnkdGScLA10w _RAMC9gC8EemnkdGScLA10w _RAMC-AC8EemnkdGScLA10w _RAMC-gC8EemnkdGScLA10w _RAMC_AC8EemnkdGScLA10w _RAMC_gC8EemnkdGScLA10w _RAMDAAC8EemnkdGScLA10w _RAMDAgC8EemnkdGScLA10w _RAMDBAC8EemnkdGScLA10w _RAMDCAC8EemnkdGScLA10w _RAMDCgC8EemnkdGScLA10w _RAMDDAC8EemnkdGScLA10w _RAMDDwC8EemnkdGScLA10w _RAMDEgC8EemnkdGScLA10w _RAMDFAC8EemnkdGScLA10w _RAMDFQC8EemnkdGScLA10w _RAMDGAC8EemnkdGScLA10w _RAMDGwC8EemnkdGScLA10w _RAMDHgC8EemnkdGScLA10w _RAMDIQC8EemnkdGScLA10w _RAMDIwC8EemnkdGScLA10w _RAMDJQC8EemnkdGScLA10w _RAMDJwC8EemnkdGScLA10w _RAMDKQC8EemnkdGScLA10w _RAMDKwC8EemnkdGScLA10w _RAMDLQC8EemnkdGScLA10w _RAMDLwC8EemnkdGScLA10w _RAMDMAC8EemnkdGScLA10w _RAMDMQC8EemnkdGScLA10w _RAMDMwC8EemnkdGScLA10w _RAMDNQC8EemnkdGScLA10w" instantiable="false">
+        <objectClassInheritance Name="hosts.I_Host" childClasses="_JqduRwYuEemnkdGScLA10w _JFfHBwYwEemnkdGScLA10w"/>
+        <data id="_RAMC1AC8EemnkdGScLA10w" Name="datacenter" datatype="_uZhjFgE_EemnkdGScLA10w"/>
+        <data id="_RAMC1QC8EemnkdGScLA10w" Name="active" datatype="_6xudkQE5EemnkdGScLA10w"/>
+        <data id="_PpoaqRaxEemC-aG165HpOg" Name="migratingInVm" datatype="_8sYltgE0EemnkdGScLA10w"/>
+        <data id="_QC_84BaxEemC-aG165HpOg" Name="migrationOutVm" datatype="_8sYltgE0EemnkdGScLA10w"/>
+        <data id="_RAMC2AC8EemnkdGScLA10w" Name="bwProvisioner" datatype="_NVVoFgYvEemnkdGScLA10w"/>
+        <data id="_RAMC2QC8EemnkdGScLA10w" Name="ramProvisioner" datatype="_NVVoFgYvEemnkdGScLA10w"/>
+        <data id="_RAMC2gC8EemnkdGScLA10w" Name="vmScheduler" datatype="_rn2kVgYvEemnkdGScLA10w"/>
+        <data id="_RAMC2wC8EemnkdGScLA10w" Name="startTime" datatype="_lpWykQC-EemnkdGScLA10w"/>
+        <data id="_RAMC3AC8EemnkdGScLA10w" Name="shutdownTime" datatype="_lpWykQC-EemnkdGScLA10w"/>
+        <data id="_RAMC3QC8EemnkdGScLA10w" Name="failed" datatype="_6xudkQE5EemnkdGScLA10w"/>
+        <data id="_RAMC3gC8EemnkdGScLA10w" Name="TemporaryVm" semantics="" datatype="_8sYltgE0EemnkdGScLA10w"/>
+        <data id="_RAMC3wC8EemnkdGScLA10w" Name="PowerModel powerModel"/>
+      </objectclass>
+      <objectclass id="_JqduRwYuEemnkdGScLA10w" Name="hosts.HostSimple" parentClass="//@simulationDescription/@simulationdata/@objectclass.82/@objectClassInheritance" objectclassoperation="_UGaIsAYuEemnkdGScLA10w _Udc6QAYvEemnkdGScLA10w">
+        <objectClassInheritance id="_JFfHBwYyEemnkdGScLA10w" Name="hosts.HostSimple">
+          <childClasses href="Network.simulationfeature#_Jaww0xBfEemCjdCvosaTnQ"/>
+        </objectClassInheritance>
+      </objectclass>
+      <objectclass id="_JFfHBwYwEemnkdGScLA10w" Name="hosts.HostNull" parentClass="//@simulationDescription/@simulationdata/@objectclass.82/@objectClassInheritance"/>
+      <objectclass id="_r6XZBwE_EemnkdGScLA10w" Name="datacenters.I_Datacenter" semantics="extends PowerAware" parentClass="//@simulationDescription/@simulationdata/@objectclass.49/@objectClassInheritance" objectclassoperation="_RAMCdwC8EemnkdGScLA10w _RAMCegC8EemnkdGScLA10w _RAMCfQC8EemnkdGScLA10w _RAMCfwC8EemnkdGScLA10w _RAMCgQC8EemnkdGScLA10w _RAMCgwC8EemnkdGScLA10w" instantiable="false">
+        <objectClassInheritance Name="datacenters.I_Datacenter" childClasses="_-GzCtwGLEemnkdGScLA10w _lQee1wGKEemnkdGScLA10w"/>
+        <data id="_RAMCcgC8EemnkdGScLA10w" Name="HostList" datatype="_wwvExBa5EemC-aG165HpOg"/>
+        <data id="_RAMCcwC8EemnkdGScLA10w" Name="T Host"/>
+        <data id="_RAMCdAC8EemnkdGScLA10w" Name="schedulingInterval" datatype="_lpWykQC-EemnkdGScLA10w"/>
+        <data id="_RAMCdQC8EemnkdGScLA10w" Name="datacenterStorage" datatype="_7P-RFgE_EemnkdGScLA10w"/>
+        <data id="_RAMCdgC8EemnkdGScLA10w" Name="bandwidthPercentForMigration" datatype="_lpWykQC-EemnkdGScLA10w"/>
+      </objectclass>
+      <objectclass id="_lQee1wGKEemnkdGScLA10w" Name="datacenters.DatacenterSimple" semantics="" parentClass="//@simulationDescription/@simulationdata/@objectclass.85/@objectClassInheritance //@simulationDescription/@simulationdata/@objectclass.50/@objectClassInheritance" objectclassoperation="_kT13dAGKEemnkdGScLA10w _kT13dAGEKemnkdGScLA10w _kT13dGAEKemnkdGScLA10w _kT13dGAEKenmkdGScLA10w">
+        <objectClassInheritance id="_lQee1wGKEemnkdGSvLA10w" Name="datacenters.DatacenterSimple">
+          <childClasses href="Network.simulationfeature#_rEibcxBtEemCjdCvosaTnQ"/>
+        </objectClassInheritance>
+        <data id="_2Ymn8AGLEemnkdGScLA10w" Name="vmAllocationPolicy" datatype="__x_OpgGKEemnkdGScLA10w"/>
+        <data id="_4AEVAAGLEemnkdGScLA10w" Name="migrationsEnabled" datatype="_6xudkQE5EemnkdGScLA10w"/>
+      </objectclass>
+      <objectclass id="_-GzCtwGLEemnkdGScLA10w" Name="datacenters.DatacenterNull" parentClass="//@simulationDescription/@simulationdata/@objectclass.85/@objectClassInheritance"/>
+      <objectclass id="_UTOKxwYwEemnkdGScLA10w" Name="datacenters.DatacenterCharacteristicsNull" parentClass="//@simulationDescription/@simulationdata/@objectclass.89/@objectClassInheritance"/>
+      <objectclass id="_WGjwpwYwEemnkdGScLA10w" Name="datacenters.I_DatacenterCharacteristics" parentClass="//@simulationDescription/@simulationdata/@objectclass.41/@objectClassInheritance" objectclassoperation="_RAMCjgC8EemnkdGScLA10w _RAMCkAC8EemnkdGScLA10w _RAMCkgC8EemnkdGScLA10w _RAMClAC8EemnkdGScLA10w _RAMClgC8EemnkdGScLA10w _RAMCmAC8EemnkdGScLA10w" instantiable="false">
+        <objectClassInheritance Name="datacenters.I_DatacenterCharacteristics" childClasses="_UTOKxwYwEemnkdGScLA10w _amflRxa7EemC-aG165HpOg"/>
+        <data id="_RAMChwC8EemnkdGScLA10w" Name="timeZone" datatype="_lpWykQC-EemnkdGScLA10w"/>
+        <data id="_RAMCiAC8EemnkdGScLA10w" Name="vmm" datatype="_xtQW8QE6EemnkdGScLA10w"/>
+        <data id="_RAMCiQC8EemnkdGScLA10w" Name="architecture" datatype="_xtQW8QE6EemnkdGScLA10w"/>
+        <data id="_RAMCigC8EemnkdGScLA10w" Name="os" datatype="_xtQW8QE6EemnkdGScLA10w"/>
+        <data id="_RAMCiwC8EemnkdGScLA10w" Name="costPerBw" datatype="_lpWykQC-EemnkdGScLA10w"/>
+        <data id="_RAMCjAC8EemnkdGScLA10w" Name="costPerSecond" datatype="_lpWykQC-EemnkdGScLA10w"/>
+        <data id="_RAMCjQC8EemnkdGScLA10w" Name="costPerStorage" datatype="_lpWykQC-EemnkdGScLA10w"/>
+        <data id="_FJs3EBa8EemC-aG165HpOg" Name="DEFAULT_VMM" semantics="DEFAULT_VMM = &quot;Xen&quot;" constant="true" datatype="_xtQW8QE6EemnkdGScLA10w"/>
+        <data id="_GPMfgBa8EemC-aG165HpOg" Name="DEFAULT_ARCH" semantics="DEFAULT_ARCH = &quot;x86&quot;" constant="true" datatype="_xtQW8QE6EemnkdGScLA10w"/>
+        <data id="_GssT0Ba8EemC-aG165HpOg" Name="DEFAULT_OS" semantics="DEFAULT_OS = &quot;Linux&quot;" constant="true" datatype="_xtQW8QE6EemnkdGScLA10w"/>
+        <data id="_HShkwBa8EemC-aG165HpOg" Name="DEFAULT_TIMEZONE" semantics="DEFAULT_TIMEZONE = 0" constant="true" datatype="_lpWykQC-EemnkdGScLA10w"/>
+      </objectclass>
+      <objectclass id="_amflRxa7EemC-aG165HpOg" Name="datacenters.DatacenterCharacteristicsSimple" parentClass="//@simulationDescription/@simulationdata/@objectclass.89/@objectClassInheritance"/>
+      <objectclass id="_BP3ZJwYxEemnkdGScLA10w" Name="brokers.I_DatacenterBroker" objectclassoperation="_RAMCnAC8EemnkdGScLA10w _RAMCoAC8EemnkdGScLA10w _RAMCogC8EemnkdGScLA10w _RAMCpQC8EemnkdGScLA10w _RAMCpwC8EemnkdGScLA10w _RAMCqQC8EemnkdGScLA10w _RAMCqwC8EemnkdGScLA10w _RAMCrQC8EemnkdGScLA10w _RAMCrwC8EemnkdGScLA10w _RAMCsQC8EemnkdGScLA10w _RAMCtQC8EemnkdGScLA10w _RAMCuAC8EemnkdGScLA10w _RAMCugC8EemnkdGScLA10w _RAMCvAC8EemnkdGScLA10w _RAMCvgC8EemnkdGScLA10w _RAMCvwC8EemnkdGScLA10w _RAMCwAC8EemnkdGScLA10w _RAMCwgC8EemnkdGScLA10w _RAMCxAC8EemnkdGScLA10w _RAMCxgC8EemnkdGScLA10w _RAMCyAC8EemnkdGScLA10w _RAMCywC8EemnkdGScLA10w _RAMCzgC8EemnkdGScLA10w _RAMC0AC8EemnkdGScLA10w" instantiable="false">
+        <objectClassInheritance Name="brokers.I_DatacenterBroker" childClasses="__9GJtwYwEemnkdGScLA10w _x6q7VwYxEemnkdGScLA10w"/>
+        <data id="_RAMCmwC8EemnkdGScLA10w" Name="function" semantics="VmDestructionDelayFunction" datatype="_qnXghRa-EemC-aG165HpOg"/>
+      </objectclass>
+      <objectclass id="_NscOlwYxEemnkdGScLA10w" Name="brokers.DatacenterBrokerSimple" parentClass="//@simulationDescription/@simulationdata/@objectclass.95/@objectClassInheritance" objectclassoperation="_MCGc1Ba9EemC-aG165HpOg">
+        <objectClassInheritance Name="brokers.DatacenterBrokerSimple" childClasses="_MujC9wYxEemnkdGScLA10w"/>
+      </objectclass>
+      <objectclass id="__9GJtwYwEemnkdGScLA10w" Name="brokers.DatacenterBrokerNull" parentClass="//@simulationDescription/@simulationdata/@objectclass.91/@objectClassInheritance"/>
+      <objectclass id="_MujC9wYxEemnkdGScLA10w" Name="brokers.DatacenterBrokerHeuristic" parentClass="//@simulationDescription/@simulationdata/@objectclass.92/@objectClassInheritance" objectclassoperation="_Ys-j0AYxEemnkdGScLA10w">
+        <data id="_hMcqgAYxEemnkdGScLA10w" Name="CloudletToVmMappingHeuristic heuristic"/>
+      </objectclass>
+      <objectclass id="_x6q7VwYxEemnkdGScLA10w" Name="brokers.A_DatacenterBrokerAbstract" semantics="" parentClass="//@simulationDescription/@simulationdata/@objectclass.91/@objectClassInheritance //@simulationDescription/@simulationdata/@objectclass.50/@objectClassInheritance" objectclassoperation="_mBsFsAYyEemnkdGScLA10w _Nw0i0AYyEemnkdGScLA10w" instantiable="false">
+        <objectClassInheritance Name="brokers.A_DatacenterBrokerAbstract" childClasses="_NscOlwYxEemnkdGScLA10w"/>
+      </objectclass>
+      <objectclass id="_YBnyVwY0EemnkdGScLA10w" Name="cloudlets.CloudletSimple" parentClass="//@simulationDescription/@simulationdata/@objectclass.97/@objectClassInheritance" objectclassoperation="_owgKcAY0EemnkdGScLA10w _ogwKcAY0EemnkdGScLA10w">
+        <objectClassInheritance id="_YBnyVwY0EenmkdGScLA10w" Name="cloudlets.CloudletSimple">
+          <childClasses href="Network.simulationfeature#_onK2kxBsEemCjdCvosaTnQ"/>
+        </objectClassInheritance>
+      </objectclass>
+      <objectclass id="_ZX6P1wY0EemnkdGScLA10w" Name="cloudlets.A_CloudletAbstract" parentClass="//@simulationDescription/@simulationdata/@objectclass.99/@objectClassInheritance" objectclassoperation="_Bp20MAY2EemnkdGScLA10w _O9RLAAY2EemnkdGScLA10w" instantiable="false">
+        <objectClassInheritance Name="cloudlets.A_CloudletAbstract" childClasses="_YBnyVwY0EemnkdGScLA10w"/>
+        <data id="_hN2mcAY2EemnkdGScLA10w" Name="requiredFiles" datatype="_AgRQlAFBEemnkdGScLA10w"/>
+      </objectclass>
+      <objectclass id="_IAk7IwY1EemnkdGScLA10w" Name="cloudlets.CloudletNull" parentClass="//@simulationDescription/@simulationdata/@objectclass.99/@objectClassInheritance"/>
+      <objectclass id="_KDEXVwY1EemnkdGScLA10w" Name="cloudlets.I_Cloudlet" parentClass="//@simulationDescription/@simulationdata/@objectclass.46/@objectClassInheritance" objectclassoperation="_RAMDSAC8EemnkdGScLA10w _RAMDSwC8EemnkdGScLA10w _RAMDTgC8EemnkdGScLA10w _RAMDUAC8EemnkdGScLA10w _RAMDUgC8EemnkdGScLA10w _RAMDVAC8EemnkdGScLA10w _RAMDVwC8EemnkdGScLA10w _RAMDWQC8EemnkdGScLA10w _RAMDWwC8EemnkdGScLA10w _RAMDXgC8EemnkdGScLA10w _RAMDYAC8EemnkdGScLA10w _RAMDYgC8EemnkdGScLA10w _RAMDZAC8EemnkdGScLA10w _RAMDZwC8EemnkdGScLA10w _RAMDaQC8EemnkdGScLA10w _RAMDawC8EemnkdGScLA10w _RAMDbQC8EemnkdGScLA10w _RAMDcAC8EemnkdGScLA10w _RAMDcgC8EemnkdGScLA10w _RAMDdAC8EemnkdGScLA10w _RAMDdgC8EemnkdGScLA10w _RAMDeQC8EemnkdGScLA10w _RAMDfAC8EemnkdGScLA10w _RAMDfwC8EemnkdGScLA10w _RAMDgQC8EemnkdGScLA10w _RAMDhAC8EemnkdGScLA10w _RAMDhgC8EemnkdGScLA10w _RAMDiAC8EemnkdGScLA10w _RAMDigC8EemnkdGScLA10w _RAMDjQC8EemnkdGScLA10w _RAMDkAC8EemnkdGScLA10w _RAMDkwC8EemnkdGScLA10w _RAMDlgC8EemnkdGScLA10w _RAMDmQC8EemnkdGScLA10w _RAMDnQC8EemnkdGScLA10w _RAMDnwC8EemnkdGScLA10w" instantiable="false">
+        <objectClassInheritance Name="cloudlets.I_Cloudlet" childClasses="_IAk7IwY1EemnkdGScLA10w _ZX6P1wY0EemnkdGScLA10w"/>
+        <data xsi:type="DataSpecification:EnumTypedData" id="_RAMDOAC8EemnkdGScLA10w" Name="Status" semantics="enum Status {INSTANTIATED,READY,FROZEN,QUEUED,INEXEC,SUCCESS,FAILED,CANCELED,PAUSED,RESUMED,FAILED_RESOURCE_UNAVAILABLE}" datatype="_xtQW8QE6EemnkdGScLA10w" enumtype="_lsiocxbCEemC-aG165HpOg"/>
+        <data id="_RAMDOQC8EemnkdGScLA10w" Name="fileNames" datatype="_AgRQlAFBEemnkdGScLA10w"/>
+        <data id="_RAMDOgC8EemnkdGScLA10w" Name="jobId" datatype="_WsB3oQC-EemnkdGScLA10w"/>
+        <data id="_RAMDOwC8EemnkdGScLA10w" Name="priority" datatype="_WsB3oQC-EemnkdGScLA10w"/>
+        <data id="_RAMDPAC8EemnkdGScLA10w" Name="fileSize" datatype="_XuMREQEzEemnkdGScLA10w"/>
+        <data id="_RAMDPQC8EemnkdGScLA10w" Name="outputSize" datatype="_XuMREQEzEemnkdGScLA10w"/>
+        <data id="_RAMDPgC8EemnkdGScLA10w" Name="utilizationModelBw" datatype="_TGCx9hbDEemC-aG165HpOg"/>
+        <data id="_RAMDPwC8EemnkdGScLA10w" Name="utilizationModelRam" datatype="_TGCx9hbDEemC-aG165HpOg"/>
+        <data id="_RAMDQAC8EemnkdGScLA10w" Name="utilizationModelCpu" datatype="_TGCx9hbDEemC-aG165HpOg"/>
+        <data id="_RAMDQQC8EemnkdGScLA10w" Name="vm" datatype="_8sYltgE0EemnkdGScLA10w"/>
+        <data id="_RAMDQgC8EemnkdGScLA10w" Name="length" datatype="_XuMREQEzEemnkdGScLA10w"/>
+        <data id="_RAMDQwC8EemnkdGScLA10w" Name="clockTime" semantics="ExecStartTime" datatype="_lpWykQC-EemnkdGScLA10w"/>
+        <data id="_RAMDRAC8EemnkdGScLA10w" Name="EventListener&lt;CloudletVmEventInfo> listener" semantics="OnFinishListener"/>
+        <data id="_RAMDRQC8EemnkdGScLA10w" Name="EventListener&lt;CloudletVmEventInfo> listener" semantics="OnUpdateProcessingListener"/>
+        <data id="__DV4oBbCEemC-aG165HpOg" Name="NOT_ASSIGNED" semantics="NOT_ASSIGNED = -1" constant="true" datatype="_WsB3oQC-EemnkdGScLA10w"/>
+      </objectclass>
+      <objectclass id="_zWbVZwY2EemnkdGScLA10w" Name="cloudlets.CloudletDatacenterExecution" objectclassoperation="_CeU8VAqPEemCjdCvosaTnQ">
+        <data id="_SB9CQAqPEemCjdCvosaTnQ" Name="arrivalTime" datatype="_lpWykQC-EemnkdGScLA10w"/>
+        <data id="_og1iwAqSEemCjdCvosaTnQ" Name="wallClockTime" datatype="_lpWykQC-EemnkdGScLA10w"/>
+        <data id="_tdj7cAqSEemCjdCvosaTnQ" Name="actualCpuTime" datatype="_lpWykQC-EemnkdGScLA10w"/>
+        <data id="_TMcxYBbCEemC-aG165HpOg" Name="costPerSec" datatype="_lpWykQC-EemnkdGScLA10w"/>
+        <data id="_wJNCUAqSEemCjdCvosaTnQ" Name="finishedSoFar" semantics="Set: Add new value to current" datatype="_XuMREQEzEemnkdGScLA10w"/>
+        <data id="_z89n0AqSEemCjdCvosaTnQ" Name="datacenter" datatype="_uZhjFgE_EemnkdGScLA10w"/>
+      </objectclass>
+      <objectclass id="_BDlo9wY3EemnkdGScLA10w" Name="cloudlets.CloudletExecution" objectclassoperation="_fd1UYAqWEemCjdCvosaTnQ _LJ99IAqXEemCjdCvosaTnQ _iHH1YAqXEemCjdCvosaTnQ _WMZIwAqXEemCjdCvosaTnQ _kSEC8AqXEemCjdCvosaTnQ _1nCnMAqWEemCjdCvosaTnQ _58b6IAqWEemCjdCvosaTnQ _HClRAAqXEemCjdCvosaTnQ _Bqi1UAqXEemCjdCvosaTnQ _OKdSoAqXEemCjdCvosaTnQ">
+        <data id="_a4RpEAqXEemCjdCvosaTnQ" Name="finishedTime" datatype="_lpWykQC-EemnkdGScLA10w"/>
+        <data id="_o62zAAqXEemCjdCvosaTnQ" Name="fileTransferTime" datatype="_lpWykQC-EemnkdGScLA10w"/>
+        <data id="_rAOkEAqXEemCjdCvosaTnQ" Name="lastProcessingTime" datatype="_lpWykQC-EemnkdGScLA10w"/>
+        <data id="_ta0XMAqXEemCjdCvosaTnQ" Name="virtualRuntime" semantics="Plus Add: Add new (if positive) to current value" datatype="_lpWykQC-EemnkdGScLA10w"/>
+        <data id="_0iVzgAqXEemCjdCvosaTnQ" Name="timeSlice" datatype="_lpWykQC-EemnkdGScLA10w"/>
+      </objectclass>
+      <objectclass id="_yzmkVwqYEemCjdCvosaTnQ" Name="utilizationmodels.I_UtilizationModel" objectclassoperation="_RAMDpAC8EemnkdGScLA10w _RAMDpgC8EemnkdGScLA10w" instantiable="false">
+        <objectClassInheritance Name="utilizationmodels.I_UtilizationModel" childClasses="_19MHRwqfEemCjdCvosaTnQ _4bwCJwqkEemCjdCvosaTnQ"/>
+        <data id="_RAMDowC8EemnkdGScLA10w" Name="simulation" datatype="_VhhMRgGCEemnkdGScLA10w"/>
+        <data xsi:type="DataSpecification:EnumTypedData" id="_RAMDogC8EemnkdGScLA10w" Name="enum Unit" semantics="  enum Unit {PERCENTAGE,ABSOLUTE }" datatype="_xtQW8QE6EemnkdGScLA10w" enumtype="_BrAR4wqjEemCjdCvosaTnQ"/>
+      </objectclass>
+      <objectclass id="_19MHRwqfEemCjdCvosaTnQ" Name="utilizationmodels.A_UtilizationModelAbstract" parentClass="//@simulationDescription/@simulationdata/@objectclass.102/@objectClassInheritance" objectclassoperation="_75atwAqiEemCjdCvosaTnQ" instantiable="false">
+        <objectClassInheritance Name="utilizationmodels.A_UtilizationModelAbstract" childClasses="_KElzBwqjEemCjdCvosaTnQ _xQ0FdwqkEemCjdCvosaTnQ _pr9lNwqqEemCjdCvosaTnQ _4do0VwqrEemCjdCvosaTnQ"/>
+        <data id="_UWOQUAqiEemCjdCvosaTnQ" Name="ALMOST_ZERO" semantics="0.0000000001" constant="true" datatype="_lpWykQC-EemnkdGScLA10w"/>
+      </objectclass>
+      <objectclass id="_KElzBwqjEemCjdCvosaTnQ" Name="utilizationmodels.UtilizationModelDynamic" parentClass="//@simulationDescription/@simulationdata/@objectclass.103/@objectClassInheritance" objectclassoperation="_K0RHAAqkEemCjdCvosaTnQ _SKDBwAqkEemCjdCvosaTnQ _ZGnAsAqjEemCjdCvosaTnQ _GZnAsAqjEemCjdCvosaTnQ _mLZssAqjEemCjdCvosaTnQ _tNnyQAqjEemCjdCvosaTnQ _3mVSgAqjEemCjdCvosaTnQ _-XdoEAqjEemCjdCvosaTnQ">
+        <data id="_POLGgAqkEemCjdCvosaTnQ" Name="maxResourceUtilization" datatype="_lpWykQC-EemnkdGScLA10w"/>
+      </objectclass>
+      <objectclass id="_xQ0FdwqkEemCjdCvosaTnQ" Name="utilizationmodels.UtilizationModelFull" parentClass="//@simulationDescription/@simulationdata/@objectclass.103/@objectClassInheritance"/>
+      <objectclass id="_4bwCJwqkEemCjdCvosaTnQ" Name="utilizationmodels.UtilizationModelNull" parentClass="//@simulationDescription/@simulationdata/@objectclass.102/@objectClassInheritance"/>
+      <objectclass id="_pr9lNwqqEemCjdCvosaTnQ" Name="utilizationmodels.UtilizationModelPlanetLab" parentClass="//@simulationDescription/@simulationdata/@objectclass.103/@objectClassInheritance" objectclassoperation="_StjTQAqrEemCjdCvosaTnQ _e_BE4AqrEemCjdCvosaTnQ">
+        <data id="_wLPgUAqrEemCjdCvosaTnQ" Name="schedulingInterval" datatype="_lpWykQC-EemnkdGScLA10w"/>
+      </objectclass>
+      <objectclass id="_4do0VwqrEemCjdCvosaTnQ" Name="utilizationmodels.UtilizationModelStochastic" parentClass="//@simulationDescription/@simulationdata/@objectclass.103/@objectClassInheritance" objectclassoperation="_LPt90AqtEemCjdCvosaTnQ _ZVpWsAqtEemCjdCvosaTnQ _RnIL0AqtEemCjdCvosaTnQ">
+        <data id="_77H88AqtEemCjdCvosaTnQ" Name="randomGenerator" semantics="Datatype: ContinuousDistribution"/>
+      </objectclass>
+      <objectclass id="_m_zlhwYLEemnkdGScLA10w" Name="selectionpolicies.power.A_PowerVmSelectionPolicy" objectclassoperation="_B7N3JAquEemCjdCvosaTnQ" instantiable="false">
+        <objectClassInheritance Name="selectionpolicies.power.A_PowerVmSelectionPolicy" childClasses="_qBPU1wquEemCjdCvosaTnQ _IME7xwqvEemCjdCvosaTnQ _jmzylwqvEemCjdCvosaTnQ _pG5XBwqvEemCjdCvosaTnQ"/>
+      </objectclass>
+      <objectclass id="_qBPU1wquEemCjdCvosaTnQ" Name="selectionpolicies.power.PowerVmSelectionPolicyMaximumCorrelation" parentClass="//@simulationDescription/@simulationdata/@objectclass.109/@objectClassInheritance" objectclassoperation="_8j9pIAquEemCjdCvosaTnQ">
+        <data id="_FXnQEAqvEemCjdCvosaTnQ" Name="fallbackPolicy" datatype="_oiI69gYLEemnkdGScLA10w"/>
+      </objectclass>
+      <objectclass id="_IME7xwqvEemCjdCvosaTnQ" Name="selectionpolicies.power.PowerVmSelectionPolicyRandomSelection" parentClass="//@simulationDescription/@simulationdata/@objectclass.109/@objectClassInheritance" objectclassoperation="_aavroAqvEemCjdCvosaTnQ"/>
+      <objectclass id="_jmzylwqvEemCjdCvosaTnQ" Name="selectionpolicies.power.PowerVmSelectionPolicyMinimumMigrationTime" parentClass="//@simulationDescription/@simulationdata/@objectclass.109/@objectClassInheritance"/>
+      <objectclass id="_pG5XBwqvEemCjdCvosaTnQ" Name="selectionpolicies.power.PowerVmSelectionPolicyMinimumUtilization" parentClass="//@simulationDescription/@simulationdata/@objectclass.109/@objectClassInheritance"/>
+    </simulationdata>
+  </simulationDescription>
+  <dataTypeContainer id="_1KKK0QC6EemnkdGScLA10w" Name="Basis Data Types">
+    <datatype xsi:type="DataTypes:BaseDataType" id="_WsB3oQC-EemnkdGScLA10w" Name="Integer" primitiveDataType="INTEGER"/>
+    <datatype xsi:type="DataTypes:BaseDataType" id="_lpWykQC-EemnkdGScLA10w" Name="Double" primitiveDataType="DOUBLE"/>
+    <datatype xsi:type="DataTypes:ObjectClassReferenceDataType" id="_xD_C1gC-EemnkdGScLA10w" Name="CloudletExecutionType" objectclass="_BDlo9wY3EemnkdGScLA10w"/>
+    <datatype xsi:type="DataTypes:ObjectClassReferenceDataType" id="_BRldZgDAEemnkdGScLA10w" Name="CloudletSchedulerAbstractType" objectclass="_4VK8AwC_EemnkdGScLA10w"/>
+    <datatype xsi:type="DataTypes:DataTypeCollection" id="_QyEItADAEemnkdGScLA10w" Name="List&lt;Double>" classicaldatatype="_lpWykQC-EemnkdGScLA10w"/>
+    <datatype xsi:type="DataTypes:DataTypeCollection" id="_3q1wJADAEemnkdGScLA10w" Name="List&lt;CloudletExecution>" classicaldatatype="_xD_C1gC-EemnkdGScLA10w"/>
+    <datatype xsi:type="DataTypes:DataTypeCollection" id="_HgFKhADBEemnkdGScLA10w" Name="Comparator&lt;CloudletExecution>" classicaldatatype="_xD_C1gC-EemnkdGScLA10w"/>
+    <datatype xsi:type="DataTypes:ObjectClassReferenceDataType" id="_gP4PpgDCEemnkdGScLA10w" Name="VmSchedulerTimeSharedOverSubscriptionType" objectclass="_c6avswDCEemnkdGScLA10w"/>
+    <datatype xsi:type="DataTypes:ObjectClassReferenceDataType" id="_zKA-ZgDCEemnkdGScLA10w" Name="VmSchedulerTimeSharedType" objectclass="_1pTEQwDCEemnkdGScLA10w"/>
+    <datatype xsi:type="DataTypes:ObjectClassReferenceDataType" id="_GxLyRgDDEemnkdGScLA10w" Name="VmSchedulerSpaceSharedType" objectclass="_C8RWMwDDEemnkdGScLA10w"/>
+    <datatype xsi:type="DataTypes:ObjectClassReferenceDataType" id="_iaScRgDDEemnkdGScLA10w" Name="VmSchedulerAbstractType" objectclass="_f1UlIwDDEemnkdGScLA10w"/>
+    <datatype xsi:type="DataTypes:BaseDataType" id="_XuMREQEzEemnkdGScLA10w" Name="Long" primitiveDataType="LONG"/>
+    <datatype xsi:type="DataTypes:ObjectClassReferenceDataType" id="_3es_5gE0EemnkdGScLA10w" Name="VmUtilizationHistoryType" objectclass="_xWPz4wE0EemnkdGScLA10w"/>
+    <datatype xsi:type="DataTypes:ObjectClassReferenceDataType" id="_8sYltgE0EemnkdGScLA10w" Name="VmType" semantics="Interface"/>
+    <datatype xsi:type="DataTypes:ObjectClassReferenceDataType" id="_CrkrhgE2EemnkdGScLA10w" Name="VmSimpleType" objectclass="_-yLYEwE1EemnkdGScLA10w"/>
+    <datatype xsi:type="DataTypes:ObjectClassReferenceDataType" id="_NNMlRgE4EemnkdGScLA10w" Name="StorageType" objectclass="_Jb-9dwE4EemnkdGScLA10w"/>
+    <datatype xsi:type="DataTypes:ObjectClassReferenceDataType" id="_RDnnxgE5EemnkdGScLA10w" Name="ResourceManageableAbstractType" objectclass="_ZIB_oAE4EemnkdGScLA10w"/>
+    <datatype xsi:type="DataTypes:ObjectClassReferenceDataType" id="_wH1GtgE5EemnkdGScLA10w" Name="ResourceAbstractType" objectclass="_B9OQZwE5EemnkdGScLA10w"/>
+    <datatype xsi:type="DataTypes:BaseDataType" id="_6xudkQE5EemnkdGScLA10w" Name="Boolean"/>
+    <datatype xsi:type="DataTypes:ObjectClassReferenceDataType" id="_QVh9RgE6EemnkdGScLA10w" Name="SanStorageType" objectclass="_F4xDdwE6EemnkdGScLA10w"/>
+    <datatype xsi:type="DataTypes:BaseDataType" id="_xtQW8QE6EemnkdGScLA10w" Name="String" primitiveDataType="STRING"/>
+    <datatype xsi:type="DataTypes:ObjectClassReferenceDataType" id="_JyFo9gE7EemnkdGScLA10w" Name="RamType" objectclass="_EcVsRwE7EemnkdGScLA10w"/>
+    <datatype xsi:type="DataTypes:ObjectClassReferenceDataType" id="_i5OFdgE7EemnkdGScLA10w" Name="Processor" objectclass="_R9_6gAE7EemnkdGScLA10w"/>
+    <datatype xsi:type="DataTypes:ObjectClassReferenceDataType" id="_VLvMVgE8EemnkdGScLA10w" Name="PeSimpleType" objectclass="_DKt25wE8EemnkdGScLA10w"/>
+    <datatype xsi:type="DataTypes:ObjectClassReferenceDataType" id="_tNeHBgE8EemnkdGScLA10w" Name="PeProvisionerType"/>
+    <datatype xsi:type="DataTypes:ObjectClassReferenceDataType" id="_MbzLRgE9EemnkdGScLA10w" Name="HarddriveStorageType" objectclass="_HC2Q9wE6EemnkdGScLA10w"/>
+    <datatype xsi:type="DataTypes:ObjectClassReferenceDataType" id="_rW05BgE9EemnkdGScLA10w" Name="FileType" objectclass="_jpahZwE9EemnkdGScLA10w"/>
+    <datatype xsi:type="DataTypes:ObjectClassReferenceDataType" id="_XUevlgE-EemnkdGScLA10w" Name="FileAttributeType" objectclass="_VmeVpwE-EemnkdGScLA10w"/>
+    <datatype xsi:type="DataTypes:ObjectClassReferenceDataType" id="_uZhjFgE_EemnkdGScLA10w" Name="DatacenterType" objectclass="_r6XZBwE_EemnkdGScLA10w"/>
+    <datatype xsi:type="DataTypes:ObjectClassReferenceDataType" id="_7P-RFgE_EemnkdGScLA10w" Name="DatacenterStorageType" objectclass="_2UGM9wE_EemnkdGScLA10w"/>
+    <datatype xsi:type="DataTypes:ObjectClassReferenceDataType" id="_I0GkdgFAEemnkdGScLA10w" Name="FileStorageType" objectclass="_3zWglwE8EemnkdGScLA10w"/>
+    <datatype xsi:type="DataTypes:DataTypeCollection" id="_QqG3ZAFAEemnkdGScLA10w" Name="List&lt;FileStorage>" classicaldatatype="_I0GkdgFAEemnkdGScLA10w"/>
+    <datatype xsi:type="DataTypes:DataTypeCollection" id="_AgRQlAFBEemnkdGScLA10w" Name="List&lt;String>" classicaldatatype="_xtQW8QE6EemnkdGScLA10w"/>
+    <datatype xsi:type="DataTypes:ObjectClassReferenceDataType" id="_gDKPlgFBEemnkdGScLA10w" Name="BandwithType" objectclass="_X9r9RwFBEemnkdGScLA10w"/>
+    <datatype xsi:type="DataTypes:ObjectClassReferenceDataType" id="_LW81tgGCEemnkdGScLA10w" Name="CloudSimEntityType" objectclass="_arE8hwGBEemnkdGScLA10w"/>
+    <datatype xsi:type="DataTypes:ObjectClassReferenceDataType" id="_VhhMRgGCEemnkdGScLA10w" Name="SimulationType" objectclass="__ms3lwF9EemnkdGScLA10w"/>
+    <datatype xsi:type="DataTypes:ObjectClassReferenceDataType" id="_jT0ehgGCEemnkdGScLA10w" Name="SimEntityType" objectclass="_Q1j61wF_EemnkdGScLA10w"/>
+    <datatype xsi:type="DataTypes:Unit" id="_rPNnwgGCEemnkdGScLA10w" Name="Object"/>
+    <datatype xsi:type="DataTypes:CombinedDataType" id="_WN1DNQGDEemnkdGScLA10w" Name="Predicate&lt;SimEvent>" classicaldatatype="_e4npFgGDEemnkdGScLA10w"/>
+    <datatype xsi:type="DataTypes:ObjectClassReferenceDataType" id="_e4npFgGDEemnkdGScLA10w" Name="SimEventType" objectclass="_cjvcZwGDEemnkdGScLA10w"/>
+    <datatype xsi:type="DataTypes:ObjectClassReferenceDataType" id="_GIyAVgGFEemnkdGScLA10w" Name="CloudSimType" objectclass="_70-ONwGEEemnkdGScLA10w"/>
+    <datatype xsi:type="DataTypes:DataTypeCollection" id="_m3461AGFEemnkdGScLA10w" Name="Set&lt;Datacenter>" classicaldatatype="_uZhjFgE_EemnkdGScLA10w"/>
+    <datatype xsi:type="DataTypes:ObjectClassReferenceDataType" id="_xABBZgGFEemnkdGScLA10w" Name="CloudInformationServiceType" objectclass="_a1eR4AGFEemnkdGScLA10w"/>
+    <datatype xsi:type="DataTypes:ObjectClassReferenceDataType" id="_AxA_hgGHEemnkdGScLA10w" Name="CloudSimEventType" objectclass="_2s-uxwGGEemnkdGScLA10w"/>
+    <datatype xsi:type="DataTypes:EnumType" id="_OzbxYwGHEemnkdGScLA10w" Name="Type" semantics="{NULL, SEND, HOLD_DONE, CREATE}" representingDataType="_xtQW8QE6EemnkdGScLA10w">
+      <enumliteral id="_sHn8wBXWEemC-aG165HpOg" literalName="NULL"/>
+      <enumliteral id="_sbSfoBXWEemC-aG165HpOg" literalName="SEND"/>
+      <enumliteral id="_sskc4BXWEemC-aG165HpOg" literalName="HOLD_DONE"/>
+      <enumliteral id="_s9LEsBXWEemC-aG165HpOg" literalName="CREATE"/>
+    </datatype>
+    <datatype xsi:type="DataTypes:CombinedDataType" id="_c49FJQGIEemnkdGScLA10w" Name="Iterator&lt;SimEvent>" classicaldatatype="_e4npFgGDEemnkdGScLA10w"/>
+    <datatype xsi:type="DataTypes:CombinedDataType" id="_fjFwLQGIEemnkdGScLA10w" Name="Stream&lt;SimEvent>" classicaldatatype="_e4npFgGDEemnkdGScLA10w"/>
+    <datatype xsi:type="DataTypes:DataTypeCollection" id="_YiCSxAGJEemnkdGScLA10w" Name="Collection&lt;SimEvent>" classicaldatatype="_e4npFgGDEemnkdGScLA10w"/>
+    <datatype xsi:type="DataTypes:Unit" id="_qQl_MgGJEemnkdGScLA10w" Name="Predicate"/>
+    <datatype xsi:type="DataTypes:ObjectClassReferenceDataType" id="_69n9NgGJEemnkdGScLA10w" Name="PredicateTypeType" objectclass="_4zCU9wGJEemnkdGScLA10w"/>
+    <datatype xsi:type="DataTypes:ObjectClassReferenceDataType" id="_ueV8lgGKEemnkdGScLA10w" Name="DatacenterSimpleType" objectclass="_lQee1wGKEemnkdGScLA10w"/>
+    <datatype xsi:type="DataTypes:ObjectClassReferenceDataType" id="__x_OpgGKEemnkdGScLA10w" Name="VmAllocationPolicyType" objectclass="_9-WGxwGKEemnkdGScLA10w"/>
+    <datatype xsi:type="DataTypes:ObjectClassReferenceDataType" id="_Q8OtFgGLEemnkdGScLA10w" Name="HostType" objectclass="_PGD1pwGLEemnkdGScLA10w"/>
+    <datatype xsi:type="DataTypes:DataTypeCollection" id="_VM5RBAGLEemnkdGScLA10w" Name="List&lt;? extends Host>" classicaldatatype="_Q8OtFgGLEemnkdGScLA10w"/>
+    <datatype xsi:type="DataTypes:ObjectClassReferenceDataType" id="_o5drRgYKEemnkdGScLA10w" Name="VmAllocationPolicyMigrationStaticThresholdType" objectclass="_b9kclwYKEemnkdGScLA10w"/>
+    <datatype xsi:type="DataTypes:ObjectClassReferenceDataType" id="_oiI69gYLEemnkdGScLA10w" Name="PowerVmSelectionPolicyType" objectclass="_m_zlhwYLEemnkdGScLA10w"/>
+    <datatype xsi:type="DataTypes:CombinedDataType" id="_38jahQYLEemnkdGScLA10w" Name="BiFunction&lt;VmAllocationPolicy, Vm, Optional&lt;Host>>" classicaldatatype="_8sYltgE0EemnkdGScLA10w _Q8OtFgGLEemnkdGScLA10w __x_OpgGKEemnkdGScLA10w"/>
+    <datatype xsi:type="DataTypes:ObjectClassReferenceDataType" id="_3963BgYMEemnkdGScLA10w" Name="VmAllocationPolicyMigrationWorstFitStaticThresholdType" objectclass="_ooRitwYMEemnkdGScLA10w"/>
+    <datatype xsi:type="DataTypes:ObjectClassReferenceDataType" id="_0ceUFgYNEemnkdGScLA10w" Name="VmAllocationPolicyMigrationMedianAbsoluteDeviationType" objectclass="_eS2KhwYNEemnkdGScLA10w"/>
+    <datatype xsi:type="DataTypes:ObjectClassReferenceDataType" id="_U3uedgYOEemnkdGScLA10w" Name="VmAllocationPolicyMigrationType" objectclass="_iPifBwYMEemnkdGScLA10w"/>
+    <datatype xsi:type="DataTypes:ObjectClassReferenceDataType" id="_lPsl5gYjEemnkdGScLA10w" Name="VmAllocationPolicyMigrationLocalRegressionRobustType" objectclass="_aBCVFwYjEemnkdGScLA10w"/>
+    <datatype xsi:type="DataTypes:ObjectClassReferenceDataType" id="_oCAgBgYkEemnkdGScLA10w" Name="VmAllocationPolicyMigrationLocalRegressionType" objectclass="_becHNwYjEemnkdGScLA10w"/>
+    <datatype xsi:type="DataTypes:ObjectClassReferenceDataType" id="_wdPKdgYlEemnkdGScLA10w" Name="VmAllocationPolicyMigrationInterQuartileRangeTye" objectclass="_k-oZJwYlEemnkdGScLA10w"/>
+    <datatype xsi:type="DataTypes:ObjectClassReferenceDataType" id="_13APBgYmEemnkdGScLA10w" Name="VmAllocationPolicyMigrationDynamicUpperThresholdFirstFitType" objectclass="_fUqz5wYNEemnkdGScLA10w"/>
+    <datatype xsi:type="DataTypes:ObjectClassReferenceDataType" id="_uryJBgYnEemnkdGScLA10w" Name="VmAllocationPolicyMigrationBestFitStaticThresholdType" objectclass="_XRx8twYnEemnkdGScLA10w"/>
+    <datatype xsi:type="DataTypes:ObjectClassReferenceDataType" id="_tRITdgYoEemnkdGScLA10w" Name="VmAllocationPolicyMigrationAbstract" objectclass="_esC1BwYKEemnkdGScLA10w"/>
+    <datatype xsi:type="DataTypes:DataTypeCollection" id="_eWPMBAYpEemnkdGScLA10w" Name="Set&lt;? extends Host>" classicaldatatype="_Q8OtFgGLEemnkdGScLA10w"/>
+    <datatype xsi:type="DataTypes:CombinedDataType" id="_uHqdZQYpEemnkdGScLA10w" Name="Optional&lt;Host>" classicaldatatype="_Q8OtFgGLEemnkdGScLA10w"/>
+    <datatype xsi:type="DataTypes:CombinedDataType" id="_GH3uFQYqEemnkdGScLA10w" Name="Predicate&lt;Host>" classicaldatatype="_Q8OtFgGLEemnkdGScLA10w"/>
+    <datatype xsi:type="DataTypes:ObjectClassReferenceDataType" id="_zEH65gYqEemnkdGScLA10w" Name="VmAllocationPolicySimpleType" objectclass="_g11lhwYqEemnkdGScLA10w"/>
+    <datatype xsi:type="DataTypes:ObjectClassReferenceDataType" id="_jB6mFgYrEemnkdGScLA10w" Name="VmAllocationPolicyBestFitType" objectclass="_h3k55wYrEemnkdGScLA10w"/>
+    <datatype xsi:type="DataTypes:ObjectClassReferenceDataType" id="_GUuMZgYsEemnkdGScLA10w" Name="VmAllocationPolicyAbstractType" objectclass="_ViyO1wYoEemnkdGScLA10w"/>
+    <datatype xsi:type="DataTypes:ObjectClassReferenceDataType" id="_CUL5tgYtEemnkdGScLA10w" Name="HostStateHistoryEntryType" objectclass="_vRJtpwYsEemnkdGScLA10w"/>
+    <datatype xsi:type="DataTypes:ObjectClassReferenceDataType" id="_QMssNgYuEemnkdGScLA10w" Name="HostSimpleType" objectclass="_JqduRwYuEemnkdGScLA10w"/>
+    <datatype xsi:type="DataTypes:DataTypeCollection" id="_gyxtpAYuEemnkdGScLA10w" Name="List&lt;Pe>" classicaldatatype="_oh0c9gYuEemnkdGScLA10w"/>
+    <datatype xsi:type="DataTypes:ObjectClassReferenceDataType" id="_oh0c9gYuEemnkdGScLA10w" Name="PeType" objectclass="_8NfmFwE7EemnkdGScLA10w"/>
+    <datatype xsi:type="DataTypes:ObjectClassReferenceDataType" id="_NVVoFgYvEemnkdGScLA10w" Name="ResourceProvisionerType"/>
+    <datatype xsi:type="DataTypes:ObjectClassReferenceDataType" id="_rn2kVgYvEemnkdGScLA10w" Name="VmSchedulerType" objectclass="_o-Hh9wYvEemnkdGScLA10w"/>
+    <datatype xsi:type="DataTypes:ObjectClassReferenceDataType" id="_T2hyRgYxEemnkdGScLA10w" Name="DatacenterBrokerHeuristicType" objectclass="_MujC9wYxEemnkdGScLA10w"/>
+    <datatype xsi:type="DataTypes:ObjectClassReferenceDataType" id="_Grb0hgYyEemnkdGScLA10w" Name="DatacenterBrokerAbstractType" objectclass="_x6q7VwYxEemnkdGScLA10w"/>
+    <datatype xsi:type="DataTypes:ObjectClassReferenceDataType" id="_rrzv5gYyEemnkdGScLA10w" Name="DatacenterBrokerType" objectclass="_BP3ZJwYxEemnkdGScLA10w"/>
+    <datatype xsi:type="DataTypes:ObjectClassReferenceDataType" id="_guolxgY0EemnkdGScLA10w" Name="CloudletSimpleType" objectclass="_YBnyVwY0EemnkdGScLA10w"/>
+    <datatype xsi:type="DataTypes:ObjectClassReferenceDataType" id="_8WnY9gY1EemnkdGScLA10w" Name="CloudletAbstractType" objectclass="_ZX6P1wY0EemnkdGScLA10w"/>
+    <datatype xsi:type="DataTypes:ObjectClassReferenceDataType" id="_1XtEVgqOEemCjdCvosaTnQ" Name="CloudletDatacenterExecutionType" objectclass="_zWbVZwY2EemnkdGScLA10w"/>
+    <datatype xsi:type="DataTypes:ObjectClassReferenceDataType" id="_meO1BgqWEemCjdCvosaTnQ" Name="CloudletType" objectclass="_KDEXVwY1EemnkdGScLA10w"/>
+    <datatype xsi:type="DataTypes:ObjectClassReferenceDataType" id="_w7TaZgqiEemCjdCvosaTnQ" Name="UtilizationModelAbstractType" objectclass="_19MHRwqfEemCjdCvosaTnQ"/>
+    <datatype xsi:type="DataTypes:EnumType" id="_BrAR4wqjEemCjdCvosaTnQ" Name="Unit" representingDataType="_xtQW8QE6EemnkdGScLA10w">
+      <enumliteral id="_ADS4UBdIEemC-aG165HpOg" literalName="PERCENTAGE"/>
+      <enumliteral id="_BUezYBdIEemC-aG165HpOg" literalName="ABSOLUTE"/>
+    </datatype>
+    <datatype xsi:type="DataTypes:ObjectClassReferenceDataType" id="_WO7o9gqjEemCjdCvosaTnQ" Name="UtilizationModelDynamicType" objectclass="_KElzBwqjEemCjdCvosaTnQ"/>
+    <datatype xsi:type="DataTypes:CombinedDataType" id="_Zwt4NQqkEemCjdCvosaTnQ" Name="Function&lt;UtilizationModelDynamic, Double>" classicaldatatype="_lpWykQC-EemnkdGScLA10w _WO7o9gqjEemCjdCvosaTnQ"/>
+    <datatype xsi:type="DataTypes:ObjectClassReferenceDataType" id="_PKe1JgqrEemCjdCvosaTnQ" Name="UtilizationModelPlanetLabType" objectclass="_pr9lNwqqEemCjdCvosaTnQ"/>
+    <datatype xsi:type="DataTypes:ObjectClassReferenceDataType" id="_Fp0sVgqtEemCjdCvosaTnQ" Name="UtilizationModelStochasticType" objectclass="_4do0VwqrEemCjdCvosaTnQ"/>
+    <datatype xsi:type="DataTypes:ObjectClassReferenceDataType" id="_4ATQtgquEemCjdCvosaTnQ" Name="PowerVmSelectionPolicyMaximumCorrelationType" objectclass="_qBPU1wquEemCjdCvosaTnQ"/>
+    <datatype xsi:type="DataTypes:ObjectClassReferenceDataType" id="_VNKMdgqvEemCjdCvosaTnQ" Name="PowerVmSelectionPolicyRandomSelectionType" objectclass="_IME7xwqvEemCjdCvosaTnQ"/>
+    <datatype xsi:type="DataTypes:DataTypeCollection" id="_pQTF9BW4EemC-aG165HpOg" Name="Set&lt;Cloudlet>" classicaldatatype="_meO1BgqWEemCjdCvosaTnQ"/>
+    <datatype xsi:type="DataTypes:DataTypeCollection" id="_L3zlJBW8EemC-aG165HpOg" Name="&lt;T extends Pe> List&lt;T>" classicaldatatype="_oh0c9gYuEemnkdGScLA10w"/>
+    <datatype xsi:type="DataTypes:ObjectClassReferenceDataType" id="_tvYKRhXBEemC-aG165HpOg" Name="CloudletSchedulerType" objectclass="_RACQEQC8EemnkdGScLA10w"/>
+    <datatype xsi:type="DataTypes:ObjectClassReferenceDataType" id="_HoCU5hXDEemC-aG165HpOg" Name="VmStateHistoryEntryType" objectclass="_NDQGdwE1EemnkdGScLA10w"/>
+    <datatype xsi:type="DataTypes:CombinedDataType" id="_eNpaZRXEEemC-aG165HpOg" Name=" Class&lt;? extends ResourceManageable> " classicaldatatype="_neM_xhXEEemC-aG165HpOg"/>
+    <datatype xsi:type="DataTypes:ObjectClassReferenceDataType" id="_neM_xhXEEemC-aG165HpOg" Name="ResourceManageableType" objectclass="_5bPBQAE4EemnkdGScLA10w"/>
+    <datatype xsi:type="DataTypes:DataTypeCollection" id="_8cxO9BXFEemC-aG165HpOg" Name="List&lt;VmStateHistoryEntry>" classicaldatatype="_HoCU5hXDEemC-aG165HpOg"/>
+    <datatype xsi:type="DataTypes:DataTypeCollection" id="_0BLtRBXGEemC-aG165HpOg" Name="List&lt;ResourceManageable>" classicaldatatype="_neM_xhXEEemC-aG165HpOg"/>
+    <datatype xsi:type="DataTypes:ObjectClassReferenceDataType" id="_63EKhhXHEemC-aG165HpOg" Name="UtilizationHistoryType" objectclass="_l5q7hwE3EemnkdGScLA10w"/>
+    <datatype xsi:type="DataTypes:DataTypeMap" id="_8GhVVxXJEemC-aG165HpOg" Name="SortedMap&lt;Double,Double>" KeyType="_lpWykQC-EemnkdGScLA10w" valueType="_lpWykQC-EemnkdGScLA10w"/>
+    <datatype xsi:type="DataTypes:ObjectClassReferenceDataType" id="_hHSRRhXVEemC-aG165HpOg" Name="ResourceType" objectclass="_xC75hwE4EemnkdGScLA10w"/>
+    <datatype xsi:type="DataTypes:EnumType" id="_i6F2MxXWEemC-aG165HpOg" Name="Status" representingDataType="_xtQW8QE6EemnkdGScLA10w">
+      <enumliteral id="_lN5r6RXWEemC-aG165HpOg" literalName="FREE"/>
+      <enumliteral id="_mf3DABXWEemC-aG165HpOg" literalName="BUSY"/>
+      <enumliteral id="_m8THYBXWEemC-aG165HpOg" literalName="FAILED"/>
+    </datatype>
+    <datatype xsi:type="DataTypes:DataTypeCollection" id="_iA75RBXZEemC-aG165HpOg" Name="List&lt;File>" classicaldatatype="_rW05BgE9EemnkdGScLA10w"/>
+    <datatype xsi:type="DataTypes:EnumType" id="_v7-T8xXdEemC-aG165HpOg" Name="State" representingDataType="_xtQW8QE6EemnkdGScLA10w">
+      <enumliteral id="_x3j24BXdEemC-aG165HpOg" literalName="RUNNABLE"/>
+      <enumliteral id="_zMMukBXdEemC-aG165HpOg" literalName="WAITING"/>
+      <enumliteral id="_zuaDwBXdEemC-aG165HpOg" literalName="HOLDING"/>
+      <enumliteral id="_0E8UcBXdEemC-aG165HpOg" literalName="FINISHED"/>
+    </datatype>
+    <datatype xsi:type="DataTypes:DataTypeCollection" id="_6CmTxBXfEemC-aG165HpOg" Name="List&lt;SimEntity>" classicaldatatype="_jT0ehgGCEemnkdGScLA10w"/>
+    <datatype xsi:type="DataTypes:DataTypeCollection" id="_OxJxBBXhEemC-aG165HpOg" Name="&lt;T extends ChangeableId> boolean" classicaldatatype="_6xudkQE5EemnkdGScLA10w"/>
+    <datatype xsi:type="DataTypes:DataTypeCollection" id="_XpviVBXhEemC-aG165HpOg" Name="List&lt;? extends T>"/>
+    <datatype xsi:type="DataTypes:DataTypeMap" id="_EenRhxaiEemC-aG165HpOg" Name="Map&lt;Vm, Host>" KeyType="_8sYltgE0EemnkdGScLA10w" valueType="_Q8OtFgGLEemnkdGScLA10w"/>
+    <datatype xsi:type="DataTypes:DataTypeMap" id="_2PtepxaoEemC-aG165HpOg" Name="Map&lt;Host, List&lt;Double>>" semantics="" KeyType="_Q8OtFgGLEemnkdGScLA10w" valueType="_QyEItADAEemnkdGScLA10w"/>
+    <datatype xsi:type="DataTypes:DataTypeCollection" id="_IYxmtBayEemC-aG165HpOg" Name="&lt;T extends Vm> Set&lt;T>" classicaldatatype="_8sYltgE0EemnkdGScLA10w"/>
+    <datatype xsi:type="DataTypes:DataTypeCollection" id="_TNIhJBayEemC-aG165HpOg" Name="Set&lt;Vm>" classicaldatatype="_8sYltgE0EemnkdGScLA10w"/>
+    <datatype xsi:type="DataTypes:DataTypeCollection" id="_7Uy9lBayEemC-aG165HpOg" Name="&lt;T extends Vm> List&lt;T>" classicaldatatype="_8sYltgE0EemnkdGScLA10w"/>
+    <datatype xsi:type="DataTypes:DataTypeMap" id="_r_yF9xazEemC-aG165HpOg" Name="SortedMap&lt;Double, DoubleSummaryStatistics>" semantics="SortedMap&lt;Double, DoubleSummaryStatistics>" KeyType="_lpWykQC-EemnkdGScLA10w"/>
+    <datatype xsi:type="DataTypes:DataTypeCollection" id="_GBo99Ba3EemC-aG165HpOg" Name="List&lt;HostStateHistoryEntry>" classicaldatatype="_CUL5tgYtEemnkdGScLA10w"/>
+    <datatype xsi:type="DataTypes:DataTypeCollection" id="_N0--dBa3EemC-aG165HpOg" Name="List&lt;Vm>" classicaldatatype="_8sYltgE0EemnkdGScLA10w"/>
+    <datatype xsi:type="DataTypes:DataTypeCollection" id="_ZnT9BBa3EemC-aG165HpOg" Name="&lt;T extends Cloudlet> List&lt;T>" classicaldatatype="_meO1BgqWEemCjdCvosaTnQ"/>
+    <datatype xsi:type="DataTypes:DataTypeCollection" id="_wwvExBa5EemC-aG165HpOg" Name="&lt;T extends Host> List&lt;T>"/>
+    <datatype xsi:type="DataTypes:CombinedDataType" id="_ZtDRRRa6EemC-aG165HpOg" Name="&lt;T extends Host>" classicaldatatype="_Q8OtFgGLEemnkdGScLA10w"/>
+    <datatype xsi:type="DataTypes:ObjectClassReferenceDataType" id="_ttVvxha6EemC-aG165HpOg" Name="DatacenterCharacteristics" objectclass="_WGjwpwYwEemnkdGScLA10w"/>
+    <datatype xsi:type="DataTypes:ObjectClassReferenceDataType" id="_X2uW5ha8EemC-aG165HpOg" Name="DatacenterCharacteristicsSimpleType" objectclass="_amflRxa7EemC-aG165HpOg"/>
+    <datatype xsi:type="DataTypes:ObjectClassReferenceDataType" id="_QSU75ha9EemC-aG165HpOg" Name="DatacenterBrokerSimpleType" objectclass="_NscOlwYxEemnkdGScLA10w"/>
+    <datatype xsi:type="DataTypes:CombinedDataType" id="_qnXghRa-EemC-aG165HpOg" Name="Function&lt;Vm, Double>" classicaldatatype="_lpWykQC-EemnkdGScLA10w _8sYltgE0EemnkdGScLA10w"/>
+    <datatype xsi:type="DataTypes:DataTypeCollection" id="_DPTflBa_EemC-aG165HpOg" Name="List&lt;? extends Cloudlet> " classicaldatatype="_meO1BgqWEemCjdCvosaTnQ"/>
+    <datatype xsi:type="DataTypes:DataTypeCollection" id="_Se4oJBa_EemC-aG165HpOg" Name="List&lt;? extends Vm>" classicaldatatype="_8sYltgE0EemnkdGScLA10w"/>
+    <datatype xsi:type="DataTypes:CombinedDataType" id="_akWTZRa_EemC-aG165HpOg" Name="Supplier&lt;Datacenter>" classicaldatatype="_uZhjFgE_EemnkdGScLA10w"/>
+    <datatype xsi:type="DataTypes:CombinedDataType" id="_lTYo9Ra_EemC-aG165HpOg" Name="Comparator&lt;Vm>" classicaldatatype="_8sYltgE0EemnkdGScLA10w"/>
+    <datatype xsi:type="DataTypes:CombinedDataType" id="__x-AlRa_EemC-aG165HpOg" Name="Function&lt;Cloudlet, Vm>" classicaldatatype="_8sYltgE0EemnkdGScLA10w _meO1BgqWEemCjdCvosaTnQ"/>
+    <datatype xsi:type="DataTypes:DataTypeCollection" id="_Jp02hBbAEemC-aG165HpOg" Name="List&lt;Cloudlet>" classicaldatatype="_meO1BgqWEemCjdCvosaTnQ"/>
+    <datatype xsi:type="DataTypes:EnumType" id="_lsiocxbCEemC-aG165HpOg" Name="Status-Cloudlet" representingDataType="_xtQW8QE6EemnkdGScLA10w">
+      <enumliteral id="_oOjSMBbCEemC-aG165HpOg" literalName="FAILED_RESOURCE_UNAVAILABLE"/>
+      <enumliteral id="_q-iGgBbCEemC-aG165HpOg" literalName="READY"/>
+      <enumliteral id="_rdvLABbCEemC-aG165HpOg" literalName="FROZEN"/>
+      <enumliteral id="_r0wj4BbCEemC-aG165HpOg" literalName="QUEUED"/>
+      <enumliteral id="_sLWe8BbCEemC-aG165HpOg" literalName="INEXEC"/>
+      <enumliteral id="_sf7n0BbCEemC-aG165HpOg" literalName="SUCCESS"/>
+      <enumliteral id="_s3_igBbCEemC-aG165HpOg" literalName="FAILED"/>
+      <enumliteral id="_teaCQBbCEemC-aG165HpOg" literalName="CANCELED"/>
+      <enumliteral id="_t5eNoBbCEemC-aG165HpOg" literalName="PAUSED"/>
+      <enumliteral id="_uStNABbCEemC-aG165HpOg" literalName="RESUMED"/>
+      <enumliteral id="_umlyUBbCEemC-aG165HpOg" literalName="INSTANTIATED"/>
+    </datatype>
+    <datatype xsi:type="DataTypes:ObjectClassReferenceDataType" id="_TGCx9hbDEemC-aG165HpOg" Name="UtilizationModel" objectclass="_yzmkVwqYEemCjdCvosaTnQ"/>
+  </dataTypeContainer>
+  <basicsimulationcomponent href="CloudSim.modularsimulationassembly#_gvCj5hBEEemCjdCvosaTnQ"/>
+</SimulationFeature:SimulationFeature>
