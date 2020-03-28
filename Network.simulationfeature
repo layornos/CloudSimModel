@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SimulationFeature:SimulationFeature xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:DataTypes="edu.kit.ipd.sdq.Modularization.DataRepresentation.DataTypes" xmlns:SimulationFeature="edu.kit.ipd.sdq.Modularization.SimulationFeature" xmlns:SimulationInformation="edu.kit.ipd.sdq.Modularization.DataRepresentation.SimulationInformation" id="_6sKQoA-pEemCjdCvosaTnQ" Name="NetworkFeature">
+  <simulationDescription id="_H2L_sBBfEemCjdCvosaTnQ">
+    <simulationdata xsi:type="SimulationInformation:ObjectOrientedViewSimulationData" id="_IkYicBBfEemCjdCvosaTnQ">
+      <objectclassoperation id="_l98ykBBhEemCjdCvosaTnQ" Name="getTotalDataTransferBytes" returnType="_TrZ2ARBmEemCjdCvosaTnQ"/>
+      <objectclassoperation id="_8XDJQBBmEemCjdCvosaTnQ" Name="addReceivedNetworkPacket">
+        <parameters Name="hostPacket" dataType="_353MRhBmEemCjdCvosaTnQ"/>
+      </objectclassoperation>
+      <objectclassoperation id="_1ksAcBBtEemCjdCvosaTnQ" Name="getEdgeSwitch" returnType="_JmLY1BBuEemCjdCvosaTnQ"/>
+      <objectclassoperation id="_SySjEBBuEemCjdCvosaTnQ" Name="addSwitch">
+        <parameters Name="swt" dataType="_FGhWphBuEemCjdCvosaTnQ"/>
+      </objectclassoperation>
+      <objectclassoperation id="_aApAIBBuEemCjdCvosaTnQ" Name="getSwitchMap" returnType="_JmLY1BBuEemCjdCvosaTnQ"/>
+      <objectclassoperation id="_NzzLoBB1EemlUMLbVV28Ug" Name="getId" returnType="_TrZ2ARBmEemCjdCvosaTnQ"/>
+      <objectclassoperation id="_oL1PUBB1EemlUMLbVV28Ug" Name="getNumberOfHops" returnType="_TrZ2ARBmEemCjdCvosaTnQ"/>
+      <objectclassoperation id="_uTGvkBB1EemlUMLbVV28Ug" Name="getTotalResponseTime" returnType="_uKu0gRBmEemCjdCvosaTnQ"/>
+      <objectclassoperation id="_1REnQBB1EemlUMLbVV28Ug" Name="addEntryTime">
+        <parameters Name="time" dataType="_uKu0gRBmEemCjdCvosaTnQ"/>
+      </objectclassoperation>
+      <objectclassoperation id="_6JXy8BB1EemlUMLbVV28Ug" Name="addExitTime">
+        <parameters Name="time" dataType="_uKu0gRBmEemCjdCvosaTnQ"/>
+      </objectclassoperation>
+      <objectclassoperation id="_M6GHABB2EemlUMLbVV28Ug" Name="getDetailBaudRate" returnType="_GadxJBB2EemlUMLbVV28Ug"/>
+      <objectclassoperation id="_S-GQ0BB2EemlUMLbVV28Ug" Name="getDetailEntryTimes" returnType="_GadxJBB2EemlUMLbVV28Ug"/>
+      <objectclassoperation id="_Wf_DMBB2EemlUMLbVV28Ug" Name="getDetailExitTimes" returnType="_GadxJBB2EemlUMLbVV28Ug"/>
+      <objectclassoperation id="_7dlFcBB4EemlUMLbVV28Ug" Name="HostPacket" returnType="_353MRhBmEemCjdCvosaTnQ">
+        <parameters Name="senderHost" dataType="_myP9VhBhEemCjdCvosaTnQ"/>
+        <parameters Name="vmPacket" dataType="__1vO9hBsEemCjdCvosaTnQ"/>
+      </objectclassoperation>
+      <objectclassoperation id="_Vw_u4BB5EemlUMLbVV28Ug" Name="getVmPacket" returnType="__1vO9hBsEemCjdCvosaTnQ"/>
+      <objectclassoperation id="_-nhToBEBEemlUMLbVV28Ug" Name="NetworkCloudlet" returnType="_wbpfhhBsEemCjdCvosaTnQ">
+        <parameters Name="length" dataType="_hskF0RB1EemlUMLbVV28Ug"/>
+        <parameters Name="pesNumber" dataType="_TrZ2ARBmEemCjdCvosaTnQ"/>
+        <parameters Name="id" dataType="_TrZ2ARBmEemCjdCvosaTnQ"/>
+      </objectclassoperation>
+      <objectclassoperation id="_HoAcsBECEemlUMLbVV28Ug" Name="getNumberOfTasks" returnType="_uKu0gRBmEemCjdCvosaTnQ"/>
+      <objectclassoperation id="_X05iEBECEemlUMLbVV28Ug" Name="getTasks" returnType="_RRgGhBECEemlUMLbVV28Ug"/>
+      <objectclassoperation id="_isjoIBECEemlUMLbVV28Ug" Name="isTasksStarted" returnType="_WlKpsRBsEemCjdCvosaTnQ"/>
+      <objectclassoperation id="_kHG6kBECEemlUMLbVV28Ug" Name="startNextTaskIfCurrentIsFinished" returnType="_WlKpsRBsEemCjdCvosaTnQ">
+        <parameters Name="nextTaskStartTime" dataType="_uKu0gRBmEemCjdCvosaTnQ"/>
+      </objectclassoperation>
+      <objectclassoperation id="_pHIe4BECEemlUMLbVV28Ug" Name="getCurrentTask" returnType="_sG6pxBECEemlUMLbVV28Ug"/>
+      <objectclassoperation id="_yxsfsBECEemlUMLbVV28Ug" Name="addTask" returnType="_wbpfhhBsEemCjdCvosaTnQ">
+        <parameters Name="task" dataType="_O6mglhECEemlUMLbVV28Ug"/>
+      </objectclassoperation>
+      <objectclassoperation id="_Ovo70BEEEemlUMLbVV28Ug" Name="CloudletTask" returnType="_O6mglhECEemlUMLbVV28Ug">
+        <parameters Name="id" dataType="_TrZ2ARBmEemCjdCvosaTnQ"/>
+      </objectclassoperation>
+      <objectclassoperation id="_pWCysBEEEemlUMLbVV28Ug" Name="getExecutionTime" returnType="_uKu0gRBmEemCjdCvosaTnQ"/>
+      <objectclassoperation id="_qq7iABEEEemlUMLbVV28Ug" Name="getFinishTime" returnType="_uKu0gRBmEemCjdCvosaTnQ"/>
+      <objectclassoperation id="_tD3vUBEEEemlUMLbVV28Ug" Name="isExecutionTask" returnType="_WlKpsRBsEemCjdCvosaTnQ"/>
+      <objectclassoperation id="_wawLkBEEEemlUMLbVV28Ug" Name="isSendTask" returnType="_WlKpsRBsEemCjdCvosaTnQ"/>
+      <objectclassoperation id="_xxLzABEEEemlUMLbVV28Ug" Name="isReceiveTask" returnType="_WlKpsRBsEemCjdCvosaTnQ"/>
+      <objectclassoperation id="_R8bygBEFEemlUMLbVV28Ug" Name="CloudletSendTask" returnType="_PGsUdhEFEemlUMLbVV28Ug">
+        <parameters Name="id" dataType="_TrZ2ARBmEemCjdCvosaTnQ"/>
+      </objectclassoperation>
+      <objectclassoperation id="_Wdx2wBEFEemlUMLbVV28Ug" Name="getPacketsToSend" returnType="_Dg55JBBtEemCjdCvosaTnQ">
+        <parameters Name="sendTime" optional="true" dataType="_uKu0gRBmEemCjdCvosaTnQ"/>
+      </objectclassoperation>
+      <objectclassoperation id="_XQEH8BEIEemlUMLbVV28Ug" Name="receivePacket">
+        <parameters Name="packet" dataType="__1vO9hBsEemCjdCvosaTnQ"/>
+      </objectclassoperation>
+      <objectclassoperation id="_cF_8IBEIEemlUMLbVV28Ug" Name="getPacketsReceived" returnType="_Dg55JBBtEemCjdCvosaTnQ"/>
+      <objectclassoperation id="_WmoT8BEJEemlUMLbVV28Ug" Name="CloudletExecutionTask" returnType="_TLQZRhEJEemlUMLbVV28Ug">
+        <parameters Name="id" dataType="_TrZ2ARBmEemCjdCvosaTnQ"/>
+        <parameters Name="executionLength" dataType="_hskF0RB1EemlUMLbVV28Ug"/>
+      </objectclassoperation>
+      <objectclassoperation id="_m7GA8BEJEemlUMLbVV28Ug" Name="getTotalExecutedLength" returnType="_hskF0RB1EemlUMLbVV28Ug"/>
+      <objectclassoperation id="_o80oIBEJEemlUMLbVV28Ug" Name="process" returnType="_WlKpsRBsEemCjdCvosaTnQ">
+        <parameters Name="partialFinishedMI" dataType="_hskF0RB1EemlUMLbVV28Ug"/>
+      </objectclassoperation>
+      <objectclassoperation id="_5238cRBvEemCjdCvosaTnQ" Name="getSize" semantics="" returnType="_hskF0RB1EemlUMLbVV28Ug"/>
+      <objectclassoperation id="_TtwTQhESEemlUMLbVV28Ug" Name="getHostList" semantics="" returnType="_BRTR1BT-EemC-aG165HpOg"/>
+      <objectclassoperation id="_Xqhq0hESEemlUMLbVV28Ug" Name="connectHost">
+        <parameters Name="host" dataType="_myP9VhBhEemCjdCvosaTnQ"/>
+      </objectclassoperation>
+      <objectclassoperation id="_cJCdghESEemlUMLbVV28Ug" Name="disconnectHost" returnType="_WlKpsRBsEemCjdCvosaTnQ">
+        <parameters Name="host" dataType="_myP9VhBhEemCjdCvosaTnQ"/>
+      </objectclassoperation>
+      <objectclassoperation id="_e7D5MhESEemlUMLbVV28Ug" Name="getPacketToHostMap" semantics="" returnType="_R-20RRT-EemC-aG165HpOg"/>
+      <objectclassoperation id="_jzF_IhESEemlUMLbVV28Ug" Name="getDownlinkSwitches" semantics="" returnType="_JmLY1BBuEemCjdCvosaTnQ"/>
+      <objectclassoperation id="_jr4HYhETEemlUMLbVV28Ug" Name="getDownlinkSwitchPacketList" semantics="" returnType="_YsmepBT-EemC-aG165HpOg">
+        <parameters Name="downlinkSwitch" dataType="_FGhWphBuEemCjdCvosaTnQ"/>
+      </objectclassoperation>
+      <objectclassoperation id="_uITqAhETEemlUMLbVV28Ug" Name="getUplinkSwitchPacketList" semantics="" returnType="_YsmepBT-EemC-aG165HpOg">
+        <parameters Name="uplinkSwitch" dataType="_FGhWphBuEemCjdCvosaTnQ"/>
+      </objectclassoperation>
+      <objectclassoperation id="_tsB9shETEemlUMLbVV28Ug" Name="getHostPacketList" semantics="" returnType="_YsmepBT-EemC-aG165HpOg">
+        <parameters Name="host" dataType="_myP9VhBhEemCjdCvosaTnQ"/>
+      </objectclassoperation>
+      <objectclassoperation id="_70J5ghEUEemlUMLbVV28Ug" Name="getUplinkSwitchPacketMap" semantics="" returnType="_ukn61RT-EemC-aG165HpOg"/>
+      <objectclassoperation id="__374AhEUEemlUMLbVV28Ug" Name="addPacketToBeSentToDownlinkSwitch">
+        <parameters Name="downlinkSwitch" dataType="_FGhWphBuEemCjdCvosaTnQ"/>
+        <parameters Name="packet" dataType="_353MRhBmEemCjdCvosaTnQ"/>
+      </objectclassoperation>
+      <objectclassoperation id="_CkMC4hEVEemlUMLbVV28Ug" Name="addPacketToBeSentToUplinkSwitch">
+        <parameters Name="packet" dataType="_353MRhBmEemCjdCvosaTnQ"/>
+        <parameters Name="uplinkSwitch" dataType="_FGhWphBuEemCjdCvosaTnQ"/>
+      </objectclassoperation>
+      <objectclassoperation id="_DQ1tghEVEemlUMLbVV28Ug" Name="addPacketToBeSentToHost">
+        <parameters Name="packet" dataType="_353MRhBmEemCjdCvosaTnQ"/>
+        <parameters Name="host" dataType="_myP9VhBhEemCjdCvosaTnQ"/>
+      </objectclassoperation>
+      <objectclassoperation id="_dNsREREVEemlUMLbVV28Ug" Name="getPacketList" semantics="" returnType="_YsmepBT-EemC-aG165HpOg"/>
+      <objectclassoperation id="_fwrLMhEVEemlUMLbVV28Ug" Name="getLevel" semantics="" returnType="_TrZ2ARBmEemCjdCvosaTnQ"/>
+      <objectclassoperation id="_L-NPgBT1EemC-aG165HpOg" Name="NetworkVm" returnType="_XgUn1hT1EemC-aG165HpOg">
+        <parameters Name="id" optional="true" dataType="_TrZ2ARBmEemCjdCvosaTnQ"/>
+        <parameters Name="mipsCapacity" dataType="_hskF0RB1EemlUMLbVV28Ug"/>
+        <parameters Name="numberOfPes" dataType="_TrZ2ARBmEemCjdCvosaTnQ"/>
+      </objectclassoperation>
+      <objectclass id="_Jaww0xBfEemCjdCvosaTnQ" Name="hosts.network.NetworkHost" semantics="" objectclassoperation="_l98ykBBhEemCjdCvosaTnQ _8XDJQBBmEemCjdCvosaTnQ">
+        <parentClass href="Basis.simulationfeature#_JFfHBwYyEemnkdGScLA10w"/>
+        <data id="_EqMgoBBmEemCjdCvosaTnQ" Name="edgeSwitch" datatype="_A8rtFhBmEemCjdCvosaTnQ"/>
+        <data id="_qD5iABBmEemCjdCvosaTnQ" Name="bandwidth" datatype="_uKu0gRBmEemCjdCvosaTnQ"/>
+      </objectclass>
+      <objectclass id="_wSh1MxBrEemCjdCvosaTnQ" Name="vms.network.NetworkVm" objectclassoperation="_L-NPgBT1EemC-aG165HpOg">
+        <parentClass href="Basis.simulationfeature#_-yLYEwE1EemnfdGScLA10w"/>
+        <data id="_mAu_2RBsEemCjdCvosaTnQ" Name="cloudletList" datatype="_tuhK5BBsEemCjdCvosaTnQ"/>
+        <data id="_JbQ-wBBtEemCjdCvosaTnQ" Name="receivedPacketList" datatype="_Dg55JBBtEemCjdCvosaTnQ"/>
+        <data id="_TTBuEBBtEemCjdCvosaTnQ" Name="free" datatype="_WlKpsRBsEemCjdCvosaTnQ"/>
+        <data id="_WRwJABBtEemCjdCvosaTnQ" Name="finishTime" datatype="_uKu0gRBmEemCjdCvosaTnQ"/>
+      </objectclass>
+      <objectclass id="_rEibcxBtEemCjdCvosaTnQ" Name="datacenters.network.NetworkDatacenter" objectclassoperation="_1ksAcBBtEemCjdCvosaTnQ _SySjEBBuEemCjdCvosaTnQ _aApAIBBuEemCjdCvosaTnQ">
+        <parentClass href="Basis.simulationfeature#_lQee1wGKEemnkdGSvLA10w"/>
+      </objectclass>
+      <objectclass id="_ddZwBxBwEemCjdCvosaTnQ" Name="network.I_NetworkPacket" semantics="NetworkPacket&lt;T extends Identifiable>" objectclassoperation="_5238cRBvEemCjdCvosaTnQ" instantiable="false">
+        <objectClassInheritance Name="network.I_NetworkPacket" childClasses="_sa-65xB2EemlUMLbVV28Ug _7piUQxBsEemCjdCvosaTnQ __yqMIxB0EemlUMLbVV28Ug"/>
+        <data id="_AeoTkBBwEemCjdCvosaTnQ" Name="source" semantics="" datatype="_1UQqVhT4EemC-aG165HpOg"/>
+        <data id="_FNZv0BBwEemCjdCvosaTnQ" Name="destination" semantics="" datatype="_1UQqVhT4EemC-aG165HpOg"/>
+        <data id="_IyausBBwEemCjdCvosaTnQ" Name="sendTime" semantics="" datatype="_uKu0gRBmEemCjdCvosaTnQ"/>
+        <data id="_L6hvIBBwEemCjdCvosaTnQ" Name="receiveTime" semantics="" datatype="_uKu0gRBmEemCjdCvosaTnQ"/>
+      </objectclass>
+      <objectclass id="_7piUQxBsEemCjdCvosaTnQ" Name="network.VmPacket" parentClass="//@simulationDescription/@simulationdata/@objectclass.3/@objectClassInheritance"/>
+      <objectclass id="__yqMIxB0EemlUMLbVV28Ug" Name="network.IcmpPacket" parentClass="//@simulationDescription/@simulationdata/@objectclass.3/@objectClassInheritance" objectclassoperation="_NzzLoBB1EemlUMLbVV28Ug _1REnQBB1EemlUMLbVV28Ug _6JXy8BB1EemlUMLbVV28Ug _M6GHABB2EemlUMLbVV28Ug _S-GQ0BB2EemlUMLbVV28Ug _Wf_DMBB2EemlUMLbVV28Ug _oL1PUBB1EemlUMLbVV28Ug _uTGvkBB1EemlUMLbVV28Ug">
+        <data id="_eQoxgBB1EemlUMLbVV28Ug" Name="size" datatype="_hskF0RB1EemlUMLbVV28Ug"/>
+        <data id="_dpakABB2EemlUMLbVV28Ug" Name="netServiceLevel" datatype="_TrZ2ARBmEemCjdCvosaTnQ"/>
+        <data id="_gu_04BB2EemlUMLbVV28Ug" Name="tag" datatype="_TrZ2ARBmEemCjdCvosaTnQ"/>
+        <data id="_rPrVEBT6EemC-aG165HpOg" Name="baudRate" datatype="_uKu0gRBmEemCjdCvosaTnQ"/>
+      </objectclass>
+      <objectclass id="_sa-65xB2EemlUMLbVV28Ug" Name="network.HostPacket" parentClass="//@simulationDescription/@simulationdata/@objectclass.3/@objectClassInheritance" objectclassoperation="_Vw_u4BB5EemlUMLbVV28Ug _7dlFcBB4EemlUMLbVV28Ug"/>
+      <objectclass id="_3teR4xBtEemCjdCvosaTnQ" Name="network.switches.I_Switch" objectclassoperation="_TtwTQhESEemlUMLbVV28Ug _Xqhq0hESEemlUMLbVV28Ug _cJCdghESEemlUMLbVV28Ug _e7D5MhESEemlUMLbVV28Ug _jzF_IhESEemlUMLbVV28Ug _jr4HYhETEemlUMLbVV28Ug _uITqAhETEemlUMLbVV28Ug _tsB9shETEemlUMLbVV28Ug _70J5ghEUEemlUMLbVV28Ug __374AhEUEemlUMLbVV28Ug _CkMC4hEVEemlUMLbVV28Ug _DQ1tghEVEemlUMLbVV28Ug _dNsREREVEemlUMLbVV28Ug _fwrLMhEVEemlUMLbVV28Ug" instantiable="false">
+        <objectClassInheritance Name="network.switches.I_Switch" childClasses="_8BfRhxB9EemlUMLbVV28Ug _gTDVxxDkEemlUMLbVV28Ug"/>
+        <parentClass href="Basis.simulationfeature#//@simulationDescription/@simulationdata/@objectclass.49/@objectClassInheritance"/>
+        <data id="_J2UUEBESEemlUMLbVV28Ug" Name="uplinkBandwidth" datatype="_uKu0gRBmEemCjdCvosaTnQ"/>
+        <data id="_M6IDUBESEemlUMLbVV28Ug" Name="downlinkBandwidth" datatype="_uKu0gRBmEemCjdCvosaTnQ"/>
+        <data id="_OFdOABESEemlUMLbVV28Ug" Name="ports" datatype="_TrZ2ARBmEemCjdCvosaTnQ"/>
+        <data id="_OqU1ohESEemlUMLbVV28Ug" Name="switchingDelay" datatype="_uKu0gRBmEemCjdCvosaTnQ"/>
+        <data id="_aghgMBEVEemlUMLbVV28Ug" Name="datacenter" datatype="_ukn61RT-EenC-aG165HpOg"/>
+      </objectclass>
+      <objectclass id="_8BfRhxB9EemlUMLbVV28Ug" Name="network.switches.SwitchNull" parentClass="//@simulationDescription/@simulationdata/@objectclass.7/@objectClassInheritance"/>
+      <objectclass id="_9h3zFxBlEemCjdCvosaTnQ" Name="network.switches.EdgeSwitch" parentClass="//@simulationDescription/@simulationdata/@objectclass.12/@objectClassInheritance">
+        <data id="_sRaOgBB-EemlUMLbVV28Ug" Name="LEVEL" semantics="LEVEL = 2" constant="true" datatype="_TrZ2ARBmEemCjdCvosaTnQ"/>
+        <data id="_zm084BB-EemlUMLbVV28Ug" Name="DOWNLINK_BW" semantics="DOWNLINK_BW = 100 * 8" constant="true" datatype="_hskF0RB1EemlUMLbVV28Ug"/>
+        <data id="_1bEhsBB-EemlUMLbVV28Ug" Name="PORTS" semantics="PORTS = 4" constant="true" datatype="_TrZ2ARBmEemCjdCvosaTnQ"/>
+        <data id="_41mu4BB-EemlUMLbVV28Ug" Name="SWITCHING_DELAY" semantics="SWITCHING_DELAY = 0.00157" constant="true" datatype="_uKu0gRBmEemCjdCvosaTnQ"/>
+      </objectclass>
+      <objectclass id="_AdQ5RxB-EemlUMLbVV28Ug" Name="network.switches.RootSwitch" parentClass="//@simulationDescription/@simulationdata/@objectclass.12/@objectClassInheritance">
+        <data id="_Kxe7EBB-EemlUMLbVV28Ug" Name="LEVEL" semantics="LEVEL = 0" constant="true" datatype="_TrZ2ARBmEemCjdCvosaTnQ"/>
+        <data id="_O2j6EBB-EemlUMLbVV28Ug" Name="PORTS" semantics="PORTS = 1" constant="true" datatype="_TrZ2ARBmEemCjdCvosaTnQ"/>
+        <data id="_S6Oj0BB-EemlUMLbVV28Ug" Name="SWITCHING_DELAY" semantics="SWITCHING_DELAY = 0.00285" constant="true" datatype="_uKu0gRBmEemCjdCvosaTnQ"/>
+        <data id="_W7jEMBB-EemlUMLbVV28Ug" Name="DOWNLINK_BW" semantics="DOWNLINK_BW = (long) Conversion.gigaToMega(40 * 8); // 40000 Megabits (40 Gigabits)" constant="true" datatype="_hskF0RB1EemlUMLbVV28Ug"/>
+      </objectclass>
+      <objectclass id="_60s41xB-EemlUMLbVV28Ug" Name="network.switches.AggregateSwitch" parentClass="//@simulationDescription/@simulationdata/@objectclass.12/@objectClassInheritance">
+        <data id="_OchM8BB_EemlUMLbVV28Ug" Name="LEVEL" semantics="LEVEL = 1" constant="true" datatype="_TrZ2ARBmEemCjdCvosaTnQ"/>
+        <data id="_TxXxwBB_EemlUMLbVV28Ug" Name="SWITCHING_DELAY" semantics="SWITCHING_DELAY = 0.00245" constant="true" datatype="_uKu0gRBmEemCjdCvosaTnQ"/>
+        <data id="_Xk9_MBB_EemlUMLbVV28Ug" Name="DOWNLINK_BW" semantics="DOWNLINK_BW =  (long) Conversion.MEGA * 100 * 8" constant="true" datatype="_hskF0RB1EemlUMLbVV28Ug"/>
+        <data id="_asfJwBB_EemlUMLbVV28Ug" Name=" PORTS" semantics=" PORTS = 1" constant="true" datatype="_TrZ2ARBmEemCjdCvosaTnQ"/>
+      </objectclass>
+      <objectclass id="_gTDVxxDkEemlUMLbVV28Ug" Name="network.switches.A_AbstractSwitch" instantiable="false">
+        <objectClassInheritance Name="network.switches.A_AbstractSwitch" childClasses="_60s41xB-EemlUMLbVV28Ug _9h3zFxBlEemCjdCvosaTnQ _AdQ5RxB-EemlUMLbVV28Ug"/>
+        <parentClass href="#//@simulationDescription/@simulationdata/@objectclass.7/@objectClassInheritance"/>
+        <parentClass href="Basis.simulationfeature#//@simulationDescription/@simulationdata/@objectclass.50/@objectClassInheritance"/>
+      </objectclass>
+      <objectclass id="_onK2kxBsEemCjdCvosaTnQ" Name="cloudlets.network.NetworkCloudlet" objectclassoperation="_-nhToBEBEemlUMLbVV28Ug _HoAcsBECEemlUMLbVV28Ug _X05iEBECEemlUMLbVV28Ug _isjoIBECEemlUMLbVV28Ug _kHG6kBECEemlUMLbVV28Ug _pHIe4BECEemlUMLbVV28Ug _yxsfsBECEemlUMLbVV28Ug">
+        <parentClass href="Basis.simulationfeature#_YBnyVwY0EenmkdGScLA10w"/>
+        <data id="_dLkr0BECEemlUMLbVV28Ug" Name="memory" datatype="_hskF0RB1EemlUMLbVV28Ug"/>
+      </objectclass>
+      <objectclass id="_MPHxxxECEemlUMLbVV28Ug" Name="cloudlets.network.CloudletTask" objectclassoperation="_Ovo70BEEEemlUMLbVV28Ug _pWCysBEEEemlUMLbVV28Ug _tD3vUBEEEemlUMLbVV28Ug _xxLzABEEEemlUMLbVV28Ug _wawLkBEEEemlUMLbVV28Ug">
+        <objectClassInheritance Name="cloudlets.network.CloudletTask" childClasses="_GU-AJxEFEemlUMLbVV28Ug _ytkGRxEFEemlUMLbVV28Ug _y8LptxEIEemlUMLbVV28Ug"/>
+        <parentClass href="Basis.simulationfeature#//@simulationDescription/@simulationdata/@objectclass.41/@objectClassInheritance"/>
+        <data id="_TWvCwBEEEemlUMLbVV28Ug" Name="id" datatype="_TrZ2ARBmEemCjdCvosaTnQ"/>
+        <data id="_VxU14BEEEemlUMLbVV28Ug" Name="memory" datatype="_hskF0RB1EemlUMLbVV28Ug"/>
+        <data id="_YO4dcBEEEemlUMLbVV28Ug" Name="startTime" datatype="_uKu0gRBmEemCjdCvosaTnQ"/>
+        <data id="_b6M4oBEEEemlUMLbVV28Ug" Name="cloudlet" datatype="_wbpfhhBsEemCjdCvosaTnQ"/>
+        <data id="_fOwZoBEEEemlUMLbVV28Ug" Name="finished" datatype="_WlKpsRBsEemCjdCvosaTnQ"/>
+      </objectclass>
+      <objectclass id="_GU-AJxEFEemlUMLbVV28Ug" Name="cloudlets.network.CloudletSendTask" parentClass="//@simulationDescription/@simulationdata/@objectclass.14/@objectClassInheritance" objectclassoperation="_R8bygBEFEemlUMLbVV28Ug _Wdx2wBEFEemlUMLbVV28Ug"/>
+      <objectclass id="_ytkGRxEFEemlUMLbVV28Ug" Name="cloudlets.network.CloudletReceiveTask" parentClass="//@simulationDescription/@simulationdata/@objectclass.14/@objectClassInheritance" objectclassoperation="_XQEH8BEIEemlUMLbVV28Ug _cF_8IBEIEemlUMLbVV28Ug">
+        <data id="_ogXyIBEIEemlUMLbVV28Ug" Name=" expectedPacketsToReceive" datatype="_hskF0RB1EemlUMLbVV28Ug"/>
+      </objectclass>
+      <objectclass id="_y8LptxEIEemlUMLbVV28Ug" Name="cloudlets.network.CloudletExecutionTask" parentClass="//@simulationDescription/@simulationdata/@objectclass.14/@objectClassInheritance" objectclassoperation="_WmoT8BEJEemlUMLbVV28Ug _m7GA8BEJEemlUMLbVV28Ug _o80oIBEJEemlUMLbVV28Ug">
+        <data id="_jSlCIBEJEemlUMLbVV28Ug" Name="length" datatype="_hskF0RB1EemlUMLbVV28Ug"/>
+      </objectclass>
+      <objectclass id="_xMx3lxT4EemC-aG165HpOg" Name="T" semantics="" instantiable="false">
+        <parentClass href="Basis.simulationfeature#//@simulationDescription/@simulationdata/@objectclass.41/@objectClassInheritance"/>
+      </objectclass>
+    </simulationdata>
+  </simulationDescription>
+  <dataTypeContainer id="_IQQskRBfEemCjdCvosaTnQ">
+    <datatype xsi:type="DataTypes:ObjectClassReferenceDataType" id="_myP9VhBhEemCjdCvosaTnQ" Name="NetworkHostType" objectclass="_Jaww0xBfEemCjdCvosaTnQ"/>
+    <datatype xsi:type="DataTypes:ObjectClassReferenceDataType" id="_A8rtFhBmEemCjdCvosaTnQ" Name="EdgeSwitchType" objectclass="_9h3zFxBlEemCjdCvosaTnQ"/>
+    <datatype xsi:type="DataTypes:BaseDataType" id="_TrZ2ARBmEemCjdCvosaTnQ" Name="integer" primitiveDataType="INTEGER"/>
+    <datatype xsi:type="DataTypes:BaseDataType" id="_uKu0gRBmEemCjdCvosaTnQ" Name="double" primitiveDataType="DOUBLE"/>
+    <datatype xsi:type="DataTypes:ObjectClassReferenceDataType" id="_353MRhBmEemCjdCvosaTnQ" Name="HostPacketType" objectclass="_sa-65xB2EemlUMLbVV28Ug"/>
+    <datatype xsi:type="DataTypes:BaseDataType" id="_WlKpsRBsEemCjdCvosaTnQ" Name="boolean"/>
+    <datatype xsi:type="DataTypes:DataTypeCollection" id="_tuhK5BBsEemCjdCvosaTnQ" Name="List&lt;NetworkCloudlet>" classicaldatatype="_wbpfhhBsEemCjdCvosaTnQ"/>
+    <datatype xsi:type="DataTypes:ObjectClassReferenceDataType" id="_wbpfhhBsEemCjdCvosaTnQ" Name="NetworkCloudletType" objectclass="_onK2kxBsEemCjdCvosaTnQ"/>
+    <datatype xsi:type="DataTypes:ObjectClassReferenceDataType" id="__1vO9hBsEemCjdCvosaTnQ" Name="VmPacketType" objectclass="_7piUQxBsEemCjdCvosaTnQ"/>
+    <datatype xsi:type="DataTypes:DataTypeCollection" id="_Dg55JBBtEemCjdCvosaTnQ" Name="List&lt;VmPacket>" classicaldatatype="__1vO9hBsEemCjdCvosaTnQ"/>
+    <datatype xsi:type="DataTypes:ObjectClassReferenceDataType" id="_FGhWphBuEemCjdCvosaTnQ" Name="SwitchType" objectclass="_3teR4xBtEemCjdCvosaTnQ"/>
+    <datatype xsi:type="DataTypes:DataTypeCollection" id="_JmLY1BBuEemCjdCvosaTnQ" Name="List&lt;Switch>" classicaldatatype="_FGhWphBuEemCjdCvosaTnQ"/>
+    <datatype xsi:type="DataTypes:BaseDataType" id="_hskF0RB1EemlUMLbVV28Ug" Name="long" primitiveDataType="LONG"/>
+    <datatype xsi:type="DataTypes:DataTypeCollection" id="_GadxJBB2EemlUMLbVV28Ug" Name="List&lt;Double>" classicaldatatype="_uKu0gRBmEemCjdCvosaTnQ"/>
+    <datatype xsi:type="DataTypes:ObjectClassReferenceDataType" id="_O6mglhECEemlUMLbVV28Ug" Name="CloudletTaskType" objectclass="_MPHxxxECEemlUMLbVV28Ug"/>
+    <datatype xsi:type="DataTypes:DataTypeCollection" id="_RRgGhBECEemlUMLbVV28Ug" Name="List&lt;CloudletTask>" classicaldatatype="_O6mglhECEemlUMLbVV28Ug"/>
+    <datatype xsi:type="DataTypes:DataTypeCollection" id="_sG6pxBECEemlUMLbVV28Ug" Name="Optional&lt;CloudletTask>" semantics="java.util.Optional" classicaldatatype="_O6mglhECEemlUMLbVV28Ug"/>
+    <datatype xsi:type="DataTypes:ObjectClassReferenceDataType" id="_PGsUdhEFEemlUMLbVV28Ug" Name="CloudetSendTaskType" objectclass="_GU-AJxEFEemlUMLbVV28Ug"/>
+    <datatype xsi:type="DataTypes:ObjectClassReferenceDataType" id="_LZj0BhEIEemlUMLbVV28Ug" Name="CloudletReceiveTaskType" objectclass="_ytkGRxEFEemlUMLbVV28Ug"/>
+    <datatype xsi:type="DataTypes:ObjectClassReferenceDataType" id="_TLQZRhEJEemlUMLbVV28Ug" Name="CloudletExecutionTaskType" objectclass="_y8LptxEIEemlUMLbVV28Ug"/>
+    <datatype xsi:type="DataTypes:ObjectClassReferenceDataType" id="_XgUn1hT1EemC-aG165HpOg" Name="NetworkVmType" objectclass="_wSh1MxBrEemCjdCvosaTnQ"/>
+    <datatype xsi:type="DataTypes:ObjectClassReferenceDataType" id="_1UQqVhT4EemC-aG165HpOg" Name="TType" semantics=" extends Identifiable" objectclass="_xMx3lxT4EemC-aG165HpOg"/>
+    <datatype xsi:type="DataTypes:DataTypeCollection" id="_BRTR1BT-EemC-aG165HpOg" Name="List&lt;NetworkHost>" classicaldatatype="_myP9VhBhEemCjdCvosaTnQ"/>
+    <datatype xsi:type="DataTypes:CombinedDataType" id="_R-20RRT-EemC-aG165HpOg" Name="Map&lt;NetworkHost, List&lt;HostPacket>>" classicaldatatype="_myP9VhBhEemCjdCvosaTnQ _YsmepBT-EemC-aG165HpOg"/>
+    <datatype xsi:type="DataTypes:DataTypeCollection" id="_YsmepBT-EemC-aG165HpOg" Name="List&lt;HostPacket>" classicaldatatype="_353MRhBmEemCjdCvosaTnQ"/>
+    <datatype xsi:type="DataTypes:CombinedDataType" id="_ukn61RT-EemC-aG165HpOg" Name="Map&lt;Switch, List&lt;HostPacket>>" classicaldatatype="_FGhWphBuEemCjdCvosaTnQ _YsmepBT-EemC-aG165HpOg"/>
+    <datatype xsi:type="DataTypes:ObjectClassReferenceDataType" id="_ukn61RT-EenC-aG165HpOg" Name="NetwerkDatacenterType" objectclass="_rEibcxBtEemCjdCvosaTnQ"/>
+  </dataTypeContainer>
+  <basicsimulationcomponent href="CloudSim.modularsimulationassembly#_k5LpIBBEEemCjdCvosaTnQ"/>
+</SimulationFeature:SimulationFeature>
