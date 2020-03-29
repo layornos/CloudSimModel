@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<InterfaceDefinition:InterfaceRepository xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:InterfaceDefinition="edu.kit.ipd.sdq.Modularization.Assembly.AssemblyInterface.InterfaceDefinition" id="_RACQEAC8EemnkdGScLA10w" Name="BasisInterfaceRepository">
+  <assemblyinterface id="_Vi1s0Rd5EemC-aG165HpOg" Name="HostSimple"/>
+  <assemblyinterface id="_laaCcBd5EemC-aG165HpOg" Name="VmSimple"/>
+  <assemblyinterface id="_heUOEBd-EemC-aG165HpOg" Name="DatacenterSimple"/>
+  <assemblyinterface id="_jOOFcBd-EemC-aG165HpOg" Name="Cloudlet"/>
+  <assemblyinterface id="_kDUhcBd-EemC-aG165HpOg" Name="Vm"/>
+  <assemblyinterface id="_l2-QYBd-EemC-aG165HpOg" Name="SimEntity"/>
+  <assemblyinterface id="_m1OBUBd-EemC-aG165HpOg" Name="CloudSim"/>
+  <assemblyinterface id="_ohCp8Bd-EemC-aG165HpOg" Name="CloudSimEntity"/>
+  <assemblyinterface id="_q3SIkBd-EemC-aG165HpOg" Name="CloudletSimple"/>
+  <assemblyinterface id="_sgaCgBd-EemC-aG165HpOg" Name="Identifiable"/>
+</InterfaceDefinition:InterfaceRepository>

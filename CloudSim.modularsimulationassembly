@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ModularSimulationAssembly:SimulationAssembly xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:AssemblyComponentWiring="edu.kit.ipd.sdq.Modularization.Assembly.AssemblyConnections.ComponentWiring" xmlns:InterfaceConnection="edu.kit.ipd.sdq.Modularization.Assembly.AssemblyConnections.ComponentInterfaceConnection" xmlns:InterfaceMapping="edu.kit.ipd.sdq.Modularization.Assembly.AssemblyInterface.InterfaceMapping" xmlns:ModularSimulationAssembly="edu.kit.ipd.sdq.Modularization.Assembly" id="_W4I6oAC2EemnkdGScLA10w" Name="CloudSimAssembly">
+  <connection xsi:type="AssemblyComponentWiring:SimulationFeature_MSEWiring" id="_CwXwsRBEEemCjdCvosaTnQ" Name="ToDo in Future"/>
+  <connection xsi:type="InterfaceConnection:RequiredProvidedInterfaceConnection" id="_Xn4fVBE6EemlUMLbVV28Ug" Name="HostSimple" providingComponent="_gvCj5hBEEemCjdCvosaTnQ" requieringComponent="_k5LpIBBEEemCjdCvosaTnQ" interfaceprovided="_UYQr6ReAEemC-aG165HpOg" interfacerequired="_JDRJmBeAsimpleC-aG165HpOg"/>
+  <connection xsi:type="InterfaceConnection:RequiredProvidedInterfaceConnection" id="_-l2k9Bd-EemC-aG165HpOg" Name="VmSimple" providingComponent="_gvCj5hBEEemCjdCvosaTnQ" requieringComponent="_k5LpIBBEEemCjdCvosaTnQ" interfaceprovided="_WG7NKReAEemC-aG165HpOg" interfacerequired="_JDRJmBeAEvmsC-aG165Hpog"/>
+  <connection xsi:type="InterfaceConnection:RequiredProvidedInterfaceConnection" id="_cLAE5Bd_EemC-aG165HpOg" Name="DatacenterSimple" providingComponent="_gvCj5hBEEemCjdCvosaTnQ" requieringComponent="_k5LpIBBEEemCjdCvosaTnQ" interfaceprovided="_Tfge-ReAEemC-aG165HpOg" interfacerequired="_JRDJmBeAdatasimC-aG165HpOg"/>
+  <connection xsi:type="InterfaceConnection:RequiredProvidedInterfaceConnection" id="_djJjlBd_EemC-aG165HpOg" Name="Cloudlet" providingComponent="_gvCj5hBEEemCjdCvosaTnQ" requieringComponent="_k5LpIBBEEemCjdCvosaTnQ" interfaceprovided="__h5hCRd_EemC-aG165HpOg" interfacerequired="_JDRJmBeAEeClo-aG165HpOg"/>
+  <connection xsi:type="InterfaceConnection:RequiredProvidedInterfaceConnection" id="_d8GPFBd_EemC-aG165HpOg" Name="Vm" providingComponent="_gvCj5hBEEemCjdCvosaTnQ" requieringComponent="_k5LpIBBEEemCjdCvosaTnQ" interfaceprovided="_Vv_66ReAEemC-aG165HpOg" interfacerequired="_JDRJmBeAEvmC-aG165HpOg"/>
+  <connection xsi:type="InterfaceConnection:RequiredProvidedInterfaceConnection" id="_fP5ZRBd_EemC-aG165HpOg" Name="SimEntity" providingComponent="_gvCj5hBEEemCjdCvosaTnQ" requieringComponent="_k5LpIBBEEemCjdCvosaTnQ" interfaceprovided="_VWgc2ReAEemC-aG165HpOg" interfacerequired="_JDRJmBesimenemC-aG156HpOg"/>
+  <connection xsi:type="InterfaceConnection:RequiredProvidedInterfaceConnection" id="_fn1YJBd_EemC-aG165HpOg" Name="CloudSim" providingComponent="_gvCj5hBEEemCjdCvosaTnQ" requieringComponent="_k5LpIBBEEemCjdCvosaTnQ" interfaceprovided="_AsoOyReAEemC-aG165HpOg" interfacerequired="_JDRJmBeAEsimC-aG165HpOg"/>
+  <connection xsi:type="InterfaceConnection:RequiredProvidedInterfaceConnection" id="_f_LhJBd_EemC-aG165HpOg" Name="CloudSimEntity" providingComponent="_gvCj5hBEEemCjdCvosaTnQ" requieringComponent="_k5LpIBBEEemCjdCvosaTnQ" interfaceprovided="_Q43z6ReAEemC-aG165HpOg" interfacerequired="_JDRJmBeAECSE-ga165HpOg"/>
+  <connection xsi:type="InterfaceConnection:RequiredProvidedInterfaceConnection" id="_e192VBd_EemC-aG165HpOg" Name="CoudletSimple" providingComponent="_gvCj5hBEEemCjdCvosaTnQ" requieringComponent="_k5LpIBBEEemCjdCvosaTnQ" interfaceprovided="_AOBAKReAEemC-aG165HpOg" interfacerequired="_JDRJmBeAECsi-aG165PhOg"/>
+  <connection xsi:type="InterfaceConnection:RequiredProvidedInterfaceConnection" id="_eXcuVBd_EemC-aG165HpOg" Name="Identifiable" providingComponent="_gvCj5hBEEemCjdCvosaTnQ" requieringComponent="_k5LpIBBEEemCjdCvosaTnQ" interfaceprovided="_U5V_uReAEemC-aG165HpOg" interfacerequired="_JDRJmBeAEideC-aG165HpOg"/>
+  <assembablecomponent xsi:type="ModularSimulationAssembly:MSEComponent" id="_W4SroQC2EemnkdGScLA10w" Name="ToDo in Future"/>
+  <assembablecomponent xsi:type="ModularSimulationAssembly:SimulationFeatureComponent" id="_gvCj5hBEEemCjdCvosaTnQ" Name="BasisComponent">
+    <interfacemapping xsi:type="InterfaceMapping:InterfaceProvided" id="__h5hCRd_EemC-aG165HpOg" simulationcomonent="_gvCj5hBEEemCjdCvosaTnQ">
+      <assemblyinterface href="CloudSim.interfacedefinition#_jOOFcBd-EemC-aG165HpOg"/>
+    </interfacemapping>
+    <interfacemapping xsi:type="InterfaceMapping:InterfaceProvided" id="_AOBAKReAEemC-aG165HpOg" simulationcomonent="_gvCj5hBEEemCjdCvosaTnQ">
+      <assemblyinterface href="CloudSim.interfacedefinition#_q3SIkBd-EemC-aG165HpOg"/>
+    </interfacemapping>
+    <interfacemapping xsi:type="InterfaceMapping:InterfaceProvided" id="_AsoOyReAEemC-aG165HpOg" simulationcomonent="_gvCj5hBEEemCjdCvosaTnQ">
+      <assemblyinterface href="CloudSim.interfacedefinition#_m1OBUBd-EemC-aG165HpOg"/>
+    </interfacemapping>
+    <interfacemapping xsi:type="InterfaceMapping:InterfaceProvided" id="_Q43z6ReAEemC-aG165HpOg" simulationcomonent="_gvCj5hBEEemCjdCvosaTnQ">
+      <assemblyinterface href="CloudSim.interfacedefinition#_ohCp8Bd-EemC-aG165HpOg"/>
+    </interfacemapping>
+    <interfacemapping xsi:type="InterfaceMapping:InterfaceProvided" id="_Tfge-ReAEemC-aG165HpOg" simulationcomonent="_gvCj5hBEEemCjdCvosaTnQ">
+      <assemblyinterface href="CloudSim.interfacedefinition#_heUOEBd-EemC-aG165HpOg"/>
+    </interfacemapping>
+    <interfacemapping xsi:type="InterfaceMapping:InterfaceProvided" id="_UYQr6ReAEemC-aG165HpOg" simulationcomonent="_gvCj5hBEEemCjdCvosaTnQ">
+      <assemblyinterface href="CloudSim.interfacedefinition#_Vi1s0Rd5EemC-aG165HpOg"/>
+    </interfacemapping>
+    <interfacemapping xsi:type="InterfaceMapping:InterfaceProvided" id="_U5V_uReAEemC-aG165HpOg" simulationcomonent="_gvCj5hBEEemCjdCvosaTnQ">
+      <assemblyinterface href="CloudSim.interfacedefinition#_sgaCgBd-EemC-aG165HpOg"/>
+    </interfacemapping>
+    <interfacemapping xsi:type="InterfaceMapping:InterfaceProvided" id="_VWgc2ReAEemC-aG165HpOg" simulationcomonent="_gvCj5hBEEemCjdCvosaTnQ">
+      <assemblyinterface href="CloudSim.interfacedefinition#_l2-QYBd-EemC-aG165HpOg"/>
+    </interfacemapping>
+    <interfacemapping xsi:type="InterfaceMapping:InterfaceProvided" id="_Vv_66ReAEemC-aG165HpOg" simulationcomonent="_gvCj5hBEEemCjdCvosaTnQ">
+      <assemblyinterface href="CloudSim.interfacedefinition#_kDUhcBd-EemC-aG165HpOg"/>
+    </interfacemapping>
+    <interfacemapping xsi:type="InterfaceMapping:InterfaceProvided" id="_WG7NKReAEemC-aG165HpOg" simulationcomonent="_gvCj5hBEEemCjdCvosaTnQ">
+      <assemblyinterface href="CloudSim.interfacedefinition#_laaCcBd5EemC-aG165HpOg"/>
+    </interfacemapping>
+    <simmodule href="Basis.simulationfeature#_Z27KgAC3EemnkdGScLA10w"/>
+  </assembablecomponent>
+  <assembablecomponent xsi:type="ModularSimulationAssembly:SimulationFeatureComponent" id="_k5LpIBBEEemCjdCvosaTnQ" Name="NetworkComponent">
+    <interfacemapping xsi:type="InterfaceMapping:InterfaceRequired" id="_JDRJmBeAsimpleC-aG165HpOg" simulationcomonent="_k5LpIBBEEemCjdCvosaTnQ">
+      <assemblyinterface href="CloudSim.interfacedefinition#_Vi1s0Rd5EemC-aG165HpOg"/>
+    </interfacemapping>
+    <interfacemapping xsi:type="InterfaceMapping:InterfaceRequired" id="_JDRJmBeAEvmsC-aG165Hpog" simulationcomonent="_k5LpIBBEEemCjdCvosaTnQ">
+      <assemblyinterface href="CloudSim.interfacedefinition#_laaCcBd5EemC-aG165HpOg"/>
+    </interfacemapping>
+    <interfacemapping xsi:type="InterfaceMapping:InterfaceRequired" id="_JRDJmBeAdatasimC-aG165HpOg" simulationcomonent="_k5LpIBBEEemCjdCvosaTnQ">
+      <assemblyinterface href="CloudSim.interfacedefinition#_heUOEBd-EemC-aG165HpOg"/>
+    </interfacemapping>
+    <interfacemapping xsi:type="InterfaceMapping:InterfaceRequired" id="_JDRJmBesimenemC-aG156HpOg" simulationcomonent="_k5LpIBBEEemCjdCvosaTnQ">
+      <assemblyinterface href="CloudSim.interfacedefinition#_l2-QYBd-EemC-aG165HpOg"/>
+    </interfacemapping>
+    <interfacemapping xsi:type="InterfaceMapping:InterfaceRequired" id="_JDRJmBeAECSE-ga165HpOg" simulationcomonent="_k5LpIBBEEemCjdCvosaTnQ">
+      <assemblyinterface href="CloudSim.interfacedefinition#_ohCp8Bd-EemC-aG165HpOg"/>
+    </interfacemapping>
+    <interfacemapping xsi:type="InterfaceMapping:InterfaceRequired" id="_JDRJmBeAECsi-aG165PhOg" simulationcomonent="_k5LpIBBEEemCjdCvosaTnQ">
+      <assemblyinterface href="CloudSim.interfacedefinition#_q3SIkBd-EemC-aG165HpOg"/>
+    </interfacemapping>
+    <interfacemapping xsi:type="InterfaceMapping:InterfaceRequired" id="_JDRJmBeAEideC-aG165HpOg" simulationcomonent="_k5LpIBBEEemCjdCvosaTnQ">
+      <assemblyinterface href="CloudSim.interfacedefinition#_sgaCgBd-EemC-aG165HpOg"/>
+    </interfacemapping>
+    <interfacemapping xsi:type="InterfaceMapping:InterfaceRequired" id="_JDRJmBeAEeClo-aG165HpOg" simulationcomonent="_k5LpIBBEEemCjdCvosaTnQ">
+      <assemblyinterface href="CloudSim.interfacedefinition#_jOOFcBd-EemC-aG165HpOg"/>
+    </interfacemapping>
+    <interfacemapping xsi:type="InterfaceMapping:InterfaceRequired" id="_JDRJmBeAEvmC-aG165HpOg" simulationcomonent="_k5LpIBBEEemCjdCvosaTnQ">
+      <assemblyinterface href="CloudSim.interfacedefinition#_kDUhcBd-EemC-aG165HpOg"/>
+    </interfacemapping>
+    <interfacemapping xsi:type="InterfaceMapping:InterfaceRequired" id="_JDRJmBeAEsimC-aG165HpOg" simulationcomonent="_k5LpIBBEEemCjdCvosaTnQ">
+      <assemblyinterface href="CloudSim.interfacedefinition#_m1OBUBd-EemC-aG165HpOg"/>
+    </interfacemapping>
+    <simmodule href="Network.simulationfeature#_6sKQoA-pEemCjdCvosaTnQ"/>
+  </assembablecomponent>
+</ModularSimulationAssembly:SimulationAssembly>
